@@ -17,6 +17,8 @@ package org.telegram.messenger.support.widget;
 
 import android.view.View;
 
+import org.telegram.messenger.support.widget.RecyclerView;
+
 /**
  * A helper class to do scroll offset calculations.
  */

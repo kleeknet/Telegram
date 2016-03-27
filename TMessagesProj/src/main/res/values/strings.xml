@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
-<resources>
-    <string name="AppName">Telegram</string>
-    <string name="AppNameBeta">Telegram Beta</string>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="AppName">Kleegram</string>
+    <string name="AppNameBeta">Kleegram</string>
     <string name="LanguageName">English</string>
     <string name="LanguageNameInEnglish">English</string>
     <string name="LanguageCode">en</string>
@@ -14,13 +13,9 @@
     <string name="ChooseCountry">Choose a country</string>
     <string name="WrongCountry">Wrong country code</string>
     <!--code enter view-->
-    <string name="YourCode">Phone verification</string>
-    <string name="SentSmsCode">We\'ve sent an SMS with an activation code to your phone <![CDATA[<b>]]>%1$s<![CDATA[</b>]]>.</string>
-    <string name="SentAppCode">We\'ve sent the code to the <![CDATA[<b>]]>Telegram<![CDATA[</b>]]> app on your other device.</string>
-    <string name="SentCallCode">We\'ve sent an activation call to your phone <![CDATA[<b>]]>%1$s<![CDATA[</b>]]>.\n\nDon\'t take it, Telegram will process everything automatically.</string>
-    <string name="SentCallOnly">We are calling your phone <![CDATA[<b>]]>%1$s<![CDATA[</b>]]> to dictate a code.</string>
+    <string name="YourCode">Your code</string>
+    <string name="SentSmsCode">We\'ve sent an SMS with an activation code to your phone</string>
     <string name="CallText">We will call you in %1$d:%2$02d</string>
-    <string name="SmsText">We will send you an SMS in %1$d:%2$02d</string>
     <string name="Calling">Calling you...</string>
     <string name="Code">Code</string>
     <string name="WrongNumber">Wrong number?</string>
@@ -43,6 +38,7 @@
     <string name="WaitingForNetwork">Waiting for network...</string>
     <string name="Connecting">Connecting...</string>
     <string name="Updating">Updating...</string>
+    <string name="TelegramFaq"> پرسش و پاسخ تلگرام </string>
     <string name="NewSecretChat">New Secret Chat</string>
     <string name="AwaitingEncryption">Waiting for %s to get online...</string>
     <string name="EncryptionRejected">Secret chat cancelled</string>
@@ -56,7 +52,7 @@
     <string name="HiddenName">Deleted Account</string>
     <string name="SelectChat">Select Chat</string>
     <string name="PhotoTip">Tap and hold to view</string>
-    <string name="CompatibilityChat">%1$s is using an older version of Telegram, so secret photos will be shown in compatibility mode.\n\nOnce %2$s updates Telegram, photos with timers for 1 minute or less will start working in \'Tap and hold to view\' mode, and you will be notified whenever the other party takes a screenshot.</string>
+    <string name="CompatibilityChat">%1$s is using an older version of Kleegram, so secret photos will be shown in compatibility mode.\n\nOnce %2$s updates Kleegram, photos with timers for 1 minute or less will start working in \'Tap and hold to view\' mode, and you will be notified whenever the other party takes a screenshot.</string>
     <string name="SearchMessages">MESSAGES</string>
     <string name="Search">Search</string>
     <string name="MuteNotifications">Mute notifications</string>
@@ -68,10 +64,6 @@
     <string name="Recent">RECENT</string>
     <string name="LinkPreview">Link preview</string>
     <!--channels-->
-    <string name="GroupType">Group Type</string>
-    <string name="ChannelType">Channel Type</string>
-    <string name="ChannelTypePublic">Public</string>
-    <string name="ChannelTypePrivate">Private</string>
     <string name="SetAsAdmin">Promote to admin</string>
     <string name="DescriptionInfoMega">You can provide an optional description for your group.</string>
     <string name="LeaveMega">Leave Group</string>
@@ -87,19 +79,8 @@
     <string name="GroupUserCantAdd">Sorry, you can\'t add this user to groups.</string>
     <string name="GroupUserAddLimit">Sorry, this group is full.</string>
     <string name="GroupUserLeftError">Sorry, this user decided to leave this group, so you cannot invite them back here.</string>
-    <string name="GroupUserCantAdmin">Sorry, too many administrators in this group.</string>
+    <string name="GroupUserCantAdmin">Sorry, too many adminstrators in this group.</string>
     <string name="GroupUserCantBot">Sorry, too many bots in this group.</string>
-    <string name="ActionPinnedText">un1 pinned \"%1$s\"</string>
-    <string name="ActionPinnedNoText">un1 pinned a message</string>
-    <string name="ActionPinnedPhoto">un1 pinned a photo</string>
-    <string name="ActionPinnedVideo">un1 pinned a video</string>
-    <string name="ActionPinnedFile">un1 pinned a file</string>
-    <string name="ActionPinnedSticker">un1 pinned a sticker</string>
-    <string name="ActionPinnedVoice">un1 pinned a voice message</string>
-    <string name="ActionPinnedContact">un1 pinned a contact</string>
-    <string name="ActionPinnedGeo">un1 pinned a map</string>
-    <string name="ActionPinnedGif">un1 pinned a GIF</string>
-    <string name="ActionPinnedMusic">un1 pinned a track</string>
     <string name="ActionMigrateFromGroup">This group was upgraded to a supergroup</string>
     <string name="ActionMigrateFromGroupNotify">%1$s was upgraded to a supergroup</string>
     <string name="NoBlockedGroup">Blocked users are removed from the group and can only come back if invited by an admin. Invite links don\'t work for them.</string>
@@ -108,22 +89,15 @@
     <string name="Comments">Comments</string>
     <string name="CommentsInfo">If you enable comments, people will be able to discuss your posts in the channel.</string>
     <string name="AddMutual">Add contacts to your channel</string>
-    <string name="ChannelUsernameHelp">People can share this link with others and find your channel using Telegram search.</string>
-    <string name="MegaUsernameHelp">People can share this link with others and find your group using Telegram search.</string>
+    <string name="ChannelUsernameHelp">People can share this link with others and find your channel using Kleegram search.</string>
     <string name="ChannelUsernamePlaceholder">link</string>
     <string name="ChannelPrivateLinkHelp">People can join your channel by following this link. You can revoke the link any time.</string>
-    <string name="MegaPrivateLinkHelp">People can join your group by following this link. You can revoke the link any time.</string>
-    <string name="DescriptionOptionalPlaceholder">Description (optional)</string>
     <string name="DescriptionPlaceholder">Description</string>
     <string name="DescriptionInfo">You can provide an optional description for your channel.</string>
     <string name="ChannelPublic">Public Channel</string>
-    <string name="MegaPublic">Public Group</string>
     <string name="ChannelPublicInfo">Public channels can be found in search, anyone can join them.</string>
-    <string name="MegaPublicInfo">Public groups can be found in search, chat history is available to everyone and anyone can join.</string>
     <string name="ChannelPrivate">Private Channel</string>
-    <string name="MegaPrivate">Private Group</string>
     <string name="ChannelPrivateInfo">Private channels can only be joined via an invite link.</string>
-    <string name="MegaPrivateInfo">Private groups can only be joined if you were invited or have an invite link.</string>
     <string name="ChannelLinkTitle">Link</string>
     <string name="ChannelInviteLinkTitle">Invite Link</string>
     <string name="ChannelAddMembers">Add members</string>
@@ -133,7 +107,6 @@
     <string name="ChannelJoin">JOIN</string>
     <string name="OpenChannelProfile">Channel info</string>
     <string name="ChannelBroadcast">Broadcast</string>
-    <string name="ChannelSilentBroadcast">Silent Broadcast</string>
     <string name="ChannelComment">Comment</string>
     <string name="ShowDiscussion">show comments</string>
     <string name="ChannelAlertTitle">What is a Channel?</string>
@@ -144,8 +117,6 @@
     <string name="LinkInvalidShort">Channel names must have at least 5 characters.</string>
     <string name="LinkInvalidLong">The name must not exceed 32 characters.</string>
     <string name="LinkInvalidStartNumber">Channel names can\'t start with a number.</string>
-    <string name="LinkInvalidShortMega">Group names must have at least 5 characters.</string>
-    <string name="LinkInvalidStartNumberMega">Group names can\'t start with a number.</string>
     <string name="LinkChecking">Checking name…</string>
     <string name="LinkAvailable">%1$s is available.</string>
     <string name="ChannelMembers">Members</string>
@@ -157,7 +128,6 @@
     <string name="ChannelLeaveAlert">Are you sure you want to leave the channel?</string>
     <string name="ChannelDeleteInfo">You will lose all messages in this channel.</string>
     <string name="ChannelEdit">Edit</string>
-    <string name="MegaWasPrivateAlert">Please note that if you choose a public link for your group, anyone will be able to find it in search and join.\n\nDo not create this link if you want your supergroup to stay private.</string>
     <string name="ChannelWasPrivateAlert">Please note that if you choose a public link for your channel, anyone will be able to find it in search and join.\n\nDo not create this link if you want your channel to stay private.</string>
     <string name="ChannelPublicEmptyUsername">Please choose a link for your public channel, so that people can find it in search and share with others.\n\nIf you\'re not interested, we suggest creating a private channel instead.</string>
     <string name="ActionCreateChannel">Channel created</string>
@@ -165,7 +135,6 @@
     <string name="ActionChannelRemovedPhoto">Channel photo removed</string>
     <string name="ActionChannelChangedTitle">Channel name changed to un2</string>
     <string name="ChannelPublicLimitReached">Sorry, you have created too many public channels. You can either create a private channel or delete one of your existing channels first.</string>
-    <string name="ChangePublicLimitReached">Sorry, you have created too many public links. Try deleting or making some of your groups or channels private.</string>
     <string name="ChannelModerator">Moderator</string>
     <string name="ChannelCreator">Creator</string>
     <string name="ChannelEditor">Administrator</string>
@@ -177,12 +146,10 @@
     <string name="ChannelRemoveUserAdmin">Remove</string>
     <string name="ChannelMembersInfo">Only channel administrators can see this list.</string>
     <string name="ChannelAdminNotParticipant">This user hasn\'t joined the channel yet. Do you want to invite them?</string>
-    <string name="ChannelLinkInfo">Anyone who has Telegram installed will be able to join your channel by following this link.</string>
+    <string name="ChannelLinkInfo">Anyone who has Kleegram installed will be able to join your channel by following this link.</string>
     <string name="ChannelAdminsInfo">You can add administrators to help you manage your channel. Tap and hold to remove admins.</string>
     <string name="ChannelJoinTo">Do you want to join the channel \'%1$s\'?</string>
     <string name="ChannelCantOpenPrivate">Sorry, this chat is no longer accessible.</string>
-    <string name="ChannelCantOpenBanned">Unfortunately, you were banned from participating in public groups.</string>
-    <string name="ChannelCantOpenNa">Sorry, this chat is no longer accessible.</string>
     <string name="ChannelAddTo">Add %1$s to the channel?</string>
     <string name="ChannelUserLeftError">Sorry, this user decided to leave this channel, so you cannot invite them back here.</string>
     <string name="ChannelUserCantAdd">Sorry, you can\'t add this user to channels.</string>
@@ -190,9 +157,7 @@
     <string name="ChannelUserCantBot">Sorry, too many bots in this channel.</string>
     <string name="ChannelUserAddLimit">Sorry, you can only add the first 200 members to a channel. Note that an unlimited number of people may join via the channel\'s link.</string>
     <string name="ChannelAddedBy">un1 added you to this channel</string>
-    <string name="ChannelJoined">You joined this channel</string>
-    <string name="ChannelMegaJoined">You joined this group</string>
-    "%@ joined the group"
+    <string name="ChannelJoined">You joined the channel</string>
     <string name="ChannelRemoveUser">Remove from channel</string>
     <string name="ChannelCantSendMessage">Sorry, you can\'t send messages to this channel.</string>
     <string name="ChannelAddedByNotification">%1$s added you to the channel %2$s</string>
@@ -203,9 +168,7 @@
     <string name="ChannelMessageGroupContact">%1$s shared a contact in the channel %2$s</string>
     <string name="ChannelMessageGroupMap">%1$s sent a location to the channel %2$s</string>
     <string name="ChannelMessageGroupDocument">%1$s sent a file to the channel %2$s</string>
-    <string name="ChannelMessageGroupGif">%1$s sent a GIF to the channel %2$s</string>
-    <string name="ChannelMessageGroupAudio">%1$s sent a voice message to the channel %2$s</string>
-    <string name="ChannelMessageGroupMusic">%1$s sent a track to the channel %2$s</string>
+    <string name="ChannelMessageGroupAudio">%1$s sent an audio to the channel %2$s</string>
     <string name="ChannelMessageGroupSticker">%1$s sent a sticker to the channel %2$s</string>
     <string name="ChannelMessageNoText">%1$s posted a message</string>
     <string name="ChannelMessagePhoto">%1$s posted a photo</string>
@@ -213,17 +176,8 @@
     <string name="ChannelMessageContact">%1$s posted a contact</string>
     <string name="ChannelMessageMap">%1$s posted a location</string>
     <string name="ChannelMessageDocument">%1$s posted a file</string>
-    <string name="ChannelMessageGIF">%1$s posted a GIF</string>
     <string name="ChannelMessageAudio">%1$s posted a voice message</string>
-    <string name="ChannelMessageMusic">%1$s posted a track</string>
     <string name="ChannelMessageSticker">%1$s posted a sticker</string>
-    <string name="WhoCanAddMembers">Who can add new members?</string>
-    <string name="WhoCanAddMembersAllMembers">All Members</string>
-    <string name="WhoCanAddMembersAdmins">Only Admins</string>
-    <string name="ChannelNotifyMembersInfoOn">Members will be notified when you post</string>
-    <string name="ChannelNotifyMembersInfoOff">Members will not be notified when you post</string>
-    <string name="ChannelSignMessages">Sign Messages</string>
-    <string name="ChannelSignMessagesInfo">Add names of the admins to the messages they post.</string>
     <!--broadcasts-->
     <string name="NewBroadcastList">New Broadcast List</string>
     <string name="EnterListName">Enter list name</string>
@@ -255,15 +209,15 @@
     <string name="Typing">typing...</string>
     <string name="IsTyping">is typing...</string>
     <string name="AreTyping">are typing...</string>
-    <string name="IsRecordingAudio">%1$s is recording voice message...</string>
+    <string name="IsRecordingAudio">%1$s is recording audio...</string>
     <string name="IsSendingPhoto">%1$s is sending photo...</string>
     <string name="IsSendingVideo">%1$s is sending video...</string>
     <string name="IsSendingFile">%1$s is sending file...</string>
-    <string name="RecordingAudio">recording voice message...</string>
+    <string name="RecordingAudio">recording audio...</string>
     <string name="SendingPhoto">sending photo...</string>
     <string name="SendingVideoStatus">sending video...</string>
     <string name="SendingFile">sending file...</string>
-    <string name="GotAQuestion">Got a question\nabout Telegram?</string>
+    <string name="GotAQuestion">Got a question\nabout Kleegram?</string>
     <string name="ChatTakePhoto">Take photo</string>
     <string name="ChatGallery">Gallery</string>
     <string name="ChatLocation">Location</string>
@@ -291,8 +245,6 @@
     <string name="DeleteThisChat">Delete this chat</string>
     <string name="SlideToCancel">SLIDE TO CANCEL</string>
     <string name="SaveToDownloads">Save to downloads</string>
-    <string name="SaveToGIFs">Save to GIFs</string>
-    <string name="DeleteGif">Delete GIF?</string>
     <string name="SaveToMusic">Save to music</string>
     <string name="ShareFile">Share</string>
     <string name="ApplyLocalizationFile">Apply localization file</string>
@@ -305,33 +257,14 @@
     <string name="SendItems">Send %1$s</string>
     <string name="OpenUrlAlert">Open url %1$s?</string>
     <string name="ReportSpam">REPORT SPAM</string>
-    <string name="ReportSpamAndLeave">REPORT SPAM AND LEAVE</string>
     <string name="AddContactChat">ADD CONTACT</string>
     <string name="ReportSpamAlert">Are you sure you want to report spam from this user?</string>
     <string name="ReportSpamAlertGroup">Are you sure you want to report spam from this group?</string>
-    <string name="ReportSpamAlertChannel">Are you sure you want to report spam from this channel?</string>
     <string name="NobodyLikesSpam1">Sorry, you can only send messages to mutual contacts at the moment.</string>
     <string name="NobodyLikesSpam2">Sorry, you can only add mutual contacts to groups at the moment.</string>
-    <string name="NobodyLikesSpamUrl">https://telegram.org/faq#can-39t-send-messages-to-non-contacts</string>
+    <string name="NobodyLikesSpamUrl">https://Kleegram.org/faq#can-39t-send-messages-to-non-contacts</string>
     <string name="MoreInfo">More info</string>
     <string name="ShareSendTo">Send to...</string>
-    <string name="TapHereGifs">Tap here to access saved GIFs</string>
-    <string name="PinMessage">Pin</string>
-    <string name="PinNotify">Notify all members</string>
-    <string name="UnpinMessage">Unpin</string>
-    <string name="PinMessageAlert">Do you want to pin this message in this group?</string>
-    <string name="UnpinMessageAlert">Do you want to unpin this message?</string>
-    <string name="DeleteBanUser">Ban user</string>
-    <string name="DeleteReportSpam">Report spam</string>
-    <string name="DeleteAllFrom">Delete all from %1$s</string>
-    <string name="ClearRecentEmoji">Clear recent emoji?</string>
-    <string name="ReportChat">Report</string>
-    <string name="ReportChatSpam">Spam</string>
-    <string name="ReportChatViolence">Violence</string>
-    <string name="ReportChatPornography">Pornography</string>
-    <string name="ReportChatOther">Other</string>
-    <string name="ReportChatDescription">Description</string>
-    <string name="PinnedMessage">Pinned Message</string>
     <!--notification-->
     <string name="MessageLifetimeChanged">%1$s set the self-destruct timer to %2$s</string>
     <string name="MessageLifetimeChangedOutgoing">You set the self-destruct timer to %1$s</string>
@@ -345,9 +278,7 @@
     <string name="NotificationMessageContact">%1$s shared a contact with you</string>
     <string name="NotificationMessageMap">%1$s sent you a location</string>
     <string name="NotificationMessageDocument">%1$s sent you a file</string>
-    <string name="NotificationMessageGif">%1$s sent you a GIF</string>
-    <string name="NotificationMessageAudio">%1$s sent you a voice message</string>
-    <string name="NotificationMessageMusic">%1$s sent you a track</string>
+    <string name="NotificationMessageAudio">%1$s sent you an audio</string>
     <string name="NotificationMessageSticker">%1$s sent you a sticker</string>
     <string name="NotificationMessageGroupText">%1$s @ %2$s: %3$s</string>
     <string name="NotificationMessageGroupNoText">%1$s sent a message to the group %2$s</string>
@@ -356,53 +287,28 @@
     <string name="NotificationMessageGroupContact">%1$s shared a contact in the group %2$s</string>
     <string name="NotificationMessageGroupMap">%1$s sent a location to the group %2$s</string>
     <string name="NotificationMessageGroupDocument">%1$s sent a file to the group %2$s</string>
-    <string name="NotificationMessageGroupGif">%1$s sent a GIF to the group %2$s</string>
-    <string name="NotificationMessageGroupAudio">%1$s sent a voice message to the group %2$s</string>
-    <string name="NotificationMessageGroupMusic">%1$s sent a track to the group %2$s</string>
+    <string name="NotificationMessageGroupAudio">%1$s sent an audio to the group %2$s</string>
     <string name="NotificationMessageGroupSticker">%1$s sent a sticker to the group %2$s</string>
     <string name="NotificationInvitedToGroup">%1$s invited you to the group %2$s</string>
     <string name="NotificationEditedGroupName">%1$s edited the group\'s %2$s name</string>
     <string name="NotificationEditedGroupPhoto">%1$s edited the group\'s %2$s photo</string>
     <string name="NotificationGroupAddMember">%1$s invited %3$s to the group %2$s</string>
     <string name="NotificationGroupAddSelf">%1$s returned to the group %2$s</string>
-    <string name="NotificationGroupAddSelfMega">%1$s joined the group %2$s</string>
     <string name="NotificationGroupKickMember">%1$s removed %3$s from the group %2$s</string>
     <string name="NotificationGroupKickYou">%1$s removed you from the group %2$s</string>
     <string name="NotificationGroupLeftMember">%1$s has left the group %2$s</string>
-    <string name="NotificationContactJoined">%1$s joined Telegram!</string>
-    <string name="NotificationUnrecognizedDevice">%1$s,\nWe detected a login into your account from a new device on %2$s\n\nDevice: %3$s\nLocation: %4$s\n\nIf this wasn\'t you, you can go to Settings - Privacy and Security - Sessions and terminate that session.\n\nIf you think that somebody logged in to your account against your will, you can enable two-step verification in Privacy and Security settings.\n\nSincerely,\nThe Telegram Team</string>
+    <string name="NotificationContactJoined">%1$s joined Kleegram!</string>
+    <string name="NotificationUnrecognizedDevice">%1$s,\nWe detected a login into your account from a new device on %2$s\n\nDevice: %3$s\nLocation: %4$s\n\nIf this wasn\'t you, you can go to Settings - Privacy and Security - Sessions and terminate that session.\n\nIf you think that somebody logged in to your account against your will, you can enable two-step verification in Privacy and Security settings.\n\nSincerely,\nThe Kleegram Team</string>
     <string name="NotificationContactNewPhoto">%1$s updated profile photo</string>
     <string name="NotificationInvitedToGroupByLink">%1$s joined to the group %2$s via invite link</string>
     <string name="Reply">Reply</string>
     <string name="ReplyToGroup">Reply to %1$s</string>
     <string name="ReplyToUser">Reply to %1$s</string>
     <string name="NotificationMessagesPeopleDisplayOrder">%1$s %2$s</string>
-    <string name="NotificationActionPinnedText">%1$s pinned \"%2$s\" in the group %3$s</string>
-    <string name="NotificationActionPinnedNoText">%1$s pinned a message in the group %2$s</string>
-    <string name="NotificationActionPinnedPhoto">%1$s pinned a photo in the group %2$s</string>
-    <string name="NotificationActionPinnedVideo">%1$s pinned a video in the group %2$s</string>
-    <string name="NotificationActionPinnedFile">%1$s pinned a file in the group %2$s</string>
-    <string name="NotificationActionPinnedSticker">%1$s pinned a sticker in the group %2$s</string>
-    <string name="NotificationActionPinnedVoice">%1$s pinned a voice message in the group %2$s</string>
-    <string name="NotificationActionPinnedContact">%1$s pinned a contact in the group %2$s</string>
-    <string name="NotificationActionPinnedGeo">%1$s pinned a map in the group %2$s</string>
-    <string name="NotificationActionPinnedGif">%1$s pinned a GIF in the group %2$s</string>
-    <string name="NotificationActionPinnedMusic">%1$s pinned a track in the group %2$s</string>
-    <string name="NotificationActionPinnedTextChannel">%1$s pinned \"%2$s\"</string>
-    <string name="NotificationActionPinnedNoTextChannel">%1$s pinned a message</string>
-    <string name="NotificationActionPinnedPhotoChannel">%1$s pinned a photo</string>
-    <string name="NotificationActionPinnedVideoChannel">%1$s pinned a video</string>
-    <string name="NotificationActionPinnedFileChannel">%1$s pinned a file</string>
-    <string name="NotificationActionPinnedStickerChannel">%1$s pinned a sticker</string>
-    <string name="NotificationActionPinnedVoiceChannel">%1$s pinned a voice message</string>
-    <string name="NotificationActionPinnedContactChannel">%1$s pinned a contact</string>
-    <string name="NotificationActionPinnedGeoChannel">%1$s pinned a map</string>
-    <string name="NotificationActionPinnedGifChannel">%1$s pinned a GIF</string>
-    <string name="NotificationActionPinnedMusicChannel">%1$s pinned a track</string>
     <!--contacts view-->
     <string name="SelectContact">Select Contact</string>
     <string name="NoContacts">No contacts yet</string>
-    <string name="InviteText">Hey, let\'s switch to Telegram: https://telegram.org/dl</string>
+    <string name="InviteText">Hey, let\'s switch to Kleegram: https://telegram.org/dl</string>
     <string name="TodayAt">at</string>
     <string name="YesterdayAt">yesterday at</string>
     <string name="Online">online</string>
@@ -418,7 +324,6 @@
     <string name="NewMessageTitle">New Message</string>
     <!--group create view-->
     <string name="SendMessageTo">Send message to...</string>
-    <string name="SoftUserLimitAlert">You will be able to add more users after you finish creating the group and convert it to a supergroup.</string>
     <string name="EnterGroupNamePlaceholder">Enter group name</string>
     <string name="GroupName">Group name</string>
     <string name="MembersCount">%1$d/%2$d members</string>
@@ -434,7 +339,7 @@
     <string name="RevokeLink">Revoke Link</string>
     <string name="CopyLink">Copy Link</string>
     <string name="ShareLink">Share Link</string>
-    <string name="LinkInfo">Anyone who has Telegram installed will be able to join your group by following this link.</string>
+    <string name="LinkInfo">Anyone who has Kleegram installed will be able to join your group by following this link.</string>
     <!--set admins view-->
     <string name="SetAdminsTitle">Chat Admins</string>
     <string name="SetAdminsAll">All Members are Admins</string>
@@ -448,14 +353,9 @@
     <string name="DeleteAndExit">Delete and leave group</string>
     <string name="Notifications">Notifications</string>
     <string name="KickFromGroup">Remove from group</string>
-    <string name="UpgradeGroup">Upgrade to Supergroup</string>
-    <string name="ConvertGroup">Convert to Supergroup</string>
-    <string name="ConvertGroupMenu">Convert to supergroup</string>
-    <string name="ConvertGroupAlertWarning">Warning</string>
-    <string name="ConvertGroupAlert">This action is irreversible. It is not possible to downgrade a supergroup to a regular group.</string>
-    <string name="ConvertGroupInfo"><![CDATA[<b>]]>Members limit reached.<![CDATA[</b>]]>\n\nTo go over the limit and get additional features, upgrade to a supergroup:\n\n• Supergroups can get up to %1$s\n• New members can see the full message history\n• Deleted messages will disappear for all members\n• Members can edit their own messages\n• Creator can set a public link for the group</string>
-    <string name="ConvertGroupInfo2"><![CDATA[<b>]]>In supergroups:<![CDATA[</b>]]>\n\n• New members can see the full message history\n• Deleted messages will disappear for all members\n• Members can edit their own messages\n• Creator can set a public link for the group</string>
-    <string name="ConvertGroupInfo3"><![CDATA[<b>]]>Note:<![CDATA[</b>]]> this action can\'t be undone.</string>
+    <string name="ConvertGroup">Upgrade to Supergroup</string>
+    <string name="ConvertGroupAlert">Please note that group members will need to update their Kleegram apps to the latest version to see your supergroup. Are you sure you want to upgrade this group?</string>
+    <string name="ConvertGroupInfo"><![CDATA[<b>]]>Members limit reached.<![CDATA[</b>]]>\n\nTo go over the limit and get additional features, upgrade to a supergroup:\n\n• Supergroups can get up to %1$s\n• New members see the entire chat history\n• Admins delete messages for everyone\n• Notifications are muted by default</string>
     <!--contact info view-->
     <string name="ShareContact">Share</string>
     <string name="AddContact">Add</string>
@@ -473,8 +373,7 @@
     <string name="EncryptionKey">Encryption Key</string>
     <string name="MessageLifetime">Self-Destruct Timer</string>
     <string name="ShortMessageLifetimeForever">Off</string>
-    <string name="EncryptionKeyDescription">This image and text were derived from the encryption key for this secret chat with <![CDATA[<b>]]>%1$s<![CDATA[</b>]]>.<![CDATA[<br><br>]]>If they look the same on <![CDATA[<b>]]>%2$s\'s<![CDATA[</b>]]> device, end-to-end encryption is guaranteed.<![CDATA[<br><br>]]>Learn more at telegram.org</string>
-    <string name="EncryptionKeyLink">https://telegram.org/faq#secret-chats</string>
+    <string name="EncryptionKeyDescription">This image is a visualization of the encryption key for this secret chat with <![CDATA[<b>]]>%1$s<![CDATA[</b>]]>.<![CDATA[<br><br>]]>If this image looks the same on <![CDATA[<b>]]>%2$s\'s<![CDATA[</b>]]> phone, your chat is 200%% secure.<![CDATA[<br><br>]]>Learn more at telegram.org</string>
     <string name="NumberUnknown">Unknown</string>
     <string name="Info">Info</string>
     <string name="Phone">Phone</string>
@@ -486,7 +385,7 @@
     <string name="UsernameInvalidShort">A username must have at least 5 characters.</string>
     <string name="UsernameInvalidLong">The username must not exceed 32 characters.</string>
     <string name="UsernameInvalidStartNumber">Sorry, a username can\'t start with a number.</string>
-    <string name="UsernameHelp">You can choose a username on <![CDATA[<b>]]>Telegram<![CDATA[</b>]]>. If you do, other people will be able to find you by this username and contact you without knowing your phone number.<![CDATA[<br><br>]]>You can use <![CDATA[<b>]]>a–z<![CDATA[</b>]]>, <![CDATA[<b>]]>0–9<![CDATA[</b>]]> and underscores. Minimum length is <![CDATA[<b>]]>5<![CDATA[</b>]]> characters.</string>
+    <string name="UsernameHelp">You can choose a username on <![CDATA[<b>]]>Kleegram<![CDATA[</b>]]>. If you do, other people will be able to find you by this username and contact you without knowing your phone number.<![CDATA[<br><br>]]>You can use <![CDATA[<b>]]>a–z<![CDATA[</b>]]>, <![CDATA[<b>]]>0–9<![CDATA[</b>]]> and underscores. Minimum length is <![CDATA[<b>]]>5<![CDATA[</b>]]> characters.</string>
     <string name="UsernameChecking">Checking username...</string>
     <string name="UsernameAvailable">%1$s is available.</string>
     <string name="UsernameEmpty">None</string>
@@ -505,7 +404,6 @@
     <string name="StickersCopy">Copy link</string>
     <string name="StickersRemove">Remove</string>
     <string name="NoStickers">No stickers yet</string>
-    <string name="TooMuchStickersets">Sorry, you have reached the maximum number of sticker sets.</string>
     <!--settings view-->
     <string name="ResetNotificationsText">Reset all notification settings to default</string>
     <string name="TextSize">Messages Text Size</string>
@@ -539,14 +437,12 @@
     <string name="SendByEnter">Send by Enter</string>
     <string name="TerminateAllSessions">Terminate All Other Sessions</string>
     <string name="Events">Events</string>
-    <string name="ContactJoined">Contact joined Telegram</string>
+    <string name="ContactJoined">Contact joined Kleegram</string>
     <string name="Language">Language</string>
-    <string name="AskAQuestionInfo">Please note that Telegram Support is done by volunteers. We try to respond as quickly as possible, but it may take a while.<![CDATA[<br><br>]]>Please take a look at the <![CDATA[<a href=\"https://telegram.org/faq#general\">Telegram FAQ</a>]]>: it has answers to most questions and important tips for <![CDATA[<a href=\"https://telegram.org/faq#troubleshooting\">troubleshooting</a>]]>.</string>
+    <string name="AskAQuestionInfo">Please note that Kleegram Support is done by volunteers. We try to respond as quickly as possible, but it may take a while.<![CDATA[<br><br>]]>Please take a look at the <![CDATA[<a href=\"https://telegram.org/faq#general\">Telegram FAQ</a>]]>: it has answers to most questions and important tips for <![CDATA[<a href=\"https://telegram.org/faq#troubleshooting\">troubleshooting</a>]]>.</string>
     <string name="AskButton">Ask a volunteer</string>
-    <string name="TelegramFaq">Telegram FAQ</string>
+    <string name="KleegramFaq">Kleegram FAQ</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq</string>
-    <string name="PrivacyPolicy">Privacy Policy</string>
-    <string name="PrivacyPolicyUrl">https://telegram.org/privacy</string>
     <string name="DeleteLocalization">Delete localization?</string>
     <string name="IncorrectLocalization">Incorrect localization file</string>
     <string name="Enabled">Enabled</string>
@@ -573,8 +469,6 @@
     <string name="WhenConnectedOnWiFi">When connected on Wi-Fi</string>
     <string name="WhenRoaming">When roaming</string>
     <string name="NoMediaAutoDownload">No media</string>
-    <string name="AutoplayGifs">Autoplay GIFs</string>
-    <string name="RaiseToSpeak">Raise to Speak</string>
     <string name="SaveToGallerySettings">Save to gallery</string>
     <string name="EditName">Edit name</string>
     <string name="NotificationsPriority">Priority</string>
@@ -584,12 +478,12 @@
     <string name="NotificationsPriorityMax">Max</string>
     <string name="RepeatNotificationsNever">Never</string>
     <string name="RepeatNotifications">Repeat Notifications</string>
-    <string name="PhoneNumberHelp">You can change your Telegram number here. Your account and all your cloud data — messages, media, contacts, etc. will be moved to the new number.\n\n<![CDATA[<b>Important:</b>]]> all your Telegram contacts will get your <![CDATA[<b>new number</b>]]> added to their address book, provided they had your old number and you haven\'t blocked them in Telegram.</string>
-    <string name="PhoneNumberAlert">All your Telegram contacts will get your new number added to their address book, provided they had your old number and you haven\'t blocked them in Telegram.</string>
+    <string name="PhoneNumberHelp">You can change your Kleegram number here. Your account and all your cloud data — messages, media, contacts, etc. will be moved to the new number.\n\n<![CDATA[<b>Important:</b>]]> all your Kleegram contacts will get your <![CDATA[<b>new number</b>]]> added to their address book, provided they had your old number and you haven\'t blocked them in Kleegram.</string>
+    <string name="PhoneNumberAlert">All your Kleegram contacts will get your new number added to their address book, provided they had your old number and you haven\'t blocked them in Kleegram.</string>
     <string name="PhoneNumberChange">CHANGE NUMBER</string>
     <string name="ChangePhoneNewNumber">New number</string>
     <string name="ChangePhoneHelp">We will send an SMS with a confirmation code to your new number.</string>
-    <string name="ChangePhoneNumberOccupied">The number %1$s is already connected to a Telegram account. Please delete that account before migrating to the new number.</string>
+    <string name="ChangePhoneNumberOccupied">The number %1$s is already connected to a Kleegram account. Please delete that account before migrating to the new number.</string>
     <string name="NotificationsOther">Other</string>
     <string name="NotificationsDisabled">Disabled</string>
     <string name="VibrationDisabled">Disabled</string>
@@ -605,17 +499,11 @@
     <string name="SmartNotificationsTimes">times</string>
     <string name="SmartNotificationsWithin">within</string>
     <string name="SmartNotificationsMinutes">minutes</string>
-    <string name="SecretWebPage">Link Previews</string>
-    <string name="SecretChat">Secret chats</string>
-    <string name="ChromeCustomTabs">In-App Browser</string>
-    <string name="ChromeCustomTabsInfo">Open external links within the app</string>
-    <string name="DirectShare">Direct Share</string>
-    <string name="DirectShareInfo">Show recent chats in share menu</string>
     <!--cache view-->
     <string name="CacheSettings">Cache Settings</string>
     <string name="LocalDatabase">Local Database</string>
     <string name="LocalDatabaseClear">Clear cached text messages?</string>
-    <string name="LocalDatabaseInfo">Clearing the local database will delete the texts of cached messages and compress the database to save internal disk space. Telegram needs some data to work, so database size will not reach zero.\n\nThis operation can take a few minutes to complete.</string>
+    <string name="LocalDatabaseInfo">Clearing the local database will delete the texts of cached messages and compress the database to save internal disk space. Kleegram needs some data to work, so database size will not reach zero.\n\nThis operation can take a few minutes to complete.</string>
     <string name="ClearMediaCache">Clear Cache</string>
     <string name="CacheClear">Clear</string>
     <string name="CalculatingSize">Calculating...</string>
@@ -627,13 +515,13 @@
     <string name="LocalCache">Other files</string>
     <string name="CacheEmpty">Empty</string>
     <string name="KeepMedia">Keep Media</string>
-    <string name="KeepMediaInfo">Photos, videos and other files from cloud chats that you have <![CDATA[<b>not accessed</b>]]> during this period will be removed from this device to save disk space.\n\nAll media will stay in the Telegram cloud and can be re-downloaded if you need it again.</string>
+    <string name="KeepMediaInfo">Photos, videos and other files from cloud chats that you have <![CDATA[<b>not accessed</b>]]> during this period will be removed from this device to save disk space.\n\nAll media will stay in the Kleegram cloud and can be re-downloaded if you need it again.</string>
     <string name="KeepMediaForever">Forever</string>
     <!--sessions view-->
     <string name="SessionsTitle">Active Sessions</string>
     <string name="CurrentSession">Current session</string>
     <string name="NoOtherSessions">No other active sessions</string>
-    <string name="NoOtherSessionsInfo">You can log in to Telegram from other mobile, tablet and desktop devices, using the same phone number. All your data will be instantly synchronized.</string>
+    <string name="NoOtherSessionsInfo">You can log in to Kleegram from other mobile, tablet and desktop devices, using the same phone number. All your data will be instantly synchronized.</string>
     <string name="OtherSessions">Active Sessions</string>
     <string name="SessionsInfo">Control your sessions on other devices.</string>
     <string name="TerminateSessionInfo">Tap on a session to terminate.</string>
@@ -642,8 +530,8 @@
     <!--passcode view-->
     <string name="Passcode">Passcode Lock</string>
     <string name="ChangePasscode">Change Passcode</string>
-    <string name="ChangePasscodeInfo">When you set up an additional passcode, a lock icon will appear on the chats page. Tap it to lock and unlock your Telegram app.\n\nNote: if you forget the passcode, you\'ll need to delete and reinstall the app. All secret chats will be lost.</string>
-    <string name="ChangePasscodeAlert">You will now see a lock icon on the chats page. Tap it to lock your Telegram app with your new passcode.</string>
+    <string name="ChangePasscodeInfo">When you set up an additional passcode, a lock icon will appear on the chats page. Tap it to lock and unlock your Kleegram app.\n\nNote: if you forget the passcode, you\'ll need to delete and reinstall the app. All secret chats will be lost.</string>
+    <string name="ChangePasscodeAlert">You will now see a lock icon on the chats page. Tap it to lock your Kleegram app with your new passcode.</string>
     <string name="PasscodePIN">PIN</string>
     <string name="PasscodePassword">Password</string>
     <string name="EnterCurrentPasscode">Enter your current passcode</string>
@@ -662,18 +550,14 @@
     <string name="FingerprintHelp">Touch sensor</string>
     <string name="FingerprintNotRecognized">Fingerprint not recognized. Try again</string>
     <!--media view-->
+    <string name="NoMedia">Share photos and videos in this chat and access them on any of your devices.</string>
     <string name="DocumentsTitle">Shared Files</string>
     <string name="SharedMediaTitle">Shared Media</string>
     <string name="LinksTitle">Shared Links</string>
     <string name="AudioTitle">Shared Music</string>
-    <string name="NoMedia">Share photos and videos in this chat and access them on any of your devices.</string>
     <string name="NoSharedAudio">Share music in this chat and access them on any of your devices.</string>
     <string name="NoSharedFiles">Share files and documents in this chat and access them on any of your devices.</string>
     <string name="NoSharedLinks">Share links in this chat and access them on any of your devices.</string>
-    <string name="NoMediaSecret">Photos and videos from this chat will be shown here.</string>
-    <string name="NoSharedAudioSecret">Music from this chat will be shown here.</string>
-    <string name="NoSharedFilesSecret">Files and documents from this chat will be shown here.</string>
-    <string name="NoSharedLinksSecret">Shared links from this chat will be shown here.</string>
     <!--map view-->
     <string name="Map">Map</string>
     <string name="Satellite">Satellite</string>
@@ -714,15 +598,6 @@
     <string name="Shadows">Shadows</string>
     <string name="Grain">Grain</string>
     <string name="Sharpen">Sharpen</string>
-    <string name="Fade">Fade</string>
-    <string name="Tint">Tint</string>
-    <string name="TintShadows">SHADOWS</string>
-    <string name="TintHighlights">HIGHLIGHTS</string>
-    <string name="Curves">Curves</string>
-    <string name="CurvesAll">ALL</string>
-    <string name="CurvesRed">RED</string>
-    <string name="CurvesGreen">GREEN</string>
-    <string name="CurvesBlue">BLUE</string>
     <string name="Blur">Blur</string>
     <string name="BlurOff">Off</string>
     <string name="BlurLinear">Linear</string>
@@ -737,7 +612,6 @@
     <string name="AddCaption">Add a caption...</string>
     <string name="PhotoCaption">Photo Caption</string>
     <string name="VideoCaption">Video Caption</string>
-    <string name="Caption">Caption</string>
     <!--password view-->
     <string name="TwoStepVerification">Two-Step Verification</string>
     <string name="SetAdditionalPassword">Set Additional Password</string>
@@ -752,7 +626,7 @@
     <string name="YourEmailInfo">Please add your valid e-mail. It is the only way to recover a forgotten password.</string>
     <string name="YourEmailSkip">Skip</string>
     <string name="YourEmailSkipWarning">Warning</string>
-    <string name="YourEmailSkipWarningText">No, seriously.\n\nIf you forget your password, you will lose access to your Telegram account. There will be no way to restore it.</string>
+    <string name="YourEmailSkipWarningText">No, seriously.\n\nIf you forget your password, you will lose access to your Kleegram account. There will be no way to restore it.</string>
     <string name="YourEmailAlmostThere">Almost there!</string>
     <string name="YourEmailAlmostThereText">Please check your e-mail (don\'t forget the spam folder) to complete Two-Step Verification setup.</string>
     <string name="YourPasswordSuccess">Success!</string>
@@ -778,7 +652,7 @@
     <string name="ResetMyAccount">RESET MY ACCOUNT</string>
     <string name="ResetMyAccountText">You will lose all your chats and messages, along with any media and files you shared, if you proceed with resetting your account.</string>
     <string name="ResetMyAccountWarning">Warning</string>
-    <string name="ResetMyAccountWarningText">This action can\'t be undone.\n\nIf you reset your account, all your messages and chats will be deleted.</string>
+    <string name="ResetMyAccountWarningText">This action can not be undone.\n\nIf you reset your account, all your messages and chats will be deleted.</string>
     <string name="ResetMyAccountWarningReset">Reset</string>
     <string name="LoginPassword">Password</string>
     <string name="LoginPasswordText">You have enabled Two-Step Verification, so your account is protected with an additional password.</string>
@@ -786,7 +660,7 @@
     <string name="PasswordRecovery">Password Recovery</string>
     <string name="PasswordCode">Code</string>
     <string name="PasswordReset">Password deactivated</string>
-    <string name="EnabledPasswordText">You have enabled Two-Step verification.\nYou\'ll need the password you set up here to log in to your Telegram account.</string>
+    <string name="EnabledPasswordText">You have enabled Two-Step verification.\nYou\'ll need the password you set up here to log in to your Kleegram account.</string>
     <string name="PendingEmailText">Your recovery e-mail %1$s is not yet active and pending confirmation.</string>
     <!--privacy settings-->
     <string name="PrivacySettings">Privacy and Security</string>
@@ -820,18 +694,6 @@
     <string name="PrivacyFloodControlError">Sorry, too many requests. Unable to change privacy settings now, please wait.</string>
     <string name="ClearOtherSessionsHelp">Logs out all devices except for this one.</string>
     <string name="RemoveFromListText">Tap and hold on user to delete.</string>
-    <string name="GroupsAndChannels">Groups</string>
-    <string name="WhoCanAddMe">Who can add me to group chats?</string>
-    <string name="WhoCanAddMeInfo">You can restrict who can add you to groups and channels with granular precision.</string>
-    <string name="AlwaysAllow">Always Allow</string>
-    <string name="NeverAllow">Never Allow</string>
-    <string name="AlwaysAllowPlaceholder">Always allow...</string>
-    <string name="NeverAllowPlaceholder">Never allow...</string>
-    <string name="CustomShareInfo">These users will or will not be able to add you to groups and channels regardless of the settings above.</string>
-    <string name="GroupsAndChannelsHelp">Change who can add you to groups and channels.</string>
-    <string name="InviteToGroupError">Sorry, you can\'t add this user to groups because of user\'s privacy settings.</string>
-    <string name="InviteToChannelError">Sorry, you can\'t add this user to channels because of user\'s privacy settings.</string>
-    <string name="CreateGroupError">Sorry, you can\'t create a group with these users because of their privacy settings.</string>
     <!--edit video view-->
     <string name="EditVideo">Edit Video</string>
     <string name="OriginalVideo">Original Video</string>
@@ -856,7 +718,6 @@
     <string name="Back">Back</string>
     <string name="Done">Done</string>
     <string name="Open">Open</string>
-    <string name="Save">Save</string>
     <string name="Cancel">Cancel</string>
     <string name="Close">Close</string>
     <string name="Add">Add</string>
@@ -878,14 +739,14 @@
     <string name="ActionInviteYou">You joined the group via invite link</string>
     <string name="ActionInviteUser">un1 joined the group via invite link</string>
     <string name="ActionKickUser">un1 removed un2</string>
-    <string name="ActionLeftUser">un1 left the group</string>
+    <string name="ActionLeftUser">un1 left group</string>
     <string name="ActionAddUser">un1 added un2</string>
     <string name="ActionRemovedPhoto">un1 removed the group photo</string>
     <string name="ActionChangedPhoto">un1 changed the group photo</string>
     <string name="ActionChangedTitle">un1 changed the group name to un2</string>
     <string name="ActionCreateGroup">un1 created the group</string>
     <string name="ActionYouKickUser">You removed un2</string>
-    <string name="ActionYouLeftUser">You left the group</string>
+    <string name="ActionYouLeftUser">You left group</string>
     <string name="ActionYouAddUser">You added un2</string>
     <string name="ActionYouRemovedPhoto">You removed the group photo</string>
     <string name="ActionYouChangedPhoto">You changed the group photo</string>
@@ -894,17 +755,15 @@
     <string name="ActionKickUserYou">un1 removed you</string>
     <string name="ActionAddUserYou">un1 added you</string>
     <string name="ActionAddUserSelf">un1 returned to the group</string>
-    <string name="ActionAddUserSelfMega">un1 joined the group</string>
     <string name="ActionAddUserSelfYou">You returned to the group</string>
-    <string name="UnsupportedMedia">This message is not supported on your version of Telegram. Update the app to view: https://telegram.org/update</string>
+    <string name="UnsuppotedMedia">This message is not supported on your version of Kleegram. Update the app to view: https://telegram.org/update</string>
     <string name="AttachPhoto">Photo</string>
     <string name="AttachVideo">Video</string>
-    <string name="AttachGif">GIF</string>
     <string name="AttachLocation">Location</string>
     <string name="AttachContact">Contact</string>
     <string name="AttachDocument">File</string>
     <string name="AttachSticker">Sticker</string>
-    <string name="AttachAudio">Voice message</string>
+    <string name="AttachAudio">Audio</string>
     <string name="FromYou">You</string>
     <string name="ActionTakeScreenshootYou">You took a screenshot!</string>
     <string name="ActionTakeScreenshoot">un1 took a screenshot!</string>
@@ -920,7 +779,7 @@
     <string name="NoPlayerInstalled">You don\'t have a video player, please install one to continue</string>
     <string name="NoMailInstalled">Please send an email to sms@stel.com and tell us about your problem.</string>
     <string name="NoHandleAppInstalled">You don\'t have applications that can handle the file type \'%1$s\', please install one to continue</string>
-    <string name="InviteUser">This user does not have Telegram yet, send an invitation?</string>
+    <string name="InviteUser">This user does not have Kleegram yet, send an invitation?</string>
     <string name="AreYouSure">Are you sure?</string>
     <string name="AddToTheGroupTitle">Add %1$s to the chat %2$s?</string>
     <string name="AddToTheGroupForwardCount">Number of last messages to forward:</string>
@@ -929,7 +788,7 @@
     <string name="ForwardMessagesTo">Forward messages to %1$s?</string>
     <string name="SendMessagesTo">Send messages to %1$s?</string>
     <string name="SendContactTo">Send contact to %1$s?</string>
-    <string name="AreYouSureLogout">Are you sure you want to log out?\n\nNote that you can seamlessly use Telegram on all your devices at once.\n\nRemember, logging out kills all your Secret Chats.</string>
+    <string name="AreYouSureLogout">Are you sure you want to log out?\n\nNote that you can seamlessly use Kleegram on all your devices at once.\n\nRemember, logging out kills all your Secret Chats.</string>
     <string name="AreYouSureSessions">Are you sure you want to terminate all other sessions?</string>
     <string name="AreYouSureDeleteAndExit">Are you sure you want to delete and leave the group?</string>
     <string name="AreYouSureDeleteThisChat">Are you sure you want to delete this chat?</string>
@@ -941,29 +800,22 @@
     <string name="AreYouSureRegistration">Are you sure you want to cancel registration?</string>
     <string name="AreYouSureClearHistory">Are you sure you want to clear history?</string>
     <string name="AreYouSureClearHistoryChannel">Delete all cached text and media from this channel?</string>
-    <string name="AreYouSureClearHistorySuper">Delete all cached text and media from this group?</string>
+    <string name="AreYouSureClearHistorySuper">Delete all cached text and media from this supergroup?</string>
     <string name="AreYouSureDeleteMessages">Are you sure you want to delete %1$s?</string>
     <string name="SendMessagesToGroup">Send messages to %1$s?</string>
     <string name="SendContactToGroup">Send contact to %1$s?</string>
     <string name="ForwardMessagesToGroup">Forward messages to %1$s?</string>
     <string name="FeatureUnavailable">Sorry, this feature is currently not available in your country.</string>
-    <string name="NoUsernameFound">There is no Telegram account with this username.</string>
+    <string name="NoUsernameFound">There is no Kleegram account with this username.</string>
     <string name="BotCantJoinGroups">This bot can\'t join groups.</string>
-    <string name="SecretLinkPreviewAlert">Would you like to enable extended link previews in Secret Chats? Note that link previews are generated on Telegram servers.</string>
-    <string name="SecretChatContextBotAlert">Please note that inline bots are provided by third-party developers. For the bot to work, the symbols you type after the bot\'s username are sent to the respective developer.</string>
-    <string name="RaiseToSpeakAlert">Would you like to enable "Raise to speak" for voice messages?</string>
-    <string name="EditMessageError">Sorry, you can\'t edit this message.</string>
-    <string name="AllowReadSms">Please allow Telegram to receive SMS so that we can automatically enter your code for you.</string>
-    <string name="AllowReadCall">Please allow Telegram to receive calls so that we can automatically enter your code for you.</string>
-    <string name="AllowReadCallAndSms">Please allow Telegram to receive calls and SMS so that we can automatically enter your code for you.</string>
     <!--permissions-->
-    <string name="PermissionContacts">Telegram needs access to your contacts so that you can connect with your friends across all your devices.</string>
-    <string name="PermissionStorage">Telegram needs access to your storage so that you can send and save photos, videos, music and other media.</string>
-    <string name="PermissionNoAudio">Telegram needs access to your microphone so that you can send voice messages.</string>
-    <string name="PermissionNoLocation">Telegram needs access to your location so that you can share it with your friends.</string>
+    <string name="PermissionContacts">Kleegram needs access to your contacts so that you can connect with your friends across all your devices.</string>
+    <string name="PermissionStorage">Kleegram needs access to your storage so that you can send and save photos, videos, music and other media.</string>
+    <string name="PermissionNoAudio">Kleegram needs access to your microphone so that you can send voice messages.</string>
+    <string name="PermissionNoLocation">Kleegram needs access to your location so that you can share it with your friends.</string>
     <string name="PermissionOpenSettings">SETTINGS</string>
     <!--Intro view-->
-    <string name="Page1Title">Telegram</string>
+    <string name="Page1Title">Kleegram</string>
     <string name="Page2Title">Fast</string>
     <string name="Page3Title">Free</string>
     <string name="Page4Title">Secure</string>
@@ -971,12 +823,12 @@
     <string name="Page6Title">Cloud-Based</string>
     <string name="Page7Title">Private</string>
     <string name="Page1Message">The world\'s <![CDATA[<b>fastest</b>]]> messaging app.<![CDATA[<br/>]]>It is <![CDATA[<b>free</b>]]> and <![CDATA[<b>secure</b>]]>.</string>
-    <string name="Page2Message"><![CDATA[<b>Telegram</b>]]> delivers messages faster than<![CDATA[<br/>]]>any other application.</string>
-    <string name="Page3Message"><![CDATA[<b>Telegram</b>]]> is free forever. No ads.<![CDATA[<br/>]]>No subscription fees.</string>
-    <string name="Page4Message"><![CDATA[<b>Telegram</b>]]> keeps your messages safe<![CDATA[<br/>]]>from hacker attacks.</string>
-    <string name="Page5Message"><![CDATA[<b>Telegram</b>]]> has no limits on the size of<![CDATA[<br/>]]>your media and chats.</string>
-    <string name="Page6Message"><![CDATA[<b>Telegram</b>]]> lets you access your messages<![CDATA[<br/>]]>from multiple devices.</string>
-    <string name="Page7Message"><![CDATA[<b>Telegram</b>]]> messages are heavily encrypted<![CDATA[<br/>]]>and can self-destruct.</string>
+    <string name="Page2Message"><![CDATA[<b>Kleegram</b>]]> delivers messages faster than<![CDATA[<br/>]]>any other application.</string>
+    <string name="Page3Message"><![CDATA[<b>Kleegram</b>]]> is free forever. No ads.<![CDATA[<br/>]]>No subscription fees.</string>
+    <string name="Page4Message"><![CDATA[<b>Kleegram</b>]]> keeps your messages safe<![CDATA[<br/>]]>from hacker attacks.</string>
+    <string name="Page5Message"><![CDATA[<b>Kleegram</b>]]> has no limits on the size of<![CDATA[<br/>]]>your media and chats.</string>
+    <string name="Page6Message"><![CDATA[<b>Kleegram</b>]]> lets you access your messages<![CDATA[<br/>]]>from multiple devices.</string>
+    <string name="Page7Message"><![CDATA[<b>Kleegram</b>]]> messages are heavily encrypted<![CDATA[<br/>]]>and can self-destruct.</string>
     <string name="StartMessaging">Start Messaging</string>
     <!--plural-->
     <string name="Online_zero">%1$d online</string>
@@ -992,7 +844,7 @@
     <string name="Members_many">%1$d members</string>
     <string name="Members_other">%1$d members</string>
     <string name="AndMoreTyping_zero">and %1$d more people are typing</string>
-    <string name="AndMoreTyping_one">and %1$d more person are typing</string>
+    <string name="AndMoreTyping_one">and %1$d more people are typing</string>
     <string name="AndMoreTyping_two">and %1$d more people are typing</string>
     <string name="AndMoreTyping_few">and %1$d more people are typing</string>
     <string name="AndMoreTyping_many">and %1$d more people are typing</string>
@@ -1136,18 +988,12 @@
     <string name="ForwardedVideo_few">%1$d forwarded videos</string>
     <string name="ForwardedVideo_many">%1$d forwarded videos</string>
     <string name="ForwardedVideo_other">%1$d forwarded videos</string>
-    <string name="ForwardedMusic_zero">%1$d forwarded tracks</string>
-    <string name="ForwardedMusic_one">Forwarded track</string>
-    <string name="ForwardedMusic_two">%1$d forwarded tracks</string>
-    <string name="ForwardedMusic_few">%1$d forwarded tracks</string>
-    <string name="ForwardedMusic_many">%1$d forwarded tracks</string>
-    <string name="ForwardedMusic_other">%1$d forwarded tracks</string>
-    <string name="ForwardedAudio_zero">%1$d forwarded voice messages</string>
-    <string name="ForwardedAudio_one">Forwarded voice message</string>
-    <string name="ForwardedAudio_two">%1$d forwarded voice messages</string>
-    <string name="ForwardedAudio_few">%1$d forwarded voice messages</string>
-    <string name="ForwardedAudio_many">%1$d forwarded voice messages</string>
-    <string name="ForwardedAudio_other">%1$d forwarded voice messages</string>
+    <string name="ForwardedAudio_zero">%1$d forwarded audios</string>
+    <string name="ForwardedAudio_one">Forwarded audio</string>
+    <string name="ForwardedAudio_two">%1$d forwarded audios</string>
+    <string name="ForwardedAudio_few">%1$d forwarded audios</string>
+    <string name="ForwardedAudio_many">%1$d forwarded audios</string>
+    <string name="ForwardedAudio_other">%1$d forwarded audios</string>
     <string name="ForwardedLocation_zero">%1$d forwarded locations</string>
     <string name="ForwardedLocation_one">Forwarded location</string>
     <string name="ForwardedLocation_two">%1$d forwarded locations</string>
@@ -1183,4 +1029,314 @@
     <string name="formatterDay24H">HH:mm</string>
     <string name="formatterDay12H">h:mm a</string>
     <string name="formatDateAtTime">%1$s at %2$s</string>
+    <!--update text-->
+    <string name="updateText">Kleegram for Android has been updated. New in version 3.3.2:\n\n- Cache management: Control how much disk space Kleegram uses on your device, delete cache for specific types of content.\n- Delete cache from supergroups and channels: Tap and hold on them in the chats list and \'Delete from Cache\'.\n- Sticker management: Manually rearrange your sticker packs. Pack order is now synced across all your devices.\n\nMore about this update:\nhttps://Telegram.org/blog/cache-and-stickers</string>
+    <string name="updateBuild">693</string>
+
+
+    <!-- KLEEGRAM !-->
+
+    <string name="app_version">V1.0.0</string>
+    <string name="app_name">کلیک</string>
+    <string name="guide_title1">تماس با سرعت بالا</string>
+    <string name="guide_title2">تنها با کشیدن انگشت</string>
+    <string name="guide_title3">خیلی جالبه</string>
+    <string name="guide_content1">هرطور که دوست داری تماس بگیر</string>
+    <string name="guide_content2">راحتی در تماس</string>
+    <string name="guide_content3">نه تنها کنفرانس</string>
+    <string name="start">لمس کن اینجا>>></string>
+    <string name="select_phone_number">انتخاب شماره تلفن</string>
+    <string name="select_email_address">انتخاب ایمیل آدرس</string>
+    <string name="select_url_address">انتخاب آدرس اینترنتی</string>
+    <string name="dialog_ok">باشه</string>
+    <string name="dialog_cancel">بیخیال</string>
+    <string name="dialog_delete">پاک کردن</string>
+    <string name="dialog_close">بستن</string>
+    <string name="dialog_clear">پاک کردن</string>
+    <string name="dialog_join">پیوستن</string>
+    <string name="dialog_send">ارسال</string>
+    <string name="dialog_upload">باشه</string>
+    <string name="phone_tag_extension">شماره</string>
+    <string name="phone_tag2_assistant">دستیار</string>
+    <string name="phone_tag2_callback">کالبک</string>
+    <string name="phone_tag2_company_main">کمپانی</string>
+    <string name="phone_tag2_car">خودرو</string>
+    <string name="phone_tag_fax_work">فکس اداره</string>
+    <string name="phone_tag_fax_home">فکس منزل</string>
+    <string name="phone_tag_home">خانه</string>
+    <string name="phone_tag2_isdn">ISDN</string>
+    <string name="phone_tag2_main">اصلی</string>
+    <string name="phone_tag2_mms">MMS</string>
+    <string name="phone_tag_mobile">موبایل</string>
+    <string name="phone_tag_other">دیگر</string>
+    <string name="phone_tag2_other_fax">فکس دیگر</string>
+    <string name="phone_tag_pager">پیجر</string>
+    <string name="phone_tag2_radio">رادیو</string>
+    <string name="phone_tag2_telex">تلکس</string>
+    <string name="phone_tag2_tty_tdd">TTY TDD</string>
+    <string name="phone_tag_work">کار</string>
+    <string name="phone_tag2_work_mobile">موبایل کار</string>
+    <string name="phone_tag2_work_pager">پیجر کار</string>
+    <string name="phone_tag_custom">دست ساز</string>
+    <string name="email_tag_home">خانه</string>
+    <string name="email_tag_mobile">موبایل</string>
+    <string name="email_tag_work">کار</string>
+    <string name="email_tag_other">دیگر</string>
+    <string name="email_tag_custom">دستی</string>
+    <string name="address_tag_home">خانه</string>
+    <string name="address_tag_work">کار</string>
+    <string name="address_tag_other">دیگر</string>
+    <string name="select_contact">انتخاب مخاطب</string>
+    <string name="select_contact_no_contact_title">بدون شماره</string>
+    <string name="select_contact_no_contact_message">هیچ شماره ای برای انتخاب موجود نیست.</string>
+    <string name="title_select_contact">انتخاب مخاطب</string>
+    <string name="title_contact_info">اطلاعات مخاطب</string>
+    <string name="title_contacts">مخاطبین</string>
+    <string name="contact_info">اطلاعات مخاطب</string>
+    <string name="phone">تلفن</string>
+    <string name="email">ایمیل</string>
+    <string name="no_contact_info">بدون اطلاعات مخاطب</string>
+    <string name="search">جستجو</string>
+    <string name="no_results_found">بدون هیچ نتیجه</string>
+    <string name="no_contacts">بدون مخاطب</string>
+    <string name="no_call_log">خالیه</string>
+    <string name="no_quick_call">بدون تماس گیری سریع</string>
+    <string name="it_is_too_short">این خیلی کوتاهه</string>
+    <string name="update_quick_call_success">Update quick dial success.</string>
+    <string name="create_quick_call_success">Create quick dial success.</string>
+    <string name="quick_call_no_change">No changes of this quick dial.</string>
+    <string name="menu_editContact">تغییر اطلاعات</string>
+    <string name="menu_newContact">ایجاد کاربر جدبد</string>
+    <string name="menu_addContact">اضافه کردن کاربر</string>
+    <string name="menu_sendEmail">ارسال ایمیل</string>
+    <string name="contact_exists">کاربر موجود است</string>
+    <string name="contact_exists_message">%1$s(%2$s) این کاربر وجود دارد</string>
+    <string name="call_error_title">خطا در تماس</string>
+
+    <!-- long click contact menu item -->
+    <string name="long_click_contact_create_new_quick_call">ایجاد تماس سریع</string>
+    <string name="long_click_contact_call_contact">کاربر کالبک</string>
+    <string name="long_click_contact_send_message">ارسال پیغام</string>
+    <string name="long_click_contact_view_contact"> مشاهده کاربر</string>
+    <string name="long_click_contact_send_email">ارسال ایمیل</string>
+    <string name="long_click_contact_edit_contact">تغییر اطلاعات</string>
+    <string name="long_click_contact_delete_contact">حذف</string>
+    <string name="delete_contact">حذف کاربر</string>
+    <string name="delete_contact_message">آیا میخواهید اطلاعات کاربر را پاک کنید؟</string>
+    <string name="delete_contact_failed_title">مشکل در پاک کردن</string>
+    <string name="delete_contact_failed">متاسفانه، امکان پاک کردن وجود ندارد</string>
+    <string name="delete_quick_message">آیا میخواهید شماره گیری سریع پاک شود؟</string>
+    <string name="history">تاریخچه</string>
+    <string name="unsaved">ذخیره نشدن</string>
+    <string name="history_info">اطلاعات تاریخچه</string>
+    <string name="history_detail_view_contact">مشاهده اطلاعات</string>
+    <string name="history_detail_call_contact">تماس با کاربر</string>
+    <string name="history_detail_send_message">ارسال پیغام</string>
+    <string name="popup_text_create_new_message">ایجاد پیغام جدید</string>
+    <string name="popup_text_edit">تغییر پیغام</string>
+    <string name="popup_text_clear_all">خذف همه</string>
+    <string name="popup_text_edit_history">تغییرات در تاریخچه</string>
+    <string name="popup_text_view_contact">مشاهده </string>
+    <string name="popup_text_call_contact">تماس با مخاطب</string>
+    <string name="popup_text_create_new_contact">ایجاد مخاطب</string>
+    <string name="popup_text_add_to_existing_contact">اضافه کردن به مخاطب موجود</string>
+    <string name="popup_text_clear_this_history">حذف تاریخچه</string>
+    <string name="popup_text_delete_this_message">حذف این پیغام</string>
+    <string name="delete_history">حذف تاریخچه</string>
+    <string name="delete_history_message">آیا میخواهید این رکورد حذف شود؟</string>
+    <string name="delete_history_by_contact">آیا میخواهید تمام تاریخچه این مخاطب پاک شود؟</string>
+    <string name="today">امروز</string>
+    <string name="manage">مدیریت تماس سریع</string>
+
+    <string name="quick_call_splash_text">کلیک</string>
+    <string name="quick_call_splash_text2">انگشت خود را روی صفحه بکشید</string>
+    <string name="quick_call_copyright_text">Copyright &#169; 2014 Sipax, Inc.</string>
+
+    <string name="quick_call_create_new">ایجاد یک تماس سریع</string>
+    <string name="quick_call_info">اطلاعات تماس سریع</string>
+    <string name="quick_call_manage">مدیریت تماس سریع</string>
+
+    <string name="button_reset">ریست</string>
+    <string name="button_save">ذخیره</string>
+    <string name="button_update">به روزرسانی</string>
+
+    <string name="dialog_exist_title">این تماس سریع وجود دارد</string>
+    <string name="dialog_exist_msg">این تماس سریع قبلا اشغال شده(%1$s).</string>
+
+    <string name="dialog_quick_call_title">شروع تماس</string>
+    <string name="dialog_quick_call_msg">تماس با(%1$s) فورا؟</string>
+    <string name="call">تماس</string>
+
+    <string name="settings_suggestions">بازخورد</string>
+    <string name="settings_rate_app">امتیاز دهی</string>
+    <string name="settings_about_quick_call">درباره کلیک</string>
+    <string name="title_suggestions">بازخورد</string>
+    <string name="hint_reply">لطفا سوالات و پیشنهادات خود را در این بخش وارد کنید</string>
+    <string name="hint_reply_info">لطفا ایمیل یا شماره موبایل خود را وارد کنید</string>
+    <string name="submit">ارسال</string>
+    <string name="cannot_submit">عدم ارسال</string>
+    <string name="call_error_message_network_error">عدم دسترسی به شبکه، لطفا بعدا تلاش کنید.</string>
+    <string name="submit_suggestion_failed">متاسفانه مشکلی در ارسال درخواست پیش آمد.</string>
+    <string name="submit_suggestion_success">ارسال با موفقیت انجام شد.</string>
+
+    <string name="contact_us">تماس با ما</string>
+    <string name="contact_us_name">سرویس ارتباطی کلیک - شرکت ارتباطاتی ضحی کیش</string>
+    <string name="contact_us_email">Email: info@96868696.ir</string>
+    <string name="contact_us_phone">tel: 021-96869696</string>
+    <string name="contact_us_qq">QQ : 122429471</string>
+    <string name="contact_us_address">Address : Jordan, Tehran, Iran</string>
+
+    <string name="home_bottom_quick_call">تماس سریع</string>
+    <string name="home_bottom_call_log">ریز مکالمات</string>
+    <string name="home_bottom_contacts">مخاطبین</string>
+    <string name="home_bottom_settings">تنظیمات</string>
+
+    <string name="this_number_has_been_set">این شماره در لیست مخاطبین ذخیره است</string>
+
+    <string name="popup_text_delete_this_contact">حذف این مخاطب</string>
+    <string name="popup_text_edit_this_contact">تغییر مخاطب</string>
+    <string name="popup_text_create_new_quick_call">ایجاد یک تماس سریع جدید</string>
+
+    <string name="save_first">شما بایستی این شماره را در دفترچه تلفن گوشی ذخیره کنید.</string>
+
+    <string name="yek">10000 ریال</string>
+    <string name="dow">20000 ریال</string>
+    <string name="panj">50000 ریال</string>
+    <string name="dah">100000 ریال</string>
+    <string name="bist">200000 ریال</string>
+    <string name="operator_spinner">Operators</string>
+    <string-array name="operator_array">
+        <item>Irancell</item>
+        <item>Hamrahe Aval</item>
+    </string-array>
+    <string name="PrefKeyName">Operators</string>
+    <string name="notification_title">AutoAnswer enabled</string>
+    <string name="notification_text">Select to configure or disable.</string>
+    <string name="enabled">Enabled?</string>
+    <string name="which_contacts">Answer Which Calls?</string>
+    <string name="delay">Delay Before Answer?</string>
+    <string name="use_speakerphone">Force Speakerphone?</string>
+    <string name="headset_only">Only Using BT Headset?</string>
+    <string name="no_second_call">Don\'t Answer if In Call?</string>
+    <string name="about_title">About</string>
+    <string name="about_message">AutoAnswer Version 1.5\nCopyright (c) 2010 EverySoft\n\nA simple Android application that automatically answers incoming calls.\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.\n\nChanges:\n1.5 - new answer routine should support more phones (thanks to Tedd\'s Droid Tools!)\n\n1.4 - added notification bar icon\n\n1.3 - added experimental BT headset detection\n\n1.2 - added support for froyo and the ability to ignore calls when there is already a call in process (ignore second call)\n\n1.1 - added configurable delay before answer\n\n1.0 - initial release</string>
+    <string name="license_title">License</string>
+    <string name="license_message"><![CDATA[GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007\n\nCopyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.\n\nPreamble\n\nThe GNU General Public License is a free, copyleft license for software and other kinds of works.\n\nThe licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.\n\nWhen we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things.\n\nTo protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others.\n\nFor example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.\n\nDevelopers that use the GNU GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.\n\nFor the developers\' and authors\' protection, the GPL clearly explains that there is no warranty for this free software. For both users\' and authors\' sake, the GPL requires that modified versions be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions.\n\nSome devices are designed to deny users access to install or run modified versions of the software inside them, although the manufacturer can do so. This is fundamentally incompatible with the aim of protecting users\' freedom to change the software. The systematic pattern of such abuse occurs in the area of products for individuals to use, which is precisely where it is most unacceptable. Therefore, we have designed this version of the GPL to prohibit the practice for those products. If such problems arise substantially in other domains, we stand ready to extend this provision to those domains in future versions of the GPL, as needed to protect the freedom of users.\n\nFinally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. To prevent this, the GPL assures that patents cannot be used to render the program non-free.\n\nThe precise terms and conditions for copying, distribution and modification follow.\n\nTERMS AND CONDITIONS\n\n0. Definitions.\n\n\"This License\" refers to version 3 of the GNU General Public License.\n\n\"Copyright\" also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.\n\n\"The Program\" refers to any copyrightable work licensed under this License. Each licensee is addressed as \"you\". \"Licensees\" and \"recipients\" may be individuals or organizations.\n\nTo \"modify\" a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a \"modified version\" of the earlier work or a work \"based on\" the earlier work.\n\nA \"covered work\" means either the unmodified Program or a work based on the Program.\n\nTo \"propagate\" a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.\n\nTo \"convey\" a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.\n\nAn interactive user interface displays \"Appropriate Legal Notices\" to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that licensees may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list meets this criterion.\n\n1. Source Code.\n\nThe \"source code\" for a work means the preferred form of the work for making modifications to it. \"Object code\" means any non-source form of a work.\n\nA \"Standard Interface\" means an interface that either is an official standard defined by a recognized standards body, or, in the case of interfaces specified for a particular programming language, one that is widely used among developers working in that language.\n\nThe \"System Libraries\" of an executable work include anything, other than the work as a whole, that (a) is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and (b) serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A \"Major Component\", in this context, means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.\n\nThe \"Corresponding Source\" for a work in object code form means all the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the work\'s System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work. For example, Corresponding Source includes interface definition files associated with source files for the work, and the source code for shared libraries and dynamically linked subprograms that the work is specifically designed to require, such as by intimate data communication or control flow between those subprograms and other parts of the work.\n\nThe Corresponding Source need not include anything that users can regenerate automatically from other parts of the Corresponding Source.\n\nThe Corresponding Source for a work in source code form is that same work.\n\n2. Basic Permissions.\n\nAll rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.\n\nYou may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.\n\nConveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.\n\n3. Protecting Users\' Legal Rights From Anti-Circumvention Law.\n\nNo covered work shall be deemed part of an effective technological measure under any applicable law fulfilling obligations under article 11 of the WIPO copyright treaty adopted on 20 December 1996, or similar laws prohibiting or restricting circumvention of such measures.\n\nWhen you convey a covered work, you waive any legal power to forbid circumvention of technological measures to the extent such circumvention is effected by exercising rights under this License with respect to the covered work, and you disclaim any intention to limit operation or modification of the work as a means of enforcing, against the work\'s users, your or third parties\' legal rights to forbid circumvention of technological measures.\n\n4. Conveying Verbatim Copies.\n\nYou may convey verbatim copies of the Program\'s source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code; keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.\n\nYou may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.\n\n5. Conveying Modified Source Versions.\n\nYou may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:\n\na) The work must carry prominent notices stating that you modified it, and giving a relevant date.\n\nb) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7. This requirement modifies the requirement in section 4 to \"keep intact all notices\".\n\nc) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.\n\nd) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.\n\nA compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an \"aggregate\" if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation\'s users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.\n\n6. Conveying Non-Source Forms.\n\nYou may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:\n\na) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by the Corresponding Source fixed on a durable physical medium customarily used for software interchange.\n\nb) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.\n\nc) Convey individual copies of the object code with a copy of the written offer to provide the Corresponding Source. This alternative is allowed only occasionally and noncommercially, and only if you received the object code with such an offer, in accord with subsection 6b.\n\nd) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.\n\ne) Convey the object code using peer-to-peer transmission, provided you inform other peers where the object code and Corresponding Source of the work are being offered to the general public at no charge under subsection 6d.\n\nA separable portion of the object code, whose source code is excluded from the Corresponding Source as a System Library, need not be included in conveying the object code work.\n\nA \"User Product\" is either (1) a \"consumer product\", which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, \"normally used\" refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.\n\n\"Installation Information\" for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.\n\nIf you convey an object code work under this section in, or with, or specifically for use in, a User Product, and the conveying occurs as part of a transaction in which the right of possession and use of the User Product is transferred to the recipient in perpetuity or for a fixed term (regardless of how the transaction is characterized), the Corresponding Source conveyed under this section must be accompanied by the Installation Information. But this requirement does not apply if neither you nor any third party retains the ability to install modified object code on the User Product (for example, the work has been installed in ROM).\n\nThe requirement to provide Installation Information does not include a requirement to continue to provide support service, warranty, or updates for a work that has been modified or installed by the recipient, or for the User Product in which it has been modified or installed. Access to a network may be denied when the modification itself materially and adversely affects the operation of the network or violates the rules and protocols for communication across the network.\n\nCorresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.\n\n7. Additional Terms.\n\n\"Additional permissions\" are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.\n\nWhen you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.\n\nNotwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:\n\na) Disclaiming warranty or limiting liability differently from the terms of sections 15 and 16 of this License; or\n\nb) Requiring preservation of specified reasonable legal notices or author attributions in that material or in the Appropriate Legal Notices displayed by works containing it; or\n\nc) Prohibiting misrepresentation of the origin of that material, or requiring that modified versions of such material be marked in reasonable ways as different from the original version; or\n\nd) Limiting the use for publicity purposes of names of licensors or authors of the material; or\n\ne) Declining to grant rights under trademark law for use of some trade names, trademarks, or service marks; or\n\nf) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.\n\nAll other non-permissive additional terms are considered \"further restrictions\" within the meaning of section 10. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.\n\nIf you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.\n\nAdditional terms, permissive or non-permissive, may be stated in the form of a separately written license, or stated as exceptions; the above requirements apply either way.\n\n8. Termination.\n\nYou may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).\n\nHowever, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.\n\nMoreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.\n\nTermination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, you do not qualify to receive new licenses for the same material under section 10.\n\n9. Acceptance Not Required for Having Copies.\n\nYou are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.\n\n10. Automatic Licensing of Downstream Recipients.\n\nEach time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.\n\nAn \"entity transaction\" is a transaction transferring control of an organization, or substantially all assets of one, or subdividing an organization, or merging organizations. If propagation of a covered work results from an entity transaction, each party to that transaction who receives a copy of the work also receives whatever licenses to the work the party\'s predecessor in interest had or could give under the previous paragraph, plus a right to possession of the Corresponding Source of the work from the predecessor in interest, if the predecessor has it or can get it with reasonable efforts.\n\nYou may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.\n\n11. Patents.\n\nA \"contributor\" is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor\'s \"contributor version\".\n\nA contributor\'s \"essential patent claims\" are all patent claims owned or controlled by the contributor, whether already acquired or hereafter acquired, that would be infringed by some manner, permitted by this License, of making, using, or selling its contributor version, but do not include claims that would be infringed only as a consequence of further modification of the contributor version. For purposes of this definition, \"control\" includes the right to grant patent sublicenses in a manner consistent with the requirements of this License.\n\nEach contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor\'s essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.\n\nIn the following three paragraphs, a \"patent license\" is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To \"grant\" such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.\n\nIf you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. \"Knowingly relying\" means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient\'s use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.\n\nIf, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.\n\nA patent license is \"discriminatory\" if it does not include within the scope of its coverage, prohibits the exercise of, or is conditioned on the non-exercise of one or more of the rights that are specifically granted under this License. You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license (a) in connection with copies of the covered work conveyed by you (or copies made from those copies), or (b) primarily for and in connection with specific products or compilations that contain the covered work, unless you entered into that arrangement, or that patent license was granted, prior to 28 March 2007.\n\nNothing in this License shall be construed as excluding or limiting any implied license or other defenses to infringement that may otherwise be available to you under applicable patent law.\n\n12. No Surrender of Others\' Freedom.\n\nIf conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot convey a covered work so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not convey it at all. For example, if you agree to terms that obligate you to collect a royalty for further conveying from those to whom you convey the Program, the only way you could satisfy both those terms and this License would be to refrain entirely from conveying the Program.\n\n13. Use with the GNU Affero General Public License.\n\nNotwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.\n\n14. Revised Versions of this License.\n\nThe Free Software Foundation may publish revised and/or new versions of the GNU General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.\n\nEach version is given a distinguishing version number. If the Program specifies that a certain numbered version of the GNU General Public License \"or any later version\" applies to it, you have the option of following the terms and conditions either of that numbered version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of the GNU General Public License, you may choose any version ever published by the Free Software Foundation.\n\nIf the Program specifies that a proxy can decide which future versions of the GNU General Public License can be used, that proxy\'s public statement of acceptance of a version permanently authorizes you to choose that version for the Program.\n\nLater license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.\n\n15. Disclaimer of Warranty.\n\nTHERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n16. Limitation of Liability.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n17. Interpretation of Sections 15 and 16.\n\nIf the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.\n\nEND OF TERMS AND CONDITIONS\n\nHow to Apply These Terms to Your New Programs\n\nIf you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.\n\nTo do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the \"copyright\" line and a pointer to where the full notice is found.\n\n<one line to give the program\'s name and a brief idea of what it does.> Copyright (C) <year> <name of author>\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\nIf the program does terminal interaction, make it output a short notice like this when it starts in an interactive mode:\n\n<program> Copyright (C) <year> <name of author> This program comes with ABSOLUTELY NO WARRANTY; for details type `show w\'. This is free software, and you are welcome to redistribute it under certain conditions; type `show c\' for details.\n\nThe hypothetical commands `show w\' and `show c\' should show the appropriate parts of the General Public License. Of course, your program\'s commands might be different; for a GUI interface, you would use an \"about box\".\n\nYou should also get your employer (if you work as a programmer) or school, if any, to sign a \"copyright disclaimer\" for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <http://www.gnu.org/licenses/>.\n\nThe GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <http://www.gnu.org/philosophy/why-not-lgpl.html>.]]></string>
+
+
+    <string name="description_image_button_one">one</string>
+
+    <!-- String describing the image on ImageButton two
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_two">two</string>
+
+    <!-- String describing the image on ImageButton three
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_three">three</string>
+
+    <!-- String describing the image on ImageButton four
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_four">four</string>
+
+    <!-- String describing the image on ImageButton five
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_five">five</string>
+
+    <!-- String describing the image on ImageButton six
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_six">six</string>
+
+    <!-- String describing the image on ImageButton seven
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_seven">seven</string>
+
+    <!-- String describing the image on ImageButton eight
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_eight">eight</string>
+
+    <!-- String describing the image on ImageButton nine
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_nine">nine</string>
+
+    <!-- String describing the image on ImageButton star
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_star">star</string>
+
+    <!-- String describing the image on ImageButton zero
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_zero">zero</string>
+
+    <!-- String describing the image on ImageButton pound
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_pound">pound</string>
+
+    <string name="description_delete_button">backspace</string>
+    <string name="description_dial_button">dial</string>
+    <string name="dialerDialpadHintText">Dial to add a call</string>
+    <string name="recentCalls_addToContact">Add to contacts</string>
+    <string name="add_2sec_pause">Add 2-sec pause</string>
+    <string name="add_wait">Add wait</string>
+    <string name="call_settings">Settings</string>
+    <string name="dialog_voicemail_airplane_mode_message">To call voicemail, first turn off Airplane mode.</string>
+    <string name="dialog_voicemail_not_ready_message">To set up voicemail, go to Menu &gt; Settings.</string>
+    <string name="dialog_phone_call_prohibited_message" msgid="4313552620858880999">Call not sent</string>
+    <string name="dialer_useDtmfDialpad">Use touch tone keypad</string>
+    <string name="dialer_returnToInCallScreen">Return to call in progress</string>
+    <string name="dialer_addAnotherCall">Add call</string>
+
+    <string name="home_bottom_dialpad">صفحه شماره</string>
+    <string name="balance_text">باقیمانده اعتبار</string>
+    <string name="support_text">تماس با پشتیبانی</string>
+    <string name="charg_text">خرید اعتبار</string>
+    <string name="charg_title_text">مبلغ مورد نظر را انتخاب کنید</string>
+    <string name="balance_num">2</string>
+    <string name="support_num">100</string>
+    <string name="global_check_item">کلیک برای تمام تماس ها</string>
+    <string name="global_check_notify">درحال ارسال درخواست به کلیک</string>
+    <string name="is_global_off">کلیک برای تمام تماس ها لغو شد</string>
+    <string name="is_global_on">کلیک برای تمام تماس ها فعال شد</string>
+    <string name="nitification_cost">هزینه آخرین تماس (به ریال)</string>
+    <string name="nitification_click_title">تنظیم کلیک برای تمام تماس ها</string>
+    <string name="nitification_click_content_enable">برای فعال سازی روی این پیام ضربه بزنید</string>
+    <string name="nitification_click_content_disable">برای لغو بر روی این پیام ضربه بزنید</string>
+    <string name="autoanswer_check_item">اتصال خودکار تماس دریافتی از کلیک</string>
+    <string name="guid_text">راهنما</string>
+    <string name="callWithKleegram">Call with Kleegram</string>
+    <string name="callingWithKleegram">در حال برقراری تماس با کلیگرام</string>
+    <string name="kleegramSettings">Kleegram Settings</string>
+    <string name="activeKleegram">Activate Kleegram</string>
+    <!-- KLEEGRAM !-->
 </resources>

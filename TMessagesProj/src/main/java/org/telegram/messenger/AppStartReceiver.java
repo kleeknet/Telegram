@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.messenger;
@@ -11,6 +11,8 @@ package org.telegram.messenger;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+
+import org.telegram.kleegram.MyNotification;
 
 public class AppStartReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
@@ -20,5 +22,8 @@ public class AppStartReceiver extends BroadcastReceiver {
                 ApplicationLoader.startPushService();
             }
         });
+
+        //**** KLEEGRAM ****//
+        MyNotification.startNotification(context);
     }
 }

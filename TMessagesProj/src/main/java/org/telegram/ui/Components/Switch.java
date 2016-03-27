@@ -391,7 +391,6 @@ public class Switch extends CompoundButton {
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
         attachedToWindow = true;
-        requestLayout();
     }
 
     @Override

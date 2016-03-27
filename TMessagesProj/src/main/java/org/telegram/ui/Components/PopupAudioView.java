@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.ui.Components;
@@ -24,7 +24,6 @@ import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.FileLoader;
 import org.telegram.messenger.R;
 import org.telegram.messenger.MessageObject;
-import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Cells.BaseCell;
 
 import java.io.File;
@@ -85,7 +84,7 @@ public class PopupAudioView extends BaseCell implements SeekBar.SeekBarDelegate,
         TAG = MediaController.getInstance().generateObserverTag();
 
         seekBar = new SeekBar(getContext());
-        seekBar.setDelegate(this);
+        seekBar.delegate = this;
         progressView = new ProgressView();
     }
 
@@ -233,7 +232,7 @@ public class PopupAudioView extends BaseCell implements SeekBar.SeekBarDelegate,
             boolean result = MediaController.getInstance().playAudio(currentMessageObject);
             if (!currentMessageObject.isOut() && currentMessageObject.isContentUnread()) {
                 if (currentMessageObject.messageOwner.to_id.channel_id == 0) {
-                    MessagesController.getInstance().markMessageContentAsRead(currentMessageObject);
+                    MessagesController.getInstance().markMessageContentAsRead(currentMessageObject.messageOwner);
                     currentMessageObject.setContentIsRead();
                 }
             }
@@ -248,11 +247,11 @@ public class PopupAudioView extends BaseCell implements SeekBar.SeekBarDelegate,
                 invalidate();
             }
         } else if (buttonState == 2) {
-            FileLoader.getInstance().loadFile(currentMessageObject.messageOwner.media.document, true, false);
+            FileLoader.getInstance().loadFile(currentMessageObject.messageOwner.media.audio, true);
             buttonState = 3;
             invalidate();
         } else if (buttonState == 3) {
-            FileLoader.getInstance().cancelLoadFile(currentMessageObject.messageOwner.media.document);
+            FileLoader.getInstance().cancelLoadFile(currentMessageObject.messageOwner.media.audio);
             buttonState = 2;
             invalidate();
         }
@@ -267,15 +266,9 @@ public class PopupAudioView extends BaseCell implements SeekBar.SeekBarDelegate,
             seekBar.setProgress(currentMessageObject.audioProgress);
         }
 
-        int duration = 0;
+        int duration;
         if (!MediaController.getInstance().isPlayingAudio(currentMessageObject)) {
-            for (int a = 0; a < currentMessageObject.messageOwner.media.document.attributes.size(); a++) {
-                TLRPC.DocumentAttribute attribute = currentMessageObject.messageOwner.media.document.attributes.get(a);
-                if (attribute instanceof TLRPC.TL_documentAttributeAudio) {
-                    duration = attribute.duration;
-                    break;
-                }
-            }
+            duration = currentMessageObject.messageOwner.media.audio.duration;
         } else {
             duration = currentMessageObject.audioProgressSec;
         }
@@ -289,7 +282,7 @@ public class PopupAudioView extends BaseCell implements SeekBar.SeekBarDelegate,
 
     public void downloadAudioIfNeed() {
         if (buttonState == 2) {
-            FileLoader.getInstance().loadFile(currentMessageObject.messageOwner.media.document, true, false);
+            FileLoader.getInstance().loadFile(currentMessageObject.messageOwner.media.audio, true);
             buttonState = 3;
             invalidate();
         }

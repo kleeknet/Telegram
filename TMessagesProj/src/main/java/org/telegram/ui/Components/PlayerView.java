@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.ui.Components;
@@ -99,8 +99,7 @@ public class PlayerView extends FrameLayout implements NotificationCenter.Notifi
         setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MessageObject messageObject = MediaController.getInstance().getPlayingMessageObject();
-                if (messageObject != null && messageObject.isMusic() && fragment != null) {
+                if (fragment != null) {
                     fragment.presentFragment(new AudioPlayerActivity());
                 }
             }
@@ -159,7 +158,7 @@ public class PlayerView extends FrameLayout implements NotificationCenter.Notifi
                 create = true;
             }
         }
-        if (messageObject == null || messageObject.getId() == 0/* || !messageObject.isMusic()*/) {
+        if (messageObject == null || !messageObject.isMusic()) {
             lastMessageObject = null;
             if (visible) {
                 visible = false;
@@ -225,14 +224,7 @@ public class PlayerView extends FrameLayout implements NotificationCenter.Notifi
             }
             if (lastMessageObject != messageObject) {
                 lastMessageObject = messageObject;
-                SpannableStringBuilder stringBuilder;
-                if (lastMessageObject.isVoice()) {
-                    stringBuilder = new SpannableStringBuilder(String.format("%s %s", messageObject.getMusicAuthor(), messageObject.getMusicTitle()));
-                    titleTextView.setEllipsize(TextUtils.TruncateAt.MIDDLE);
-                } else {
-                    stringBuilder = new SpannableStringBuilder(String.format("%s - %s", messageObject.getMusicAuthor(), messageObject.getMusicTitle()));
-                    titleTextView.setEllipsize(TextUtils.TruncateAt.END);
-                }
+                SpannableStringBuilder stringBuilder = new SpannableStringBuilder(String.format("%s - %s", messageObject.getMusicAuthor(), messageObject.getMusicTitle()));
                 TypefaceSpan span = new TypefaceSpan(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
                 stringBuilder.setSpan(span, 0, messageObject.getMusicAuthor().length(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
                 titleTextView.setText(stringBuilder);

@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.ui.Adapters;
@@ -43,7 +43,7 @@ public class DrawerLayoutAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return UserConfig.isClientActivated() ? 10 : 0;
+        return UserConfig.isClientActivated() ? 12 : 0;
     }
 
     @Override
@@ -96,6 +96,10 @@ public class DrawerLayoutAdapter extends BaseAdapter {
                 actionCell.setTextAndIcon(LocaleController.getString("Settings", R.string.Settings), R.drawable.menu_settings);
             } else if (i == 9) {
                 actionCell.setTextAndIcon(LocaleController.getString("TelegramFaq", R.string.TelegramFaq), R.drawable.menu_help);
+            } else if (i == 10) { // ***** KLEEGRAM ***** //
+                actionCell.setTextAndIcon(LocaleController.getString("TelegramFaq", R.string.kleegramSettings), R.drawable.kleegramsettings);
+            } else if (i == 11) { // ***** KLEEGRAM ***** //
+                actionCell.setTextAndIcon(LocaleController.getString("TelegramFaq", R.string.activeKleegram), R.drawable.acctivation);
             }
         }
 

@@ -15,7 +15,6 @@
  */
 
 package org.telegram.messenger.support.widget;
-
 import android.view.View;
 
 /**
@@ -36,11 +35,8 @@ class LayoutState {
 
     final static int ITEM_DIRECTION_TAIL = 1;
 
-    /**
-     * We may not want to recycle children in some cases (e.g. layout)
-     */
-    boolean mRecycle = true;
-    
+    final static int SCOLLING_OFFSET_NaN = Integer.MIN_VALUE;
+
     /**
      * Number of pixels that we should fill, in the layout direction.
      */
@@ -72,16 +68,6 @@ class LayoutState {
      * This is the target pixel closest to the end of the layout that we are trying to fill
      */
     int mEndLine = 0;
-
-    /**
-     * If true, layout should stop if a focusable view is added
-     */
-    boolean mStopInFocusable;
-
-    /**
-     * If the content is not wrapped with any value
-     */
-    boolean mInfinite;
 
     /**
      * @return true if there are more items in the data adapter

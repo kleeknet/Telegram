@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.ui.Cells;
@@ -18,7 +18,6 @@ import android.text.SpannableStringBuilder;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.text.style.ClickableSpan;
-import android.text.style.URLSpan;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
@@ -153,11 +152,7 @@ public class AboutLinkCell extends FrameLayout {
                                 }
                             }
                         } else {
-                            if (pressedLink instanceof URLSpan) {
-                                AndroidUtilities.openUrl(getContext(), ((URLSpan) pressedLink).getURL());
-                            } else {
-                                pressedLink.onClick(this);
-                            }
+                            pressedLink.onClick(this);
                         }
                     } catch (Exception e) {
                         FileLog.e("tmessages", e);

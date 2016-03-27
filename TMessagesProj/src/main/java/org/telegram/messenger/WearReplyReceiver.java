@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.messenger;
@@ -31,7 +31,7 @@ public class WearReplyReceiver extends BroadcastReceiver {
         if (dialog_id == 0 || max_id == 0) {
             return;
         }
-        SendMessagesHelper.getInstance().sendMessage(text.toString(), dialog_id, null, null, true, false, null, null);
+        SendMessagesHelper.getInstance().sendMessage(text.toString(), dialog_id, null, null, true, false);
         MessagesController.getInstance().markDialogAsRead(dialog_id, max_id, max_id, 0, true, false);
     }
 }

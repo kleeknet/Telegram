@@ -19,6 +19,8 @@ package org.telegram.messenger.support.widget;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import org.telegram.messenger.support.widget.RecyclerView;
+
 /**
  * Helper class for LayoutManagers to abstract measurements depending on the View's orientation.
  * <p>
@@ -166,28 +168,6 @@ public abstract class OrientationHelper {
     public abstract int getEndPadding();
 
     /**
-     * Returns the MeasureSpec mode for the current orientation from the LayoutManager.
-     *
-     * @return The current measure spec mode.
-     *
-     * @see View.MeasureSpec
-     * @see RecyclerView.LayoutManager#getWidthMode()
-     * @see RecyclerView.LayoutManager#getHeightMode()
-     */
-    public abstract int getMode();
-
-    /**
-     * Returns the MeasureSpec mode for the perpendicular orientation from the LayoutManager.
-     *
-     * @return The current measure spec mode.
-     *
-     * @see View.MeasureSpec
-     * @see RecyclerView.LayoutManager#getWidthMode()
-     * @see RecyclerView.LayoutManager#getHeightMode()
-     */
-    public abstract int getModeInOther();
-
-    /**
      * Creates an OrientationHelper for the given LayoutManager and orientation.
      *
      * @param layoutManager LayoutManager to attach to
@@ -279,16 +259,6 @@ public abstract class OrientationHelper {
             public int getEndPadding() {
                 return mLayoutManager.getPaddingRight();
             }
-
-            @Override
-            public int getMode() {
-                return mLayoutManager.getWidthMode();
-            }
-
-            @Override
-            public int getModeInOther() {
-                return mLayoutManager.getHeightMode();
-            }
         };
     }
 
@@ -364,16 +334,6 @@ public abstract class OrientationHelper {
             @Override
             public int getEndPadding() {
                 return mLayoutManager.getPaddingBottom();
-            }
-
-            @Override
-            public int getMode() {
-                return mLayoutManager.getHeightMode();
-            }
-
-            @Override
-            public int getModeInOther() {
-                return mLayoutManager.getWidthMode();
             }
         };
     }

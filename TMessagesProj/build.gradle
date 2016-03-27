@@ -5,11 +5,13 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.2.1'
-    compile "com.google.android.gms:play-services-gcm:8.4.0"
-    compile "com.google.android.gms:play-services-maps:8.4.0"
+    compile 'com.android.support:support-v4:+'
+    compile 'com.google.android.gms:play-services:3.2.+'
     compile 'net.hockeyapp.android:HockeySDK:3.6.+'
     compile 'com.googlecode.mp4parser:isoparser:1.0.+'
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+
 }
 
 android {
@@ -17,53 +19,66 @@ android {
     buildToolsVersion '23.0.2'
 
     useLibrary 'org.apache.http.legacy'
-    defaultConfig.applicationId = "org.telegram.messenger"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
-    signingConfigs {
-        debug {
-            storeFile file("config/release.keystore")
-            storePassword RELEASE_STORE_PASSWORD
-            keyAlias RELEASE_KEY_ALIAS
-            keyPassword RELEASE_KEY_PASSWORD
-        }
-
-        release {
-            storeFile file("config/release.keystore")
-            storePassword RELEASE_STORE_PASSWORD
-            keyAlias RELEASE_KEY_ALIAS
-            keyPassword RELEASE_KEY_PASSWORD
-        }
-    }
+//    signingConfigs {
+//        debug {
+//            storeFile file("config/release.keystore")
+//            storePassword RELEASE_STORE_PASSWORD
+//            keyAlias RELEASE_KEY_ALIAS
+//            keyPassword RELEASE_KEY_PASSWORD
+//        }
+//
+//        release {
+//            storeFile file("config/release.keystore")
+//            storePassword RELEASE_STORE_PASSWORD
+//            keyAlias RELEASE_KEY_ALIAS
+//            keyPassword RELEASE_KEY_PASSWORD
+//        }
+//    }
 
     buildTypes {
+//        debug {
+//            debuggable true
+//            jniDebuggable true
+//            signingConfig signingConfigs.debug
+//            applicationIdSuffix ".beta"
+//        }
+//
+//        release {
+//            debuggable false
+//            jniDebuggable false
+//            signingConfig signingConfigs.release
+//        }
+//
+//        foss {
+//            debuggable false
+//            jniDebuggable false
+//            signingConfig signingConfigs.release
+//        }
+
         debug {
             debuggable true
             jniDebuggable true
-            signingConfig signingConfigs.debug
-            applicationIdSuffix ".beta"
+            // signingConfig signingConfigs.debug
         }
 
         release {
             debuggable false
             jniDebuggable false
-            signingConfig signingConfigs.release
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // signingConfig signingConfigs.release
         }
 
         foss {
             debuggable false
             jniDebuggable false
-            signingConfig signingConfigs.release
+            // signingConfig signingConfigs.release
         }
     }
-
-    defaultConfig.versionCode = 767
 
     sourceSets.main {
         jniLibs.srcDir 'libs'
@@ -82,38 +97,11 @@ android {
         manifest.srcFile 'config/foss/AndroidManifest.xml'
     }
 
-    productFlavors {
-        x86 {
-            ndk {
-                abiFilter "x86"
-            }
-            versionCode = 2
-        }
-        arm {
-            ndk {
-                abiFilter "armeabi"
-            }
-            versionCode = 0
-        }
-        armv7 {
-            ndk {
-                abiFilter "armeabi-v7a"
-            }
-            versionCode = 1
-        }
-        fat {
-            versionCode = 3
-        }
-    }
-
-    applicationVariants.all { variant ->
-        def abiVersion = variant.productFlavors.get(0).versionCode
-        variant.mergedFlavor.versionCode = defaultConfig.versionCode * 10 + abiVersion;
-    }
-
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 8
         targetSdkVersion 23
-        versionName "3.7.0"
+        versionCode 1
+        versionName "1.0.1"
+        applicationId "com.click.kleegram"
     }
 }

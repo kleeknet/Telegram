@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.ui.Components;
@@ -84,7 +84,6 @@ public class SimpleTextView extends View {
                     } else {
                         offsetX = 0;
                     }
-                    offsetX += getPaddingLeft();
                 }
             } catch (Exception e) {
                 //ignore
@@ -95,7 +94,7 @@ public class SimpleTextView extends View {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         if (changed) {
-            createLayout(right - left - getPaddingLeft() - getPaddingRight());
+            createLayout(right - left);
             invalidate();
             wasLayout = true;
         }
@@ -104,7 +103,7 @@ public class SimpleTextView extends View {
     public void setText(CharSequence value) {
         text = value;
         if (wasLayout) {
-            createLayout(getMeasuredWidth() - getPaddingLeft() - getPaddingRight());
+            createLayout(getMeasuredWidth());
             invalidate();
         } else {
             requestLayout();

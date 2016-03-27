@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.ui.Cells;
@@ -21,7 +21,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.AnimationCompat.ViewProxy;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.R;
 import org.telegram.ui.Components.LayoutHelper;
@@ -82,7 +81,7 @@ public class PhotoPickerSearchCell extends LinearLayout {
 
     private PhotoPickerSearchCellDelegate delegate;
 
-    public PhotoPickerSearchCell(Context context, boolean allowGifs) {
+    public PhotoPickerSearchCell(Context context) {
         super(context);
         setOrientation(HORIZONTAL);
 
@@ -126,18 +125,14 @@ public class PhotoPickerSearchCell extends LinearLayout {
         layoutParams.height = AndroidUtilities.dp(48);
         layoutParams.width = 0;
         searchButton.setLayoutParams(layoutParams);
-        if (allowGifs) {
-            searchButton.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (delegate != null) {
-                        delegate.didPressedSearchButton(1);
-                    }
+        searchButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (delegate != null) {
+                    delegate.didPressedSearchButton(1);
                 }
-            });
-        } else {
-            ViewProxy.setAlpha(searchButton, 0.5f);
-        }
+            }
+        });
     }
 
     public void setDelegate(PhotoPickerSearchCellDelegate delegate) {

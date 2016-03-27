@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="AppName">کلیگرام</string>
+    <string name="AppNameBeta">کلیگرام</string>
+    <string name="LanguageName">فارسی</string>
+    <string name="LanguageNameInEnglish">فارسی</string>
+    <string name="LanguageCode">فا</string>
+    <!--signin view-->
+    <string name="YourPhone">شماره شما</string>
+    <string name="StartText">لطفا کد کشور خود را مشخص کرده و سپس شماره موبایل را بدون صفر وارد کنید.</string>
+    <string name="ChooseCountry">انتخاب کشور</string>
+    <string name="WrongCountry">کد کشور اشتباه است</string>
+    <!--code enter view-->
+    <string name="YourCode">کد شما</string>
+    <string name="SentSmsCode">کد فعالسازی را به وسیله پیامک به شماره شما ارسال میکنیم</string>
+    <string name="CallText">با شما تماس گرفته میشود %1$d:%2$02d</string>
+    <string name="Calling">تماس با شما...</string>
+    <string name="Code">کد</string>
+    <string name="WrongNumber">شماره اشتباه است?</string>
+    <string name="DidNotGetTheCode">کد را دریافت نکردید?</string>
+    <!--signup view-->
+    <string name="YourName">نام</string>
+    <string name="RegisterText">نام و نام خانوادگی را درج کنید</string>
+    <!--<string name="RegisterText">نام و عکس خود را درج کنید</string>-->
+    <string name="FirstName">نام(ضروری)</string>
+    <string name="LastName">نام خانوادگی (اختیاری)</string>
+    <string name="CancelRegistration">انصراف از ثبت نام</string>
+    <!--chats view-->
+    <string name="Settings">تنظیمات</string>
+    <string name="Contacts">مخاطبین</string>
+    <string name="NewGroup">گروه جدید</string>
+    <string name="Yesterday">دیروز</string>
+    <string name="NoResult">بی نتیجه</string>
+    <string name="NoChats">هنوز گفتگویی وجود ندارد...</string>
+    <string name="NoChatsHelp"> شروع پیام با فشار دادن \ دکمه پیام جدید در گوشه سمت راست پایین \ دکمه گزینه برای گزینه های بیشتر نیست.</string>
+    <string name="WaitingForNetwork">منتظر اتصال به شبکه...</string>
+    <string name="Connecting">در حال برقراری ارتباط...</string>
+    <string name="Updating">بروز رسانی...</string>
+    <string name="NewSecretChat">گفتگوی محرمانه جدید</string>
+    <string name="AwaitingEncryption">منتظر باشید %s برای برقرای آنلاین...</string>
+    <string name="EncryptionRejected">لغو گفتگوی محرمانه</string>
+    <string name="EncryptionProcessing">تبادل کلیدهای رمزنگار...</string>
+    <string name="EncryptedChatStartedOutgoing">%s پیوستن به گفتگوی محرمانه.</string>
+    <string name="EncryptedChatStartedIncoming">به گفتگوی محرمانه پیوستید.</string>
+    <string name="ClearHistory">پاک کردن سوابق</string>
+    <string name="ClearHistoryCache">حذف از حافظه پنهان </string>
+    <string name="DeleteChat">پاک کردن و خروج</string>
+    <string name="DeleteChatUser">پاک کردن گفتگو</string>
+    <string name="HiddenName">پاک کردن اشتراک</string>
+    <string name="SelectChat">انتخاب گفتگو</string>
+    <string name="PhotoTip">برای مشاهده ضربه بزنید و نگه دارید</string>
+    <string name="CompatibilityChat">%1$s با استفاده از نسخه قدیمی کلیگرام، عکس ها پنهان خواهند شد.\n\nOnce %2$s با بروز رسانی کلیگرام در مدت 1 دقیقه عکسها نمایش داده میشوند \' برای مشاهده ضربه بزنید و نگه دارید.</string>
+    <string name="SearchMessages">پیامها</string>
+    <string name="Search">جستجو</string>
+    <string name="MuteNotifications">بی صدا</string>
+    <string name="MuteFor">بی صدا برای %1$s</string>
+    <string name="UnmuteNotifications">با صدا</string>
+    <string name="WillUnmuteIn">In %1$s</string>
+    <string name="MuteDisable">غیر فعال</string>
+    <string name="Hashtags">هشتگ</string>
+    <string name="Recent">اخیر</string>
+    <string name="LinkPreview">پیش نمایش لینک</string>
+    <!--channels-->
+    <string name="SetAsAdmin">افزودن مدیر</string>
+    <string name="DescriptionInfoMega"> شما می توانید توضیحاتی را به دلخواه برای گروه خود ارائه دهید.</string>
+    <string name="LeaveMega">ترک گروه</string>
+    <string name="DeleteMega">حذف گروه</string>
+    <string name="LeaveMegaMenu">ترک گروه</string>
+    <string name="DeleteMegaMenu">حذف گروه</string>
+    <string name="MegaDeleteInfo"> شما می توانید توضیحاتی را به دلخواه برای گروه خود ارائه دهید.</string>
+    <string name="MegaAdminsInfo"> شما می توانید مدیرانی را برای کمک به خودتان اضافه کنید تا در گروه فعال باشند مدیریت کنید. ضربه زده و نگه دارید تا حذف شوند.</string>
+    <string name="MegaDeleteAlert">صبر کنید! با حذف این گروه همه اعضا را حذف و تمام پیام ها از دست میرود. تمایل به حذف گروه دارید?</string>
+    <string name="ActionCreateMega">ایجاد گروه</string>
+    <string name="MegaAddedBy">یک نفر شما را به گروه اضافه کرد</string>
+    <string name="MegaLeaveAlert">مطمین هستید میخواهید این گروه را ترک کنید?</string>
+    <string name="GroupUserCantAdd">با پوزش شما نمیتوانید این کاربر را به گروه اضافه کنید.</string>
+    <string name="GroupUserAddLimit">با پوزش این گروه تکمیل است.</string>
+    <string name="GroupUserLeftError">با پوزش این کاربر تصمیم به ترک گروه گرفته و شما نمیتوانید او را بازگردانید.</string>
+    <string name="GroupUserCantAdmin">با پوزش مدیران این گروه بیش از حد مجاز است.</string>
+    <string name="GroupUserCantBot">با پوزش، رباتها بیش از حد مجاز در این گروه هستند.</string>
+    <string name="ActionMigrateFromGroup">این گروه به یک گروه ویژه ارتقاء یافت</string>
+    <string name="ActionMigrateFromGroupNotify">%1$s به یک گروه ویژه ارتقاء یافت </string>
+    <string name="NoBlockedGroup"> کاربران مسدود و از گروه حذف شده اند و تنها توسط مدیر می توانید دوباره دعوت کنید. دعوت به لینک برای آنها فعال نیست.</string>
+    <string name="NewChannel">کانال جدید</string>
+    <string name="EnterChannelName">نام</string>
+    <string name="Comments">نظرات</string>
+    <string name="CommentsInfo">اگر شما بخش نظرات را فعال کنید، دیگر کاربران قادر به ارتباط با شما خواهند بود.</string>
+    <string name="AddMutual">افزودن عضو</string>
+    <string name="ChannelUsernameHelp">دیگران میتوانند این لینک را به اشتراک گذاشته و از طریق جستجو در تلگرام آن را پیدا کنند.</string>
+    <string name="ChannelUsernamePlaceholder">لینک</string>
+    <string name="ChannelPrivateLinkHelp">کاربران از طریق این لینک میتواند با شما پیوند داشته باشند.شما میتوانید هر زمان بخواهید این لینک را حذف کنید.</string>
+    <string name="DescriptionPlaceholder">تشریح کانال</string>
+    <string name="DescriptionInfo"> شما می توانید کانال خود را توصیف نمایید.</string>
+    <string name="ChannelPublic">کانال عمومی</string>
+    <string name="ChannelPublicInfo">کانال عمومی با جستجو یافت میشود وهر کسی میتواند عضو آن شود.</string>
+    <string name="ChannelPrivate">کانال خصوصی</string>
+    <string name="ChannelPrivateInfo"> در کانال های خصوصی تنها کسانی میتوانند عضو شوند که لینک دعوت برای آنان ارسال شده باشد.</string>
+    <string name="ChannelLinkTitle">لینک</string>
+    <string name="ChannelInviteLinkTitle">دعوت به لینک</string>
+    <string name="ChannelAddMembers">اضافه کردن</string>
+    <string name="LeaveChannel">ترک کانال</string>
+    <string name="LeaveChannelMenu">ترک کانال</string>
+    <string name="ChannelSettings">تنظیمات</string>
+    <string name="ChannelJoin">عضویت</string>
+    <string name="OpenChannelProfile">اطلاعات کانال</string>
+    <string name="ChannelBroadcast">Broadcast</string>
+    <string name="ChannelComment">نظرات</string>
+    <string name="ShowDiscussion">نمایش نظرات</string>
+    <string name="ChannelAlertTitle">کانال چیست?</string>
+    <string name="ChannelAlertText"> کانال یک ابزار جدید برای پخش پیام های شما به مخاطبان بیشتر است.</string>
+    <string name="ChannelAlertCreate">ایجاد کانال</string>
+    <string name="LinkInUse">با پوزش،این نام قبلا گرفته شده است.</string>
+    <string name="LinkInvalid">با پوزش, این نام معتبر نیست.</string>
+    <string name="LinkInvalidShort">نام کانال حداقل باید 5 کارکتر باشد.</string>
+    <string name="LinkInvalidLong">نام نباید از 32 کارکتر بیشتر باشد.</string>
+    <string name="LinkInvalidStartNumber">نام کانال نمیتواند با عدد شروع شود.</string>
+    <string name="LinkChecking">بررسی نام…</string>
+    <string name="LinkAvailable">%1$s آزاد میباشد.</string>
+    <string name="ChannelMembers">اعضاء</string>
+    <string name="ChannelBlockedUsers">کاربران مسدود شده</string>
+    <string name="ChannelAdministrators">مدیران</string>
+    <string name="ChannelDelete">حذف کانال</string>
+    <string name="ChannelDeleteMenu"> حذف کانال </string>
+    <string name="ChannelDeleteAlert">صبر کنید! حذف این کانال منجر به حذف همه اعضاء و پیامهای آن میشود. موافق حذف هستید?</string>
+    <string name="ChannelLeaveAlert">آیا اطمینان دارید میخواهید کانال را ترک کنید?</string>
+    <string name="ChannelDeleteInfo">توجه! شما همه پیامهای این کانال را از دست خواهید داد.</string>
+    <string name="ChannelEdit">ویرایش</string>
+    <string name="ChannelWasPrivateAlert"> لطفا توجه داشته باشید که اگر شما لینک های عمومی برای کانال خود را انتخاب کنید، هر کسی قادر خواهد بود به راحتی جستجو و عضو شود.\اگر میخواهید بصورت شخصی باقی بمانید ، این کانال را ایجاد نکنید.</string>
+    <string name="ChannelPublicEmptyUsername"> لطفا یک لینک برای کانال های عمومی خود را انتخاب کنید، به طوری که مردم بتوانند آن را در جستجو و پیدا و با دیگران به اشتراک گذارند.\n\nIf اگرعلاقه ای ندارید، پیشنهاد می کنیم به جای آن یک کانال خصوصی ایجاد کنید.</string>
+    <string name="ActionCreateChannel">ایجاد کانال</string>
+    <string name="ActionChannelChangedPhoto">تعویض عکس کانال</string>
+    <string name="ActionChannelRemovedPhoto">حذف عکس کانال</string>
+    <string name="ActionChannelChangedTitle">تغییر نام کانالun2</string>
+    <string name="ChannelPublicLimitReached">با پوزش, تعداد کانال های عمومی شما بیش از حد مجاز است.یا یکی از کانالها را حذف کرده و یا کانال خصوصی ایجاد کنید.</string>
+    <string name="ChannelModerator">مدیر کانال</string>
+    <string name="ChannelCreator">ایجاد کننده</string>
+    <string name="ChannelEditor">مدیر</string>
+    <string name="ChannelMute">بی صدا</string>
+    <string name="ChannelUnmute">با صدا</string>
+    <string name="ChannelAddAdmin">اضافه کردن مدیر</string>
+    <string name="ChannelInviteViaLink">دعوت بوسیله لینک</string>
+    <string name="ChannelAddUserAdminAlert">آیا اطمینان دارید که میخواهید مدیر اضافه کنید %1$s an?</string>
+    <string name="ChannelRemoveUserAdmin">حذف</string>
+    <string name="ChannelMembersInfo">مدیر فقط میتواند لیست اعضاء را مشاهده کند.</string>
+    <string name="ChannelAdminNotParticipant">این کاربران نمیتواند عضو شود. آیا میخواهید آنها را دعوت کنید?</string>
+    <string name="ChannelLinkInfo">هر شخصی که به تلگرام وصل شده باشد میتواند به این کانال بپیوندد.</string>
+    <string name="ChannelAdminsInfo">شما میتوانید برای کمک به خود مدیر به کانال اضافه کنید. Tap and hold to remove admins.</string>
+    <string name="ChannelJoinTo">آیا میخواهید عضو این کانال شوید \'%1$s\'?</string>
+    <string name="ChannelCantOpenPrivate">با پوزش, این گفتگو در دسترس نیست.</string>
+    <string name="ChannelAddTo">به %1$s کانال اضافه کنید?</string>
+    <string name="ChannelUserLeftError">با پوزش, این کاربر تصمیم به ترک کانال گرفته، بنا برای نمیتوانید تو را دعوت کنید.</string>
+    <string name="ChannelUserCantAdd">با پوزش, این کاربر را نمیتوانید به کانال اضافه کنید.</string>
+    <string name="ChannelUserCantAdmin">با پوزش, ادمین این کانال تکمیل میباشد.</string>
+    <string name="ChannelUserCantBot">با پوزش, ربات این کانال تکمیل میباشد.</string>
+    <string name="ChannelUserAddLimit">با پوزش, توجه داشته شما فقط می توانید 200 عضو به یک کانال اضافه کنید تعداد نامحدودی از افراد ممکن است از طریق لینک کانال عضو شوند.</string>
+    <string name="ChannelAddedBy">یک نفر شما را به این کانال وارد کرده است</string>
+    <string name="ChannelJoined">شما عضو کانال شدید</string>
+    <string name="ChannelRemoveUser">حذف کانال</string>
+    <string name="ChannelCantSendMessage">با پوزش, شما نمیتوانید این پیام را به کانال ارسال نمایید.</string>
+    <string name="ChannelAddedByNotification">%1$s عضو کانال شدید %2$s</string>
+    <string name="ChannelPhotoEditNotification">کانال %1$s بروزرسانی عکس</string>
+    <string name="ChannelMessageGroupNoText">%1$s ارسال پیام به کانال %2$s</string>
+    <string name="ChannelMessageGroupPhoto">%1$s ارسال عکس به کانال %2$s</string>
+    <string name="ChannelMessageGroupVideo">%1$s ارسال فیلم به کانال %2$s</string>
+    <string name="ChannelMessageGroupContact">%1$s اشتراک یک تماس در کانال %2$s</string>
+    <string name="ChannelMessageGroupMap">%1$s ارسال محل استقرار به کانال %2$s</string>
+    <string name="ChannelMessageGroupDocument">%1$s ارسال فایل به کانال %2$s</string>
+    <string name="ChannelMessageGroupAudio">%1$s ارسال فایل صدا به کانال %2$s</string>
+    <string name="ChannelMessageGroupSticker">%1$s ارسال استیکر به کانال %2$s</string>
+    <string name="ChannelMessageNoText">%1$s ارسال پیام</string>
+    <string name="ChannelMessagePhoto">%1$s ارسال عکس</string>
+    <string name="ChannelMessageVideo">%1$s ارسال فیلم</string>
+    <string name="ChannelMessageContact">%1$s ارسال تماس</string>
+    <string name="ChannelMessageMap">%1$s ارسال محل استقرار</string>
+    <string name="ChannelMessageDocument">%1$s ارسال فایل</string>
+    <string name="ChannelMessageAudio">%1$s ارسال پیام صوتی</string>
+    <string name="ChannelMessageSticker">%1$s ارسال استیکر</string>
+    <!--broadcasts-->
+    <string name="NewBroadcastList">لیست جمعی جدید</string>
+    <string name="EnterListName">فهرست را وارد کنید</string>
+    <string name="YouCreatedBroadcastList">شما یک لیست جمعی ساخته اید</string>
+    <string name="AddRecipient">افزودن گیرنده</string>
+    <string name="KickFromBroadcast">جذف از لیست جمعی</string>
+    <!--audio view-->
+    <string name="NoAudio"> لطفا فایل های اضافه به بایگانی موسیقی را اینجا ببینید.</string>
+    <string name="AttachMusic">موسیقی</string>
+    <string name="AudioUnknownArtist">هنرمند ناشناس</string>
+    <string name="AudioUnknownTitle">عنوان ناشناس</string>
+    <!--documents view-->
+    <string name="SelectFile">انتخاب فایل</string>
+    <string name="FreeOfTotal">رایگان %1$s از %2$s</string>
+    <string name="UnknownError">خطا ناشناخته</string>
+    <string name="AccessError">خطا در دسترسی</string>
+    <string name="NoFiles">هنوز فایلی نیست...</string>
+    <string name="FileUploadLimit">اندازه فایل نباید بیشتر از %1$s</string>
+    <string name="NotMounted">حافظه نصب نشده است</string>
+    <string name="UsbActive">انتقال از طریق USB  فعال است</string>
+    <string name="InternalStorage">حافظه داخلی</string>
+    <string name="ExternalStorage">حافظه خارجی</string>
+    <string name="SystemRoot">پایه سیستم</string>
+    <string name="SdCard">کارت حافظه</string>
+    <string name="Folder">پوشه</string>
+    <string name="GalleryInfo">ارسال عکس بدون فشرده سازی</string>
+    <!--chat view-->
+    <string name="Invisible">مخفی</string>
+    <string name="Typing">در حال نوشتن...</string>
+    <string name="IsTyping">مینویسد...</string>
+    <string name="AreTyping">مینویسند...</string>
+    <string name="IsRecordingAudio">%1$s در حال ضبط صدا...</string>
+    <string name="IsSendingPhoto">%1$s در حال ارسال عکس...</string>
+    <string name="IsSendingVideo">%1$s در حال ارسال فیلم...</string>
+    <string name="IsSendingFile">%1$s در حال ارسال فایل...</string>
+    <string name="RecordingAudio">ضبط صدا...</string>
+    <string name="SendingPhoto">ارسال عکس...</string>
+    <string name="SendingVideoStatus">ارسال فیلم...</string>
+    <string name="SendingFile">اسال فایل...</string>
+    <string name="GotAQuestion"> پرسشی در رابطه با کلیگرام دارید?</string>
+    <string name="ChatTakePhoto">عکس بگیر</string>
+    <string name="ChatGallery">گالری</string>
+    <string name="ChatLocation">محل</string>
+    <string name="ChatVideo">فیلم</string>
+    <string name="ChatDocument">فایل</string>
+    <string name="ChatCamera">دوربین</string>
+    <string name="NoMessages">هیچ پیامی اینجا نیست...</string>
+    <string name="ForwardedMessage">پیام فرستاده شد</string>
+    <string name="From">از</string>
+    <string name="NoRecent">انتها</string>
+    <string name="Message">پیام</string>
+    <string name="TypeMessage">پیام</string>
+    <string name="ShareMyContactInfo">اشتراک گذاری مخاطبین من</string>
+    <string name="AddToContacts">اضافه کردن به مخاطبین</string>
+    <string name="EncryptedPlaceholderTitleIncoming">%شما را به گفتگوی محرمانه دعوت کرد.</string>
+    <string name="EncryptedPlaceholderTitleOutgoing">شما دعوت شدید %به گفتگوی محرمانه.</string>
+    <string name="EncryptedDescriptionTitle">گفتگوی محرمانه:</string>
+    <string name="EncryptedDescription1">استفاده از پایانه رمزگذاری</string>
+    <string name="EncryptedDescription2">خروج بدون باقیماندن اطلاعات روی سرور ما</string>
+    <string name="EncryptedDescription3">یک تایمر خود تخریب</string>
+    <string name="EncryptedDescription4">هنوز اجازه انتقال نمیدهد</string>
+    <string name="YouWereKicked">شما از این گروه حذف شده اید</string>
+    <string name="YouLeft">شما از این گروه خارج شدید</string>
+    <string name="DeleteThisGroup">حذف این گروه</string>
+    <string name="DeleteThisChat">حذف این گفتگو</string>
+    <string name="SlideToCancel">کانال کشویی</string>
+    <string name="SaveToDownloads">ذخیره بارگیری</string>
+    <string name="SaveToMusic">ذخیره موسیقی</string>
+    <string name="ShareFile">اشتراک گذاری</string>
+    <string name="ApplyLocalizationFile">درخواست محلی نمودن فایل</string>
+    <string name="UnsupportedAttachment">ضمیمه پشتیبانی نشده</string>
+    <string name="SetTimer"> مجموعه ای تایمر خود تخریب </string>
+    <string name="ServiceNotifications">خدمات اطلاع رسانی</string>
+    <string name="GettingLinkInfo">دریافت لینک اطلاعات...</string>
+    <string name="OpenInBrowser">در مرورگر باز کنید</string>
+    <string name="CopyUrl">کپی URL</string>
+    <string name="SendItems">ارسال %1$s</string>
+    <string name="OpenUrlAlert">بازکردن url %1$s?</string>
+    <string name="ReportSpam">گزارش پیام ناخواسته</string>
+    <string name="AddContactChat">افزودن تماس</string>
+    <string name="ReportSpamAlert">آیا اطمینان دارید که میخواهید این کاربر را بعنوان مزاحم گزارش دهید?</string>
+    <string name="ReportSpamAlertGroup"> آیا اطمینان دارید که میخواهید این گروه را بعنوان مزاحم گزارش دهید?</string>
+    <string name="NobodyLikesSpam1">با پوزششما فقط به مخاطبینی که شما را در لیست خود داشته باشند میتوانید پیام ارسال کنید.</string>
+    <string name="NobodyLikesSpam2">با پوزش, شما تنها کاربرانی که در گروه شما را در لیست داشته باشند در فهرست مخاطبین خود اضافه کنید.</string>
+    <string name="NobodyLikesSpamUrl">https://telegram.org/faq#can-39t-send-messages-to-non-contacts</string>
+    <string name="MoreInfo">اطلاعات بیشتر</string>
+    <string name="ShareSendTo">ارسال به...</string>
+    <!--notification-->
+    <string name="MessageLifetimeChanged">%1$s تنظیم تایمر خود تخریب به %2$s</string>
+    <string name="MessageLifetimeChangedOutgoing"> تایمر خود تخریب را تنظیم کردید به %1$s</string>
+    <string name="MessageLifetimeRemoved">%1$s غیر فعال کردن تایمر خود تخریب </string>
+    <string name="MessageLifetimeYouRemoved">خود تخریبی را غیر فعال نمودید </string>
+    <string name="YouHaveNewMessage">پیام جدید دارید</string>
+    <string name="NotificationMessageText">%1$s: %2$s</string>
+    <string name="NotificationMessageNoText">%1$s برای شما پیام فرستاد</string>
+    <string name="NotificationMessagePhoto">%1$s برای شما عکس فرستاد</string>
+    <string name="NotificationMessageVideo">%1$s برای شما فیلم فرستاد</string>
+    <string name="NotificationMessageContact">%1$s یک تماس را با شما به اشتراک گذاشت</string>
+    <string name="NotificationMessageMap">%1$s یک محل را برای شما ارسال کرد</string>
+    <string name="NotificationMessageDocument">%1$s یک فایل برای شما ارسال کرد</string>
+    <string name="NotificationMessageAudio">%1$s یک فایل صدا برای شما ارسال کرد</string>
+    <string name="NotificationMessageSticker">%1$s یک استیکر برای شما ارسال کرد</string>
+    <string name="NotificationMessageGroupText">%1$s @ %2$s: %3$s</string>
+    <string name="NotificationMessageGroupNoText">%1$s یک پیام به گروه فرستاد %2$s</string>
+    <string name="NotificationMessageGroupPhoto">%1$s یک عکس به گروه فرستاد %2$s</string>
+    <string name="NotificationMessageGroupVideo">%1$s یک فیلم به گروه فرستاد %2$s</string>
+    <string name="NotificationMessageGroupContact">%1$s یک تماس را در گروه به اشتراک گذاشت %2$s</string>
+    <string name="NotificationMessageGroupMap">%1$s یک محل را به گروه فرستاد %2$s</string>
+    <string name="NotificationMessageGroupDocument">%1$یک فایل را به گروه فرستاد %2$s</string>
+    <string name="NotificationMessageGroupAudio">%1$s یک فایل صوتی به گروه فرستاد %2$s</string>
+    <string name="NotificationMessageGroupSticker">%1$s یک استیکر به گروه فرستاد %2$s</string>
+    <string name="NotificationInvitedToGroup">%1$s شما را به گروه دعوت کرد %2$s</string>
+    <string name="NotificationEditedGroupName">%1$s گروه اصلاح شد\'s %2$s name</string>
+    <string name="NotificationEditedGroupPhoto">%1$s گروه اصلاح شد \'s %2$s photo</string>
+    <string name="NotificationGroupAddMember">%1$s دعوت شدید %3$s به گروه %2$s</string>
+    <string name="NotificationGroupAddSelf">%1$s بازگشت به گروه %2$s</string>
+    <string name="NotificationGroupKickMember">%1$s حذف شدید %3$s از گروه %2$s</string>
+    <string name="NotificationGroupKickYou">%1$s از گروه حذف شدید %2$s</string>
+    <string name="NotificationGroupLeftMember">%1$s گروه را ترک کرد %2$s</string>
+    <string name="NotificationContactJoined">%1$s به تلگرام پیوست!</string>
+    <string name="NotificationUnrecognizedDevice">%1$s,\n ما یک ورود به حساب کاربری شما از یک دستگاه جدید را شناسایی کرده ایم %2$s\n\nDevice: %3$s\nLocation: %4$s\n\n اگر این از سوی شما صورت نگرفته، به تنظیمات رفته وآن را حذف کنید.\n\nاگر شما فکر می کنید که کسی به حساب کاربری شما وارد شده، شما می توانید در بخش تنظیمات حریم خصوصی خود را ایمن سازید.\n\nبا احترام,\nتیم کیلگرام</string>
+    <string name="NotificationContactNewPhoto">%1$s عکس پروفایل خود را بروز کرد</string>
+    <string name="NotificationInvitedToGroupByLink">%1$s به گروه پیوست %2$s با لینک دعوت</string>
+    <string name="Reply">پاسخ</string>
+    <string name="ReplyToGroup">پاسخ به %1$s</string>
+    <string name="ReplyToUser">پاسخ به %1$s</string>
+    <string name="NotificationMessagesPeopleDisplayOrder">%1$s %2$s</string>
+    <!--contacts view-->
+    <string name="SelectContact">انتخاب تماس</string>
+    <string name="NoContacts">هنوز تماسی نیست</string>
+    <string name="InviteText">سلام به تلگرام وصل شدید: https://telegram.org/dl</string>
+    <string name="TodayAt">در</string>
+    <string name="YesterdayAt">در روز گذشته</string>
+    <string name="Online">هستم</string>
+    <string name="LastSeen">آخرین بازدید</string>
+    <string name="LastSeenDate">آخرین بازدید</string>
+    <string name="LastSeenNow">آخرین بازدید هم اینک</string>
+    <string name="InviteFriends">دعوت  دوستان</string>
+    <string name="GlobalSearch">جستجوی جهانی</string>
+    <string name="Lately">تازه دیدم</string>
+    <string name="WithinAWeek">یک هفته پیش دیدم</string>
+    <string name="WithinAMonth">یک ماه پیش دیدم</string>
+    <string name="ALongTimeAgo">چند ماه پیش دیدم</string>
+    <string name="NewMessageTitle">پیام جدید</string>
+    <!--group create view-->
+    <string name="SendMessageTo">ارسال پیام به...</string>
+    <string name="EnterGroupNamePlaceholder">وارد کردن نام گروه</string>
+    <string name="GroupName">نام گروه</string>
+    <string name="MembersCount">%1$d/%2$d عضو</string>
+    <string name="JoinToGroup">آیا میخواهید به گفتگو وارد شوید \'%1$s\'?</string>
+    <string name="JoinToGroupErrorFull">با پوزش, این گروه قبلا تکمیل شده.</string>
+    <string name="JoinToGroupErrorNotExist">با پوزش, به نظر میرسد این گفتگو وجود نداشته باشد.</string>
+    <string name="LinkCopied">لینک در کلیپبورد شما کپی شد</string>
+    <string name="InviteToGroupByLink">دعوت به گروه از طریق لینک</string>
+    <string name="InviteLink">لینک دعوت</string>
+    <string name="RevokeAlert">آیا مطمئن هستید که این لینک را میخواهید لغو کنید? اگر لغو شود دیگر هیچکس قادر به پیوستن به آن نیست.</string>
+    <string name="RevokeAlertNewLink">لینک قبلی غیر فعال شده. لینک جدید ایجاد شده است.</string>
+    <string name="RevokeButton">لغو</string>
+    <string name="RevokeLink">لغو لینک</string>
+    <string name="CopyLink">کپی لینک</string>
+    <string name="ShareLink">اشتراک گذاری لینک</string>
+    <string name="LinkInfo">هر کسی که به تلگرام متصل شده باشد میتواند از طریق این لینک به گروه متصل شود.</string>
+    <!--set admins view-->
+    <string name="SetAdminsTitle">ادمین های گفتگو</string>
+    <string name="SetAdminsAll">همه اعضاء ادمین هستند</string>
+    <string name="SetAdminsAllInfo">همه اعضاء قادر به اضافه کردن عضو تغییر عکس و نام گروه هستند.</string>
+    <string name="SetAdminsNotAllInfo">فقط ادمین قادر به اضافه و حذف اعضاء، تغییر نام و عکس پروفایل گروه است.</string>
+    <!--group info view-->
+    <string name="SharedMedia">اشتراک گذاری رسانه</string>
+    <string name="SETTINGS">تنظیمات</string>
+    <string name="AddMember">افزدون اعضاء</string>
+    <string name="SetAdmins">انتخاب ادمین</string>
+    <string name="DeleteAndExit">خروج از گروه و حذف آن</string>
+    <string name="Notifications">اطلاعیه ها</string>
+    <string name="KickFromGroup">حذف از گروه</string>
+    <string name="ConvertGroup">ارتقاء به گروه ویژه</string>
+    <string name="ConvertGroupAlert">لطفا توجه داشته باشید که همه اعضا تلگرام خود را ارتقاء داده باشند تا قادر به دیدن گروه ویژه باشند. آیا مطمئن هستید که میخواهید گروه را ارتقاء دهید?</string>
+    <string name="ConvertGroupInfo"><![CDATA[<b>]]>اعضاء به حداکثر رسیده است.<![CDATA[</b>]]>\n\nبرای افزایش اعضاء نیاز به ارتقاء به گروه ویژه استn\n• میتوانید به برای کسب گروه ویژه %1$s\n• اعضای جدید کل تاریخچه چت را ببینید \n• حذف پیامها توسط مدیران برای همه\n• اطلاعیه ها بصورت عادی بی صدا میباشد</string>
+    <!--contact info view-->
+    <string name="ShareContact">اشتراک گذاری</string>
+    <string name="AddContact">افزودن</string>
+    <string name="AddContactTitle">افزودن تماس</string>
+    <string name="BlockContact">مسدود کردن</string>
+    <string name="EditContact">ویرایش</string>
+    <string name="DeleteContact">حذف</string>
+    <string name="PhoneHome">خانه</string>
+    <string name="PhoneMobile">موبایل</string>
+    <string name="PhoneWork">محل کار</string>
+    <string name="PhoneOther">متفرقه</string>
+    <string name="PhoneMain">اصلی</string>
+    <string name="StartEncryptedChat">شروع گفتگوی محرمانه</string>
+    <string name="CreateEncryptedChatError"> یک خطا رخ داده.</string>
+    <string name="EncryptionKey"> کلید رمزنگاری </string>
+    <string name="MessageLifetime"> تایمر خود تخریب </string>
+    <string name="ShortMessageLifetimeForever">خاموش</string>
+    <string name="EncryptionKeyDescription">این تصویر رمزنگاری شده است <![CDATA[<b>]]>%1$s<![CDATA[</b>]]>.<![CDATA[<br><br>]]>اگر این تصویر دیده میشود <![CDATA[<b>]]>%2$s\'s<![CDATA[</b>]]> تلفن گفتگوی شما 200%% secure.<![CDATA[<br><br>]]>اطلاعات بیشتررا در سایت تلگرام بخوانید</string>
+    <string name="NumberUnknown">ناشناخته</string>
+    <string name="Info">اطلاعات</string>
+    <string name="Phone">تلفن</string>
+    <!--usernames-->
+    <string name="Username">نام کاربری</string>
+    <string name="UsernamePlaceholder">نام کاربری شما</string>
+    <string name="UsernameInUse">با پوزش, این نام کاربری قبلا ثبت شده.</string>
+    <string name="UsernameInvalid">با پوزش, این نام کاربری غیر فعال است.</string>
+    <string name="UsernameInvalidShort">نام کاربری نباید از 5 کارکتر کمتر باشد.</string>
+    <string name="UsernameInvalidLong">نام کاربری نباید از 32 کارکتر بیشتر باشد.</string>
+    <string name="UsernameInvalidStartNumber">با پوزش, نام کاربری نمیتواند با عدد شروع شود.</string>
+    <string name="UsernameHelp">شما میتوانید یک نام کاربری انتخاب کنید <![CDATA[<b>]]>Telegram<![CDATA[</b>]]>. اگر شما اینکار را انجام دهید، افراد دیگر قادر خواهند بود شما را توسط نام کاربری و بدون داشتن شماره تلفن شما را پیدا کنند.<![CDATA[<br><br>]]>شما میتوانید استفاده کنید <![CDATA[<b>]]>a–z<![CDATA[</b>]]>, <![CDATA[<b>]]>0–9<![CDATA[</b>]]> و تاکید. حداقل طول <![CDATA[<b>]]>5<![CDATA[</b>]]> کارکترها.</string>
+    <string name="UsernameChecking">بررسی نام کاربری...</string>
+    <string name="UsernameAvailable">%1$s در دسترس است.</string>
+    <string name="UsernameEmpty">خالی</string>
+    <string name="ErrorOccurred"> یک خطا رخ داده.</string>
+    <!--stickers view-->
+    <string name="Stickers">استیکر</string>
+    <string name="StickersInfo">Artists are welcome to add their own sticker packs using our @stickers bot.\n\nUsers can add stickers by tapping on them and choosing \"Add to Stickers\".</string>
+    <string name="AddStickers">افزودن استیکرها</string>
+    <string name="AddToStickers"> افزودن استیکرها </string>
+    <string name="AddStickersNotFound">استیکر یافت نشد</string>
+    <string name="StickersRemoved">استیکر حذف شد</string>
+    <string name="AddStickersInstalled">افزودن استیکر جدید</string>
+    <string name="StickersHide">پنهان</string>
+    <string name="StickersShow">نمایش</string>
+    <string name="StickersShare">اشتراک گذاری</string>
+    <string name="StickersCopy">کپی لینک</string>
+    <string name="StickersRemove">حذف</string>
+    <string name="NoStickers">استیکری موجود نیست</string>
+    <!--settings view-->
+    <string name="ResetNotificationsText"> تنظیم مجدد تمام تنظیمات اطلاع رسانی به طور پیش فرض </string>
+    <string name="TextSize">سایز حروف پیام</string>
+    <string name="AskAQuestion">یک سوال بپرسید</string>
+    <string name="EnableAnimations">فعالسازی تصاویر متحرک</string>
+    <string name="Unblock">رفع انسداد</string>
+    <string name="UnblockText"> برای رفع انسداد کاربر، ضربه بزنید و نگه دارید.</string>
+    <string name="NoBlocked">هیچ کاربری مسدود نشده</string>
+    <string name="MessageNotifications">پیام هشدار</string>
+    <string name="Alert">هشدار</string>
+    <string name="MessagePreview">دیدن پیامها</string>
+    <string name="GroupNotifications">اطلاعیه های گروه</string>
+    <string name="Sound">صدا</string>
+    <string name="InAppNotifications">اطلاعیه ها در برنامه ها</string>
+    <string name="InAppSounds">صدا ها در برنامه</string>
+    <string name="InAppVibrate">لرزش در برنامه</string>
+    <string name="Vibrate">لرزش</string>
+    <string name="InAppPreview">پیش نمایش در برنامه</string>
+    <string name="Reset">تنظیم مجدد</string>
+    <string name="ResetAllNotifications">تنظیم مجدد اطلاعیه ها</string>
+    <string name="UndoAllCustom"> خنثی سازی همه اعلامیه های تنظیمات برای همه مخاطبین و گروه ها </string>
+    <string name="NotificationsAndSounds">اطلاعیه ها و صداها</string>
+    <string name="BlockedUsers">مسدود کردن کاربران</string>
+    <string name="LogOut">خروج از کلیگرام</string>
+    <string name="NoSound">بی صدا</string>
+    <string name="Default">پیش فرض</string>
+    <string name="Support">پشتیبانی</string>
+    <string name="OnlyIfSilent">فقط اگر بی صداست</string>
+    <string name="ChatBackground">پس زمینه صفحه گفتگو</string>
+    <string name="MessagesSettings">پیامها</string>
+    <string name="SendByEnter">ارسال با انتخاب</string>
+    <string name="TerminateAllSessions"> اتمام همه جلسات دیگر </string>
+    <string name="Events">مناسبتها</string>
+    <string name="ContactJoined">تماسهای وارد شده به تلگرام</string>
+    <string name="Language">زبان</string>
+    <string name="AskAQuestionInfo"> لطفا توجه داشته باشید که پشتیبانی تلگرام توسط داوطلبان انجام می شود. ما سعی می کنیم پاسخ شما را در اسرع وقت بدهیم، اما ممکن است کمی تاخیر داشته باشیم.<![CDATA[<br><br>]]> لطفا به سایت مراجعه نمایید <![CDATA[<a href=\"https://telegram.org/faq#general\">پرسش و پاسخ تلگرام</a>]]>: پاسخ بسیاری از پرسشهای شما در آنجا وجود دارد <![CDATA[<a href=\"https://telegram.org/faq#troubleshooting\">عیب یابی</a>]]>.</string>
+    <string name="AskButton">از یک داوطلب بپرسید</string>
+    <string name="TelegramFaq"> پرسش و پاسخ تلگرام </string>
+    <string name="TelegramFaqUrl">https://telegram.org/faq</string>
+    <string name="DeleteLocalization">موقعیت مکانی حذف شود?</string>
+    <string name="IncorrectLocalization">فایل محل نادرست است</string>
+    <string name="Enabled">فعال</string>
+    <string name="Disabled">غیر فعال</string>
+    <string name="NotificationsService">هشدارها </string>
+    <string name="NotificationsServiceDisableInfo">اگر اطلاعات در گوگل پلی برای شما کافی ، می توانید بخش اطلاعیه خدمات  مارا غیر فعال کنید. با این حال توصیه می کنیم برنامه را نگه دارید تا اطلاعیه های فوری را دریافت کنید.</string>
+    <string name="SortBy">تفکیک به وسیله</string>
+    <string name="ImportContacts">ورود مخاطبین</string>
+    <string name="SortFirstName">نام</string>
+    <string name="SortLastName">نام خانوادگی</string>
+    <string name="LedColor">رنگ چراغ</string>
+    <string name="PopupNotification">پنجره اطلاعیه ها</string>
+    <string name="NoPopup">فاقد پنجره</string>
+    <string name="OnlyWhenScreenOn"> فقط زمانی که صفحه نمایش \"روشن است\"</string>
+    <string name="OnlyWhenScreenOff"> فقط زمانی که صفحه نمایش \"خاموش است\"</string>
+    <string name="AlwaysShowPopup">همیشه پنجره را نشان دهد</string>
+    <string name="BadgeNumber">نمایشگر شمارنده</string>
+    <string name="Short">کوتاه</string>
+    <string name="Long">بلند</string>
+    <string name="SystemDefault"> سیستم پیش فرض </string>
+    <string name="SettingsDefault">تنظیمات پیش فرض</string>
+    <string name="AutomaticMediaDownload">دانلود خودکار رسانه ها</string>
+    <string name="WhenUsingMobileData">وقتی از نت موبایل استفاده میکند</string>
+    <string name="WhenConnectedOnWiFi">وقتی به وای فای متصل است</string>
+    <string name="WhenRoaming">وقتی در وضع رومینگ است</string>
+    <string name="NoMediaAutoDownload">فاقد رسانه</string>
+    <string name="SaveToGallerySettings">ثبت در گالری</string>
+    <string name="EditName">ویرایش نام</string>
+    <string name="NotificationsPriority">اولویت</string>
+    <string name="NotificationsPriorityDefault">پیش فرض</string>
+    <string name="NotificationsPriorityLow">کم</string>
+    <string name="NotificationsPriorityHigh">زیاد</string>
+    <string name="NotificationsPriorityMax">جداکثر</string>
+    <string name="RepeatNotificationsNever">هیچ زمان</string>
+    <string name="RepeatNotifications">تکرار اطلاعیه ها</string>
+    <string name="PhoneNumberHelp"> شما می توانید شماره  کلیگرام خود را اینجا تغییر دهید. حساب شما و تمام داده ها ، پیام، رسانه ها، اطلاعات تماس، و غیره را به شماره جدید منتقل میشود.\n\n<![CDATA[<b>مهم:</b>]]> اطلاعات تماس کلیگرام خود را دریافت کنید <![CDATA[<b>شماره جدید</b>]]> شما به لیست مخاطبین افزدوه میشوید و آنها شماره قدیمی شما را خواهند داشت. شما نمیتوانید آنها را مسدود کنید.</string>
+    <string name="PhoneNumberAlert">تمام اطلاعات تماس را در لیست مخاطبین دریافت میدارید و آنها شماره جدید شما را دریافت میدارند و شما نمیتوانید آنها را مسدود کنید.</string>
+    <string name="PhoneNumberChange">تغییر شماره</string>
+    <string name="ChangePhoneNewNumber">شماره جدید</string>
+    <string name="ChangePhoneHelp">ما کد فعالسازی را برای شماره جدی شما پیامک میکنیم.</string>
+    <string name="ChangePhoneNumberOccupied">این شماره %1$s قبلا در تلگرام فعال شده است. لطفا شماره قبلی را در تلگرام حذف کرده و سپس شماره جدید را وارد کنید.</string>
+    <string name="NotificationsOther">متفرقه</string>
+    <string name="NotificationsDisabled">غیر فعال</string>
+    <string name="VibrationDisabled">غیر فعال</string>
+    <string name="LedDisabled">غیر فعال</string>
+    <string name="RepeatDisabled">خاموش</string>
+    <string name="InChatSound">صدا در هنگام گفتگو</string>
+    <string name="SoundDefault">پیش فرض</string>
+    <string name="VibrationDefault">پیش فرض</string>
+    <string name="SmartNotifications">اعلامیه های هوشمند</string>
+    <string name="SmartNotificationsDisabled">غیر فعال</string>
+    <string name="SmartNotificationsInfo">صدا در بسیاری از %1$s در قالب %2$s</string>
+    <string name="SmartNotificationsSoundAtMost"> صدا در بسیاری از </string>
+    <string name="SmartNotificationsTimes">زمانها</string>
+    <string name="SmartNotificationsWithin">در قالب</string>
+    <string name="SmartNotificationsMinutes">دقیقه ها</string>
+    <!--cache view-->
+    <string name="CacheSettings">تنظیمات حافظه پنهان</string>
+    <string name="LocalDatabase">محل داده های داخلی</string>
+    <string name="LocalDatabaseClear">آیا پیامهای حاظه پنهان پاک شود?</string>
+    <string name="LocalDatabaseInfo"> برای پاکسازی پایگاه داده محلی پیام های ذخیره شده پنهان برای ذخیره بر روی هارد دیسک داخلی حذف و فشرده سازی شود. تلگرام به برخی از داده ها برای کار کردن نیاز دارد، بنابراین داده ها نباید به  صفر برسد.\n\nاین عملیات می تواند چند دقیقه طول بکشد.</string>
+    <string name="ClearMediaCache">پاک کردن حافظه پنهان</string>
+    <string name="CacheClear">پاک کردن</string>
+    <string name="CalculatingSize">محاسبه...</string>
+    <string name="LocalDocumentCache">اسناد</string>
+    <string name="LocalPhotoCache">عکسها</string>
+    <string name="LocalAudioCache">پیامهای صوتی</string>
+    <string name="LocalVideoCache">فیلمها</string>
+    <string name="LocalMusicCache">موسیقی</string>
+    <string name="LocalCache">فایلهای دیگر</string>
+    <string name="CacheEmpty">خالی</string>
+    <string name="KeepMedia">حفظ رسانه ها</string>
+    <string name="KeepMediaInfo">داشته باشید عکسها فیلم ها و فایل های دیگر از گفتگوی ابری که شما باید <![CDATA[<b>not accessed</b>]]> در این مرحله از این بخش حذف کرده و در سخت افزار ثبت کنید.\n\nهمه رسانه ها در فضای ابری تلگرام باقی مانده و و اگر شما به آنها نیاز دارید می توانید آنها را دوباره دانلود کنید.</string>
+    <string name="KeepMediaForever">برای همیشه</string>
+    <!--sessions view-->
+    <string name="SessionsTitle">گفتگوی فعال</string>
+    <string name="CurrentSession">گفتگوی فعلی</string>
+    <string name="NoOtherSessions">هیچ گفتگوی دیگر</string>
+    <string name="NoOtherSessionsInfo">شما میتوانید با این شماره تلفن از طریق تلفنهای همراه، کامپیوتر، تبلت به شناسه کاربری خود متصل شوید و بلافاصله با شما هماهنگ شویم.</string>
+    <string name="OtherSessions">بخشهای سیستم</string>
+    <string name="SessionsInfo">کنترل گفتگوها در دستگاه های دیگر.</string>
+    <string name="TerminateSessionInfo">Tap on a session to terminate.</string>
+    <string name="TerminateSessionQuestion">آیا این گفتگو خاتمه یابد?</string>
+    <string name="UnofficialApp">نرم افزار غیر رسمی</string>
+    <!--passcode view-->
+    <string name="Passcode">قفل کردن رمز عبور </string>
+    <string name="ChangePasscode">تغییر رمز عبور</string>
+    <string name="ChangePasscodeInfo"> هنگامی که شما رمز عبور اضافی را تنظیم مینمایید، یک آیکون قفل در صفحه چت ظاهر خواهد شد. قفل و باز کرده وبه برنامه کلیگرام وارد شوید.\n\nتوجه: اگر رمز عبور را فراموش کرده اید، باید برنامه را پاک کرده و مجدد نصب نمایید. همه گفتگوهای محرمانه پاک خواهد شد.</string>
+    <string name="ChangePasscodeAlert"> شما در حال حاضر آیکون قفل در صفحه گفتگو میببینید. به قفل ضربه بزنید  و به برنامه تلگرام خود با رمز عبور جدید وارد شوید.</string>
+    <string name="PasscodePIN">PIN</string>
+    <string name="PasscodePassword">گذرواژه</string>
+    <string name="EnterCurrentPasscode">گذرواژه فعلی خود را وارد کنید</string>
+    <string name="EnterNewFirstPasscode">گذرواژه را وارد کنید</string>
+    <string name="EnterNewPasscode">گذرواژه جدید خود را وارد کنید</string>
+    <string name="EnterYourPasscode">گذرواژه را وارد کنید</string>
+    <string name="ReEnterYourPasscode">گذرواژه جدید را تکرار کنید</string>
+    <string name="InvalidPasscode">گذرواژه نامعتبر است</string>
+    <string name="PasscodeDoNotMatch">گذر واژه ها با هم تطابق ندارند</string>
+    <string name="AutoLock">قفل خودکار</string>
+    <string name="AutoLockInfo">نیازمند به گذرواژه برای مدت معین.</string>
+    <string name="AutoLockInTime">ورود %1$s</string>
+    <string name="AutoLockDisabled">غیر فعال</string>
+    <string name="UnlockFingerprint">بازکردن قفل با اثر انگشت</string>
+    <string name="FingerprintInfo">تایید اثر انگشت برای ادامه</string>
+    <string name="FingerprintHelp">سنسور لمسی</string>
+    <string name="FingerprintNotRecognized"> اثر انگشت شناخته نشد. دوباره تلاش کن </string>
+    <!--media view-->
+    <string name="NoMedia"> به اشتراک گذاری عکس ها و فیلم ها در این گفتگو و دسترسی به آنها در هر یک از دستگاه های خود شما.</string>
+    <string name="DocumentsTitle">اشتراک گذاری فایلها</string>
+    <string name="SharedMediaTitle">اشتراک گذاری رسانه</string>
+    <string name="LinksTitle">اشتراک گذاری لینکها</string>
+    <string name="AudioTitle">اشتراک گذاری لینکها</string>
+    <string name="NoSharedAudio"> به اشتراک گذاشتن موسیقی در این گفتگو و دسترسی به آنها در هر یک از دستگاه های خود شما.</string>
+    <string name="NoSharedFiles"> به اشتراک گذاشتن اسناد در این گفتگو و دسترسی به آنها در هر یک از دستگاه های خود شما.</string>
+    <string name="NoSharedLinks"> به اشتراک گذاشتن لینک ها در این گفتگو و دسترسی به آنها در هر یک از دستگاه های خود شما.</string>
+    <!--map view-->
+    <string name="Map">نقشه</string>
+    <string name="Satellite">ماهواره</string>
+    <string name="Hybrid">ترکیبی</string>
+    <string name="MetersAway">بر پایه متر</string>
+    <string name="KMetersAway">بر پایه کیلومتر</string>
+    <string name="SendLocation">محل استقرار خود را ارسال کنید</string>
+    <string name="SendSelectedLocation">ارسال محل انتخاب شده </string>
+    <string name="ShareLocation">محل</string>
+    <string name="AccurateTo">دقیق به %1$s</string>
+    <string name="NearbyPlaces">یا انتخاب یک محل</string>
+    <!--photo gallery view-->
+    <string name="ShowAllMedia">نمایش همه رسانه ها</string>
+    <string name="SaveToGallery">ثبت در گالری</string>
+    <string name="Of">%1$d از %2$d</string>
+    <string name="Gallery">گالری</string>
+    <string name="AllPhotos">همه عکسها</string>
+    <string name="AllVideo">همه فیلمها</string>
+    <string name="NoPhotos">عکسی موجود نیست</string>
+    <string name="NoVideo">فیلمی موجود نیست</string>
+    <string name="PleaseDownload">لطفا ابتدا رسانه ها نصب شود</string>
+    <string name="NoRecentPhotos">آخرین عکسها</string>
+    <string name="NoRecentGIFs">آخرین فایلهای هدیه </string>
+    <string name="SearchImages">پیدا کردن تصاویر</string>
+    <string name="SearchImagesInfo">جستجوی وب</string>
+    <string name="SearchGifs">پیدا کردن فایلهای هدیه </string>
+    <string name="SearchImagesTitle">Search web</string>
+    <string name="SearchGifsTitle">جستجوی فایلهای هدیه ای </string>
+    <string name="CropImage">برش تصویر</string>
+    <string name="EditImage">ویرایش تصویر</string>
+    <string name="Enhance">افزودن</string>
+    <string name="Highlights">های لایت</string>
+    <string name="Contrast">کنتراست</string>
+    <string name="Exposure">نمایش</string>
+    <string name="Warmth">گرمای رنگ</string>
+    <string name="Saturation">تکمیل</string>
+    <string name="Vignette">تصویر</string>
+    <string name="Shadows">سایه ها</string>
+    <string name="Grain">Grain</string>
+    <string name="Sharpen">واضح</string>
+    <string name="Blur">کدر</string>
+    <string name="BlurOff">خاموش</string>
+    <string name="BlurLinear">خطی</string>
+    <string name="BlurRadial">پرتوی</string>
+    <string name="AreYouSureDeletePhoto">آیا میخواهید این عکس را حذف کنید?</string>
+    <string name="AreYouSureDeleteVideo">آیا میخواهید این فیلم را حذف کنید?</string>
+    <string name="DiscardChanges"> لغو تغییرات?</string>
+    <string name="ClearSearch">سابقه جستجو پاک شود?</string>
+    <string name="ClearButton">پاک کردن</string>
+    <string name="PickerPhotos">عکسها</string>
+    <string name="PickerVideo">فیلمها</string>
+    <string name="AddCaption">یک عنوان اضافه کن...</string>
+    <string name="PhotoCaption">عنوان عکس</string>
+    <string name="VideoCaption">اضافه کردن یک فیلم</string>
+    <!--password view-->
+    <string name="TwoStepVerification">تایید دو مرحله ای</string>
+    <string name="SetAdditionalPassword">تنظیم کلمه عبور کاربر اضافی </string>
+    <string name="SetAdditionalPasswordInfo"> شما می توانید یک گذرواژه که به هنگام ورود به  دستگاه جدید مورد نیاز باشد را ایجاد کنید .کد جدید با پیامک برای شما ارسال میشود.</string>
+    <string name="YourPassword">گذرواژه شما</string>
+    <string name="PleaseEnterCurrentPassword">لطفا گذرواژه خود را وارد کنید</string>
+    <string name="PleaseEnterFirstPassword">یک گذرواژه وارد کنید</string>
+    <string name="PleaseEnterPassword">لطفا گذرواژه جدید خود را وارد کنید </string>
+    <string name="PleaseReEnterPassword">لطفا گذرواژه جدید خود را مجددا وارد کنید</string>
+    <string name="RecoveryEmail">بازیابی ایمیل</string>
+    <string name="YourEmail">ایمیل شما</string>
+    <string name="YourEmailInfo">لطفا ایمیل فعال خود را وارد کنید. این تنها راهی است که گذرواژه فراموش کرده خود را بازیابی کنید.</string>
+    <string name="YourEmailSkip">بی خیال</string>
+    <string name="YourEmailSkipWarning">هشدار</string>
+    <string name="YourEmailSkipWarningText">نه، به طور جدی.\n\nاگر گذرواژه خود را فراموش کنید و امکان دسترسی به ایمیل خود را نیز از دست بدهید ، تلگرام نمتواند در این خصوص کمکی به شما کند.</string>
+    <string name="YourEmailAlmostThere">تقریبا وجود دارد!</string>
+    <string name="YourEmailAlmostThereText"> لطفا ایمیل خود را برای تکمیل راه اندازی تایید دو مرحله ای چک کنید (پوشه اسپم را فراموش نکنید).</string>
+    <string name="YourPasswordSuccess">موفقیت!</string>
+    <string name="YourPasswordSuccessText"> گذرواژه شما برای تایید دو مرحله ای در حال حاضر فعال است.</string>
+    <string name="ChangePassword">تغییر گذرواژه</string>
+    <string name="TurnPasswordOff">روشن کردن رمز عبور فعال </string>
+    <string name="SetRecoveryEmail">ثبت ایمیل برای بازیابی</string>
+    <string name="ChangeRecoveryEmail">تغییر ایمیل بازیابی</string>
+    <string name="TurnPasswordOffQuestion"> آیا مطمئن هستید که می خواهید گذرواژه خود را غیر فعال کنید?</string>
+    <string name="PasswordHint">راهنمای گذرواژه</string>
+    <string name="PasswordHintText">لطفا یک راهنما برای یادآوری گذرواژه خود بسازید</string>
+    <string name="PasswordDoNotMatch">گذرواژه ها مطابقت ندارد</string>
+    <string name="AbortPassword"> ابطال راه اندازی تایید دو مرحله ای </string>
+    <string name="EmailPasswordConfirmText"> لطفا این مراحل را برای تکمیل راه اندازی دو مرحله دنبال کنید:\n\n1. ایمیل خود را چک کنید.بخش اسپم را هم فراموش نکنید\n%1$s\n\n2. در لینک تایید کلیک کنید.</string>
+    <string name="PasswordAsHintError"> گذرواژه باید با خود آن متفاوت باشد</string>
+    <string name="PasswordEmailInvalid">ایمیل نامعتبر است</string>
+    <string name="RestorePasswordNoEmailTitle">متاسفیم</string>
+    <string name="RestorePasswordNoEmailText"> از آنجاکه از سمت شما برای بازیابی گذرواژه ایمیلی در هنگام راه اندازی ارائه نشده ، گزینه های باقی مانده خود را به یاد داشته باشید.</string>
+    <string name="RestoreEmailSent">یک کد بازیابی گذرواژه به ایمیل شما ارسال شد:\n\n%1$s</string>
+    <string name="RestoreEmailSentInfo"> لطفا ایمیل خود را بررسی کنید و کد 6 رقمی که برای شما ارسال نموده ایم را در این بخش وارد کنید.</string>
+    <string name="RestoreEmailTrouble">برای دسترسی به ایمیل خود دچار مشکل هستید %1$s?</string>
+    <string name="RestoreEmailTroubleText">اگر برای دسترسی به ایمیل خود دچار مشکل هستید،گزینه های باقیمانده مانند نام کاربری و گذرواژه را به خاطر بسپارید.</string>
+    <string name="ResetMyAccount">تنطیم مجدد حساب کاربری من</string>
+    <string name="ResetMyAccountText">شما با بازیابی مجدد حساب کاربری خود تمام گفتگوها، فیم ، عکس و فایلهایی که به اشتراک گذاشته شده بودند را بدست آورید.</string>
+    <string name="ResetMyAccountWarning">هشدار</string>
+    <string name="ResetMyAccountWarningText">این اقدام قابل بازگشت نیست.\n\اگر شما حساب کاربری خود را تنطیم مجددنمایید تمام عکس، فیلم و فیالها پاک خواهند شد.</string>
+    <string name="ResetMyAccountWarningReset">تنظیم مجدد</string>
+    <string name="LoginPassword">گذرواژه</string>
+    <string name="LoginPasswordText">شما تایید دو مرحله ای را فعال کردید، بنابراین حساب کاربری شما با رمز دوم محافظت می شود. </string>
+    <string name="ForgotPassword">گذرواژه را فراموش کرده اید?</string>
+    <string name="PasswordRecovery">بازیابی گذرواژه</string>
+    <string name="PasswordCode">کد</string>
+    <string name="PasswordReset">گذرواژه غیر فعال است</string>
+    <string name="EnabledPasswordText">شما بخش دو مرحله ای را فعال کرده اید.\شما برای فعال سازی به گذرواژه  نیاز دارید.</string>
+    <string name="PendingEmailText">ایمیل شما برای بازیابی %1$s هنوز فعال نشده و در انتظار تایید است.</string>
+    <!--privacy settings-->
+    <string name="PrivacySettings">حریم خصوصی و امنیتی</string>
+    <string name="PrivacyTitle">حریم خصوصی</string>
+    <string name="PrivacyLastSeen">آخرین بازدید</string>
+    <string name="LastSeenEverybody">هر شخصی</string>
+    <string name="LastSeenContacts">مخاطبین من</string>
+    <string name="LastSeenNobody">هیچکس</string>
+    <string name="LastSeenEverybodyMinus">هر شخصی (-%1$d)</string>
+    <string name="LastSeenContactsPlus"> مخاطبین من (+%1$d)</string>
+    <string name="LastSeenContactsMinus"> مخاطبین من (-%1$d)</string>
+    <string name="LastSeenContactsMinusPlus"> مخاطبین من (-%1$d, +%2$d)</string>
+    <string name="LastSeenNobodyPlus">هیچکس (+%1$d)</string>
+    <string name="SecurityTitle">امنیت</string>
+    <string name="DeleteAccountTitle">بازیابی جساب کاربری</string>
+    <string name="DeleteAccountIfAwayFor">اگر زمان طولانی متصل نشدید</string>
+    <string name="DeleteAccountHelp">اگر طی این مدت شما حتی برای یکبار به حساب کاربری خود وارد نشده اید،حساب کاربری شما به همراه مخاطبین و پیامها پاک شده اند.</string>
+    <string name="DeleteAccountNowConfirmation">نام کاربری شما حذف شود?</string>
+    <string name="LastSeenHelp">بخش کسانی که میتوانند آخرین بازدید شما را ببینند را تغییر دهید.</string>
+    <string name="LastSeenTitle">چه کسی میتواند آخرین بازدید شما را ببیند?</string>
+    <string name="AddExceptions">اضافه کردن کرد استثنائات</string>
+    <string name="CustomHelp">مهم: شما قادر به دیدن مطالبی که دیگران با شما به اشتراک گذاشته اند نیستید. آخرین زمانی که بطور تقریبی دیده شده(به تازگی، طی هفته پیش،طی یک ماه).</string>
+    <string name="AlwaysShareWith">معمولا به اشتراک گذاری شود با</string>
+    <string name="NeverShareWith">هرگز اشتراک گذاری نشود با</string>
+    <string name="CustomShareSettingsHelp"> این تنظیمات را به مقادیر بالا را تغییر دهید.</string>
+    <string name="AlwaysShareWithTitle">همیشه به اشتراک گذاشته شود</string>
+    <string name="AlwaysShareWithPlaceholder">همیشه با کاربر به اشتراک گذاشته شود...</string>
+    <string name="NeverShareWithTitle">هرگز به اشتراک گذاشته شود</string>
+    <string name="NeverShareWithPlaceholder">هرگز با کاربران به اشتراک گذاشته نشود...</string>
+    <string name="EmpryUsersPlaceholder">افزدون کاربر</string>
+    <string name="PrivacyFloodControlError">با پوزش، درخواستهای متعددی برای تغییر تنظیمات وارد شده.لطفا کمی صبر کنید.</string>
+    <string name="ClearOtherSessionsHelp">همه سیستمها به جز این دستگاه از سرویس خارج شوند.</string>
+    <string name="RemoveFromListText">ضربه بزنید و نگهدارید تا کاربر حذف شود.</string>
+    <!--edit video view-->
+    <string name="EditVideo">ویرایش فیلم</string>
+    <string name="OriginalVideo">فیلم اصلی</string>
+    <string name="EditedVideo">ویرایش فیلم</string>
+    <string name="SendingVideo">در حال ارسال فیلم...</string>
+    <string name="CompressVideo">فشرده سازی فیلم</string>
+    <!--bot-->
+    <string name="Bot">ربات</string>
+    <string name="BotShare">اشتراک گذاری</string>
+    <string name="BotInvite">اضافه کردن به گروه</string>
+    <string name="BotSettings">تنظیمات</string>
+    <string name="BotHelp">راهنما</string>
+    <string name="BotStatusRead">به پیامها دسترسی دارد</string>
+    <string name="BotStatusCantRead">به پیامها دسترسی ندارد</string>
+    <string name="BotInfoTitle">این ربات چه کاری انجام میدهد?</string>
+    <string name="BotStart">شروع</string>
+    <string name="BotUnblock">راه اندازی مجدد</string>
+    <string name="BotStop">توقف ربات</string>
+    <string name="BotRestart">راه اندازی مجدد ربات</string>
+    <!--button titles-->
+    <string name="Next">بعدی</string>
+    <string name="Back">قبلی</string>
+    <string name="Done">انجام شد</string>
+    <string name="Open">باز کردن</string>
+    <string name="Cancel">انصراف</string>
+    <string name="Close">بستن</string>
+    <string name="Add">اضافه کردن</string>
+    <string name="Edit">ئیرایش</string>
+    <string name="Send">ارسال</string>
+    <string name="Call">تماس</string>
+    <string name="Copy">کپی</string>
+    <string name="Delete">حذف</string>
+    <string name="DeleteAndStop">حذف و توقف</string>
+    <string name="Forward">ارسال به</string>
+    <string name="Retry">تلاش مجدد</string>
+    <string name="FromCamera">از دوربین</string>
+    <string name="FromGalley">از گالری</string>
+    <string name="DeletePhoto">حذف عکس</string>
+    <string name="Set">تنظیم</string>
+    <string name="OK">تایید</string>
+    <string name="Crop">برش عکس</string>
+    <!--messages-->
+    <string name="ActionInviteYou">شما با لینک دعوت به عضویت گروه درآمدید</string>
+    <string name="ActionInviteUser">un1از طریق لینک دعوت به گروه پیوست</string>
+    <string name="ActionKickUser">un1 حذف شده un2</string>
+    <string name="ActionLeftUser">un1 عضو گروه را ترک کرد</string>
+    <string name="ActionAddUser">un1 اضافه شد un2</string>
+    <string name="ActionRemovedPhoto">un1 عکس از گروه حذف شد</string>
+    <string name="ActionChangedPhoto">un1 عکس گروه تغییر کرد</string>
+    <string name="ActionChangedTitle">un1 نام گروه تغییر کرد به un2</string>
+    <string name="ActionCreateGroup">un1 گروه ساخته شد</string>
+    <string name="ActionYouKickUser">شما حذف کردیدun2</string>
+    <string name="ActionYouLeftUser">شما گروه را ترک کردید</string>
+    <string name="ActionYouAddUser">شما اضافه کردید un2</string>
+    <string name="ActionYouRemovedPhoto">شما عکس گروه را حذف کردید</string>
+    <string name="ActionYouChangedPhoto">شما عکس گروه را تغییر دادید</string>
+    <string name="ActionYouChangedTitle">شما نام گروه را تغییر دادید به un2</string>
+    <string name="ActionYouCreateGroup">شما یک گروه ایجاد کردید</string>
+    <string name="ActionKickUserYou">un1 شما را حذف کرد</string>
+    <string name="ActionAddUserYou">un1 شما را اضافه کرد</string>
+    <string name="ActionAddUserSelf">un1 بازگشت به گروه</string>
+    <string name="ActionAddUserSelfYou">شما به گروه بازگشتید</string>
+    <string name="UnsuppotedMedia"> این پیام از طریق نسخه حاضر پشتیبانی نمی شود. برای مشاهده آن کلیگرام خود را بروز رسانی کنید: https://telegram.org/update</string>
+    <string name="AttachPhoto">عکس</string>
+    <string name="AttachVideo">فیلم</string>
+    <string name="AttachLocation">محل</string>
+    <string name="AttachContact">مخاطبین</string>
+    <string name="AttachDocument">فایل</string>
+    <string name="AttachSticker">استیکر</string>
+    <string name="AttachAudio">صوتی</string>
+    <string name="FromYou">شما</string>
+    <string name="ActionTakeScreenshootYou">از صفحه نمایش یک عکس گرفتید!</string>
+    <string name="ActionTakeScreenshoot">un1 صفحه نمایش یک عکس گرفته شد!</string>
+    <!--Alert messages-->
+    <string name="InvalidPhoneNumber">شماره تلفن نامعتبر است</string>
+    <string name="CodeExpired">کد منقضی شده.دوباره وارد کنید</string>
+    <string name="FloodWait">مجددا تلاش کنید</string>
+    <string name="FloodWaitTime"> مجددا تلاش کنید برای %1$s</string>
+    <string name="InvalidCode">کد نامعتبر</string>
+    <string name="InvalidFirstName">نام نامعتبر</string>
+    <string name="InvalidLastName">نام خانوادگی نامعتبر</string>
+    <string name="Loading">در حال بارگیری...</string>
+    <string name="NoPlayerInstalled">شما پخش کننده فیلم ندارید، لطفا نصب کنید</string>
+    <string name="NoMailInstalled">مشکل خود را با ارسال ایمیل به ما اطلاع دهید.</string>
+    <string name="NoHandleAppInstalled"> شما برنامه های کاربردی که می توانید انواع فایلها را کنترل کند را ندارید \'%1$s\', لطفا نصب کرده و سپس ادامه دهید</string>
+    <string name="InviteUser">این کاربر عضو تلگرام نیست ،او را دعوت کنید?</string>
+    <string name="AreYouSure">آیا مطمئین هستید?</string>
+    <string name="AddToTheGroupTitle">افزدون %1$s به گفتگو%2$s?</string>
+    <string name="AddToTheGroupForwardCount">تعداد پیام های منتقل شده به دیگران:</string>
+    <string name="AddToTheGroup">آیا  %1$s به گروه افزوده شود?</string>
+    <string name="UserAlreadyInGroup">این کاربر قبلا در گروه بوده</string>
+    <string name="ForwardMessagesTo">انتقال پیام به %1$s?</string>
+    <string name="SendMessagesTo">ارسال پیام به %1$s?</string>
+    <string name="SendContactTo">ارسال تماس به %1$s?</string>
+    <string name="AreYouSureLogout">آیا اطمینان دارید که میخواهید خارج شوید?\n\nتوجه داشته باشید که شما همزمان می توانید از کلیگرام در تمام دستگاه های خود استفاده کنید.\n\nRemember, logging out kills all your Secret Chats.</string>
+    <string name="AreYouSureSessions"> آیا مطمئن هستید تمام جلسات دیگر را می خواهید به خاتمه دهید?</string>
+    <string name="AreYouSureDeleteAndExit">آیا اطمینان دارید که میخواهید از این گروه خارج و آن را حذف کنید?</string>
+    <string name="AreYouSureDeleteThisChat">ایا اطمینان دارید میخواهید این گفتگو را حذف کنید?</string>
+    <string name="AreYouSureShareMyContactInfo"> آیا مطمئن هستید که می خواهید اطلاعات تماس خود را به اشتراک گذارید?</string>
+    <string name="AreYouSureBlockContact">"> آیا مطمئن هستید که می خواهید این تماس را مسدود کنید?</string>
+    <string name="AreYouSureUnblockContact"> آیا مطمئن هستید که می خواهید این تماس را از مسدود بودن خارج کنید?</string>
+    <string name="AreYouSureDeleteContact"> آیا مطمئن هستید که می خواهید این تماس را حذف کنید?</string>
+    <string name="AreYouSureSecretChat"> آیا مطمئن هستید که می خواهید گفتگوی محرمانه را شروع کنید?</string>
+    <string name="AreYouSureRegistration"> آیا مطمئن هستید که می خواهید از ثبت نام انصراف دهید?</string>
+    <string name="AreYouSureClearHistory"> آیا مطمئن هستید که می خواهید سوابق را پاک کنید?</string>
+    <string name="AreYouSureClearHistoryChannel"> حذف همه متون و رسانه های ذخیره شده از این کانال?</string>
+    <string name="AreYouSureClearHistorySuper"> حذف همه متون و رسانه های ذخیره شده از این گروه ویژه?</string>
+    <string name="AreYouSureDeleteMessages"> آیا مطمئن هستید که می خواهید حذف کنید %1$s?</string>
+    <string name="SendMessagesToGroup">ارسال پیام به %1$s?</string>
+    <string name="SendContactToGroup">ارسال تماس به %1$s?</string>
+    <string name="ForwardMessagesToGroup">انتقال تماس به %1$s?</string>
+    <string name="FeatureUnavailable"> با عرض پوزش، این قابلیت در حال حاضر در ایران در دسترس نیست.</string>
+    <string name="NoUsernameFound"> با این نام کاربری هیچ حساب تلگرامی وجود ندارد.</string>
+    <string name="BotCantJoinGroups">این ربات نمیتواند عضو گروه شود.</string>
+    <!--permissions-->
+    <string name="PermissionContacts"> تلگرام نیاز به دسترسی به اطلاعات تماس شما دارد تا بتوانید با دوستان خود در تمام دستگاه های خود ارتباط برقرار کنید.</string>
+    <string name="PermissionStorage"> تلگرام نیاز به دسترسی به عکس ها، فیلم ها، موسیقی و دیگر رسانه ها که ذخیره سازی کرده اید دارد تا بتوانید آنها را به مخاطبین ارسال کنید.</string>
+    <string name="PermissionNoAudio"> تلگرام نیاز به دسترسی به میکروفون دستگاه شما دارد تا بتواند پیامهای صوتی شما را ضبط و ارسال کند.</string>
+    <string name="PermissionNoLocation"> تلگرام نیاز به دسترسی به محل استقرار شما دارد تا بتوانید آنرا با دوستان خود به اشتراک بگذارید.</string>
+    <string name="PermissionOpenSettings">تنظیمات</string>
+    <!--Intro view-->
+    <string name="Page1Title">کلیگرام</string>
+    <string name="Page2Title">سریع</string>
+    <string name="Page3Title">رایگان</string>
+    <string name="Page4Title">امن</string>
+    <string name="Page5Title">قدرتمند</string>
+    <string name="Page6Title">بر پایه فضای ابری</string>
+    <string name="Page7Title">خصوصی</string>
+    <string name="Page1Message">سریعتریت برنامه پیام رسان جهانی.\nرایگان و امن.</string>
+    <string name="Page2Message">پیام ها را سریعتر از\nهر پیام رسان دیگر ارسال می نماید.</string>
+    <string name="Page3Message">برای اشتراک در این برنامه هزینه ای پرداخت نمی کنید.\nهمیشه رایگان است و بدون تبلیغات.</string>
+    <string name="Page4Message">پیام های شما را در برابر\nحمله هکر حفظ می نماید.</string>
+    <string name="Page5Message">هیچ محدودیتی در تعداد\nفایل ها و گفتگوها وجود ندارد.</string>
+    <string name="Page6Message">به شما اجازه دسترسی به پیام هایتان\nاز چندین دستگاه را می دهد.</string>
+    <string name="Page7Message">پیام ها با امنیت بالا رمزنگاری شده اند و\nمی توانند خود را از بین ببرند.</string>
+    <string name="StartMessaging">شروع گفتگو</string>
+    <!--plural-->
+    <string name="Online_zero">%1$d online</string>
+    <string name="Online_one">%1$d online</string>
+    <string name="Online_two">%1$d online</string>
+    <string name="Online_few">%1$d online</string>
+    <string name="Online_many">%1$d online</string>
+    <string name="Online_other">%1$d online</string>
+    <string name="Members_zero">%1$d اعضاء</string>
+    <string name="Members_one">%1$d عضو</string>
+    <string name="Members_two">%1$d اعضاء</string>
+    <string name="Members_few">%1$d اعضاء</string>
+    <string name="Members_many">%1$d اعضاء</string>
+    <string name="Members_other">%1$d اعضاء</string>
+    <string name="AndMoreTyping_zero">و %1$d بیشتر افراد در حال نوشتن هستند</string>
+    <string name="AndMoreTyping_one"> و %1$d بیشتر افراد در حال نوشتن هستند </string>
+    <string name="AndMoreTyping_two"> و %1$d بیشتر افراد در حال نوشتن هستند </string>
+    <string name="AndMoreTyping_few"> و %1$d بیشتر افراد در حال نوشتن هستند </string>
+    <string name="AndMoreTyping_many"> و %1$d بیشتر افراد در حال نوشتن هستند </string>
+    <string name="AndMoreTyping_other"> و %1$d بیشتر افراد در حال نوشتن هستند </string>
+    <string name="NewMessages_zero">پیام جدیدی نیست</string>
+    <string name="NewMessages_one">%1$پیام جدید</string>
+    <string name="NewMessages_two">%1$d پیام جدید</string>
+    <string name="NewMessages_few">%1$d پیام جدید</string>
+    <string name="NewMessages_many">%1$d پیامهای جدید</string>
+    <string name="NewMessages_other">%1$پیامهای جدید</string>
+    <string name="messages_zero">پیامی موجود نیست</string>
+    <string name="messages_one">%1$d پیام</string>
+    <string name="messages_two">%1$d پیامها</string>
+    <string name="messages_few">%1$d پیامها</string>
+    <string name="messages_many">%1$d پیامها</string>
+    <string name="messages_other">%1$d پیامها</string>
+    <string name="comments_zero">%1$d نظرات</string>
+    <string name="comments_one">%1$d نظر</string>
+    <string name="comments_two">%1$d نظرات</string>
+    <string name="comments_few">%1$d نظرات </string>
+    <string name="comments_many">%1$d نظرات </string>
+    <string name="comments_other">%1$d نظرات </string>
+    <string name="items_zero">موردی موجود نیست</string>
+    <string name="items_one">%1$d مورد</string>
+    <string name="items_two">%1$d موارد</string>
+    <string name="items_few">%1$d موارد</string>
+    <string name="items_many">%1$d موارد</string>
+    <string name="items_other">%1$d موارد</string>
+    <string name="FromChats_zero">از هیچ گفتگویی</string>
+    <string name="FromChats_one">از %1$d گفتگو</string>
+    <string name="FromChats_two">از %1$d گفتگو</string>
+    <string name="FromChats_few">از %1$d گفتگوها</string>
+    <string name="FromChats_many">از %1$d گفتگوها</string>
+    <string name="FromChats_other">از %1$d گفتگو</string>
+    <string name="Seconds_zero">%1$d ثانیه ها</string>
+    <string name="Seconds_one">%1$d ثانیه</string>
+    <string name="Seconds_two">%1$d ثانیه ها</string>
+    <string name="Seconds_few">%1$d ثانیه ها </string>
+    <string name="Seconds_many">%1$d ثانیه ها </string>
+    <string name="Seconds_other">%1$d ثانیه ها </string>
+    <string name="Minutes_zero">%1$d دقیقه ها</string>
+    <string name="Minutes_one">%1$d دقیقه</string>
+    <string name="Minutes_two">%1$d دقیقه ها </string>
+    <string name="Minutes_few">%1$d دقیقه ها </string>
+    <string name="Minutes_many">%1$d دقیقه ها </string>
+    <string name="Minutes_other">%1$d دقیقه ها </string>
+    <string name="Hours_zero">%1$d ساعتها</string>
+    <string name="Hours_one">%1$d ساعت</string>
+    <string name="Hours_two">%1$d ساعتها</string>
+    <string name="Hours_few">%1$d ساعتها</string>
+    <string name="Hours_many">%1$d ساعتها</string>
+    <string name="Hours_other">%1$d ساعتها</string>
+    <string name="Days_zero">%1$d روزها</string>
+    <string name="Days_one">%1$d روز</string>
+    <string name="Days_two">%1$d روزها</string>
+    <string name="Days_few">%1$d روزها</string>
+    <string name="Days_many">%1$d روزها</string>
+    <string name="Days_other">%1$d روزها</string>
+    <string name="Weeks_zero">%1$d هفته ها</string>
+    <string name="Weeks_one">%1$d هفته</string>
+    <string name="Weeks_two">%1$d هفته ها</string>
+    <string name="Weeks_few">%1$d هفته ها</string>
+    <string name="Weeks_many">%1$d هفته ها</string>
+    <string name="Weeks_other">%1$d هفته ها</string>
+    <string name="Months_zero">%1$d ماه ها</string>
+    <string name="Months_one">%1$d ماه</string>
+    <string name="Months_two">%1$d ماه ها</string>
+    <string name="Months_few">%1$d ماه ها</string>
+    <string name="Months_many">%1$d ماه ها</string>
+    <string name="Months_other">%1$d ماهها</string>
+    <string name="Years_zero">%1$d سالها</string>
+    <string name="Years_one">%1$d سال</string>
+    <string name="Years_two">%1$d سالها</string>
+    <string name="Years_few">%1$d ساها</string>
+    <string name="Years_many">%1$d سالها</string>
+    <string name="Years_other">%1$d سالها</string>
+    <string name="Users_zero">%1$d کاربران</string>
+    <string name="Users_one">%1$d کاربر</string>
+    <string name="Users_two">%1$d کاربران</string>
+    <string name="Users_few">%1$d کاربران</string>
+    <string name="Users_many">%1$d کاربران</string>
+    <string name="Users_other">%1$d کاربران</string>
+    <string name="Times_zero">%1$d زمان ها</string>
+    <string name="Times_one">%1$d زمان</string>
+    <string name="Times_two">%1$d زمان ها</string>
+    <string name="Times_few">%1$d زمان ها</string>
+    <string name="Times_many">%1$d زمانها</string>
+    <string name="Times_other">%1$d زمانها</string>
+    <string name="Meters_zero">%1$d مترها</string>
+    <string name="Meters_one">%1$d متر</string>
+    <string name="Meters_two">%1$d مترها</string>
+    <string name="Meters_few">%1$d مترها</string>
+    <string name="Meters_many">%1$d مترها</string>
+    <string name="Meters_other">%1$d مترها</string>
+    <string name="Stickers_zero">%1$d استیکرها</string>
+    <string name="Stickers_one">%1$d استیکر</string>
+    <string name="Stickers_two">%1$d استیکرها</string>
+    <string name="Stickers_few">%1$d استیکرها </string>
+    <string name="Stickers_many">%1$d استیکرها </string>
+    <string name="Stickers_other">%1$d استیکرها </string>
+    <string name="Photos_zero">%1$d عکسها</string>
+    <string name="Photos_one">%1$d عکس</string>
+    <string name="Photos_two">%1$d عکسها </string>
+    <string name="Photos_few">%1$d عکسها </string>
+    <string name="Photos_many">%1$d عکسها </string>
+    <string name="Photos_other">%1$d عکسها </string>
+    <string name="LastSeenMinutes_zero">آخرین بازدید %1$d دقایقی پیش</string>
+    <string name="LastSeenMinutes_one">آخرین بازدید %1$d دقایقی پیش </string>
+    <string name="LastSeenMinutes_two">آخرین بازدید %1$d دقایقی پیش </string>
+    <string name="LastSeenMinutes_few">آخرین بازدید %1$d دقایقی پیش </string>
+    <string name="LastSeenMinutes_many">آخرین بازدید %1$d دقایقی پیش </string>
+    <string name="LastSeenMinutes_other">آخرین بازدید %1$d دقایقی پیش </string>
+    <string name="LastSeenHours_zero">آخرین بازدید %1$d ساعتی پیش </string>
+    <string name="LastSeenHours_one">آخرین بازدید %1$d ساعتی پیش </string>
+    <string name="LastSeenHours_two">آخرین بازدید %1$d ساعاتی پیش </string>
+    <string name="LastSeenHours_few">آخرین بازدید %1$d ساعاتی پیش </string>
+    <string name="LastSeenHours_many">آخرین بازدید %1$d ساعاتی پیش </string>
+    <string name="LastSeenHours_other">آخرین بازدید %1$d ساعاتی پیش </string>
+    <!--forwarded messages-->
+    <string name="ForwardedMessage_zero">%1$d پیام منتقل شد</string>
+    <string name="ForwardedMessage_one"> پیام منتقل شد </string>
+    <string name="ForwardedMessage_two">%1$d پیامها منتقل شد </string>
+    <string name="ForwardedMessage_few">%1$d پیامها منتقل شد </string>
+    <string name="ForwardedMessage_many">%1$d پیامها منتقل شد </string>
+    <string name="ForwardedMessage_other">%1$d پیامها منتقل شد </string>
+    <string name="ForwardedFile_zero">%1$d فایلها منتقل شد </string>
+    <string name="ForwardedFile_one"> فایل منتقل شد </string>
+    <string name="ForwardedFile_two">%1$d فایلها منتقل شد </string>
+    <string name="ForwardedFile_few">%1$d فایلها منتقل شد </string>
+    <string name="ForwardedFile_many">%1$d فایلها منتقل شد </string>
+    <string name="ForwardedFile_other">%1$d فایلها منتقل شد </string>
+    <string name="ForwardedPhoto_zero">%1$d عکسها منتقل شد </string>
+    <string name="ForwardedPhoto_one"> عکس منتقل شد </string>
+    <string name="ForwardedPhoto_two">%1$d عکسها منتقل شد </string>
+    <string name="ForwardedPhoto_few">%1$d عکسها منتقل شد </string>
+    <string name="ForwardedPhoto_many">%1$d عکسها منتقل شد </string>
+    <string name="ForwardedPhoto_other">%1$d عکسها منتقل شد </string>
+    <string name="ForwardedVideo_zero">%1$d فیلمها منتقل شد </string>
+    <string name="ForwardedVideo_one"> فیلم منتقل شد </string>
+    <string name="ForwardedVideo_two">%1$d فیلمها منتقل شد</string>
+    <string name="ForwardedVideo_few">%1$d فیلمها منتقل شد </string>
+    <string name="ForwardedVideo_many">%1$d فیلمها منتقل شد </string>
+    <string name="ForwardedVideo_other">%1$d فیلمها منتقل شد </string>
+    <string name="ForwardedAudio_zero">%1$d فایل های صوتی منتقل شد </string>
+    <string name="ForwardedAudio_one"> فایل صوتی منتقل شد </string>
+    <string name="ForwardedAudio_two">%1$d فایل های صوتی منتقل شد </string>
+    <string name="ForwardedAudio_few">%1$d فایل های صوتی منتقل شد </string>
+    <string name="ForwardedAudio_many">%1$d فایل های صوتی منتقل شد </string>
+    <string name="ForwardedAudio_other">%1$d فایل های صوتی منتقل شد </string>
+    <string name="ForwardedLocation_zero">%1$d محلهای استقرار منتقل شد</string>
+    <string name="ForwardedLocation_one"> محل استقرار منتقل شد </string>
+    <string name="ForwardedLocation_two">%1$ محلهای استقرار منتقل شد </string>
+    <string name="ForwardedLocation_few">%1$ محلهای استقرار منتقل شد </string>
+    <string name="ForwardedLocation_many">%1$d محلهای استقرار منتقل شد </string>
+    <string name="ForwardedLocation_other">%1$d محلهای استقرار منتقل شد </string>
+    <string name="ForwardedContact_zero">%1$d محلهای استقرار منتقل شد </string>
+    <string name="ForwardedContact_one">تماس منتقل شد </string>
+    <string name="ForwardedContact_two">%1$d تماس ها منتقل شد </string>
+    <string name="ForwardedContact_few">%1$d تماس ها منتقل شد </string>
+    <string name="ForwardedContact_many">%1$d تماس ها منتقل شد </string>
+    <string name="ForwardedContact_other">%1$d تماس ها منتقل شد </string>
+    <string name="ForwardedSticker_zero">%1$d استیکرهامنتقل شد </string>
+    <string name="ForwardedSticker_one"> استیکرمنتقل شد </string>
+    <string name="ForwardedSticker_two">%1$d استیکرهامنتقل شد </string>
+    <string name="ForwardedSticker_few">%1$d استیکرهامنتقل شد </string>
+    <string name="ForwardedSticker_many">%1$d استیکرهامنتقل شد </string>
+    <string name="ForwardedSticker_other">%1$d استیکرهامنتقل شد </string>
+    <string name="AndOther_zero">و %1$d دیگران</string>
+    <string name="AndOther_one">و %1$d دیگران </string>
+    <string name="AndOther_two">و %1$d دیگران </string>
+    <string name="AndOther_few">و %1$d دیگران </string>
+    <string name="AndOther_many">و %1$d دیگران</string>
+    <string name="AndOther_other">و %1$d دیگران </string>
+    <!--date formatters-->
+    <string name="formatterMonthYear">MMMM yyyy</string>
+    <string name="formatterMonth">MMM dd</string>
+    <string name="formatterYear">dd.MM.yy</string>
+    <string name="formatterYearMax">dd.MM.yyyy</string>
+    <string name="chatDate">MMMM d</string>
+    <string name="chatFullDate">MMMM d, yyyy</string>
+    <string name="formatterWeek">EEE</string>
+    <string name="formatterDay24H">HH:mm</string>
+    <string name="formatterDay12H">h:mm a</string>
+    <string name="formatDateAtTime">%1$s at %2$s</string>
+    <!--update text-->
+    <string name="updateText">Telegram for Android has been updated. New in version 3.3.2:\n\n- Cache management: Control how much disk space Telegram uses on your device, delete cache for specific types of content.\n- Delete cache from supergroups and channels: Tap and hold on them in the chats list and \'Delete from Cache\'.\n- Sticker management: Manually rearrange your sticker packs. Pack order is now synced across all your devices.\n\nMore about this update:\nhttps://telegram.org/blog/cache-and-stickers</string>
+    <string name="updateBuild">693</string>
+
+
+
+
+    <string name="guide_title1">تماس با سرعت بالا</string>
+    <string name="guide_title2">تنها با کشیدن انگشت</string>
+    <string name="guide_title3">خیلی جالبه</string>
+    <string name="guide_content1">هرطور که دوست داری تماس بگیر</string>
+    <string name="guide_content2">راحتی در تماس</string>
+    <string name="guide_content3">نه تنها کنفرانس</string>
+    <string name="start">لمس کن اینجا>>></string>
+    <string name="select_phone_number">انتخاب شماره تلفن</string>
+    <string name="select_email_address">انتخاب ایمیل آدرس</string>
+    <string name="select_url_address">انتخاب آدرس اینترنتی</string>
+    <string name="dialog_ok">باشه</string>
+    <string name="dialog_cancel">بیخیال</string>
+    <string name="dialog_delete">پاک کردن</string>
+    <string name="dialog_close">بستن</string>
+    <string name="dialog_clear">پاک کردن</string>
+    <string name="dialog_join">پیوستن</string>
+    <string name="dialog_send">ارسال</string>
+    <string name="dialog_upload">باشه</string>
+    <string name="phone_tag_extension">شماره</string>
+    <string name="phone_tag2_assistant">دستیار</string>
+    <string name="phone_tag2_callback">کالبک</string>
+    <string name="phone_tag2_company_main">کمپانی</string>
+    <string name="phone_tag2_car">خودرو</string>
+    <string name="phone_tag_fax_work">فکس اداره</string>
+    <string name="phone_tag_fax_home">فکس منزل</string>
+    <string name="phone_tag_home">خانه</string>
+    <string name="phone_tag2_isdn">ISDN</string>
+    <string name="phone_tag2_main">اصلی</string>
+    <string name="phone_tag2_mms">MMS</string>
+    <string name="phone_tag_mobile">موبایل</string>
+    <string name="phone_tag_other">دیگر</string>
+    <string name="phone_tag2_other_fax">فکس دیگر</string>
+    <string name="phone_tag_pager">پیجر</string>
+    <string name="phone_tag2_radio">رادیو</string>
+    <string name="phone_tag2_telex">تلکس</string>
+    <string name="phone_tag2_tty_tdd">TTY TDD</string>
+    <string name="phone_tag_work">کار</string>
+    <string name="phone_tag2_work_mobile">موبایل کار</string>
+    <string name="phone_tag2_work_pager">پیجر کار</string>
+    <string name="phone_tag_custom">دست ساز</string>
+    <string name="email_tag_home">خانه</string>
+    <string name="email_tag_mobile">موبایل</string>
+    <string name="email_tag_work">کار</string>
+    <string name="email_tag_other">دیگر</string>
+    <string name="email_tag_custom">دستی</string>
+    <string name="address_tag_home">خانه</string>
+    <string name="address_tag_work">کار</string>
+    <string name="address_tag_other">دیگر</string>
+    <string name="select_contact">انتخاب مخاطب</string>
+    <string name="select_contact_no_contact_title">بدون شماره</string>
+    <string name="select_contact_no_contact_message">هیچ شماره ای برای انتخاب موجود نیست.</string>
+    <string name="title_select_contact">انتخاب مخاطب</string>
+    <string name="title_contact_info">اطلاعات مخاطب</string>
+    <string name="title_contacts">مخاطبین</string>
+    <string name="contact_info">اطلاعات مخاطب</string>
+    <string name="phone">تلفن</string>
+    <string name="email">ایمیل</string>
+    <string name="no_contact_info">بدون اطلاعات مخاطب</string>
+    <string name="search">جستجو</string>
+    <string name="no_results_found">بدون هیچ نتیجه</string>
+    <string name="no_contacts">بدون مخاطب</string>
+    <string name="no_call_log">خالیه</string>
+    <string name="no_quick_call">بدون تماس گیری سریع</string>
+    <string name="it_is_too_short">این خیلی کوتاهه</string>
+    <string name="update_quick_call_success">Update quick dial success.</string>
+    <string name="create_quick_call_success">Create quick dial success.</string>
+    <string name="quick_call_no_change">No changes of this quick dial.</string>
+    <string name="menu_editContact">تغییر اطلاعات</string>
+    <string name="menu_newContact">ایجاد کاربر جدبد</string>
+    <string name="menu_addContact">اضافه کردن کاربر</string>
+    <string name="menu_sendEmail">ارسال ایمیل</string>
+    <string name="contact_exists">کاربر موجود است</string>
+    <string name="contact_exists_message">%1$s(%2$s) این کاربر وجود دارد</string>
+    <string name="call_error_title">خطا در تماس</string>
+
+    <!-- long click contact menu item -->
+    <string name="long_click_contact_create_new_quick_call">ایجاد تماس سریع</string>
+    <string name="long_click_contact_call_contact">کاربر کالبک</string>
+    <string name="long_click_contact_send_message">ارسال پیغام</string>
+    <string name="long_click_contact_view_contact"> مشاهده کاربر</string>
+    <string name="long_click_contact_send_email">ارسال ایمیل</string>
+    <string name="long_click_contact_edit_contact">تغییر اطلاعات</string>
+    <string name="long_click_contact_delete_contact">حذف</string>
+    <string name="delete_contact">حذف کاربر</string>
+    <string name="delete_contact_message">آیا میخواهید اطلاعات کاربر را پاک کنید؟</string>
+    <string name="delete_contact_failed_title">مشکل در پاک کردن</string>
+    <string name="delete_contact_failed">متاسفانه، امکان پاک کردن وجود ندارد</string>
+    <string name="delete_quick_message">آیا میخواهید شماره گیری سریع پاک شود؟</string>
+    <string name="history">تاریخچه</string>
+    <string name="unsaved">ذخیره نشدن</string>
+    <string name="history_info">اطلاعات تاریخچه</string>
+    <string name="history_detail_view_contact">مشاهده اطلاعات</string>
+    <string name="history_detail_call_contact">تماس با کاربر</string>
+    <string name="history_detail_send_message">ارسال پیغام</string>
+    <string name="popup_text_create_new_message">ایجاد پیغام جدید</string>
+    <string name="popup_text_edit">تغییر پیغام</string>
+    <string name="popup_text_clear_all">خذف همه</string>
+    <string name="popup_text_edit_history">تغییرات در تاریخچه</string>
+    <string name="popup_text_view_contact">مشاهده </string>
+    <string name="popup_text_call_contact">تماس با مخاطب</string>
+    <string name="popup_text_create_new_contact">ایجاد مخاطب</string>
+    <string name="popup_text_add_to_existing_contact">اضافه کردن به مخاطب موجود</string>
+    <string name="popup_text_clear_this_history">حذف تاریخچه</string>
+    <string name="popup_text_delete_this_message">حذف این پیغام</string>
+    <string name="delete_history">حذف تاریخچه</string>
+    <string name="delete_history_message">آیا میخواهید این رکورد حذف شود؟</string>
+    <string name="delete_history_by_contact">آیا میخواهید تمام تاریخچه این مخاطب پاک شود؟</string>
+    <string name="today">امروز</string>
+    <string name="manage">مدیریت تماس سریع</string>
+
+    <string name="quick_call_splash_text">کلیک</string>
+    <string name="quick_call_splash_text2">انگشت خود را روی صفحه بکشید</string>
+    <string name="quick_call_copyright_text">Copyright &#169; 2014 Sipax, Inc.</string>
+
+    <string name="quick_call_create_new">ایجاد یک تماس سریع</string>
+    <string name="quick_call_info">اطلاعات تماس سریع</string>
+    <string name="quick_call_manage">مدیریت تماس سریع</string>
+
+    <string name="button_reset">ریست</string>
+    <string name="button_save">ذخیره</string>
+    <string name="button_update">به روزرسانی</string>
+
+    <string name="dialog_exist_title">این تماس سریع وجود دارد</string>
+    <string name="dialog_exist_msg">این تماس سریع قبلا اشغال شده(%1$s).</string>
+
+    <string name="dialog_quick_call_title">شروع تماس</string>
+    <string name="dialog_quick_call_msg">تماس با(%1$s) فورا؟</string>
+    <string name="call">تماس</string>
+
+    <string name="settings_suggestions">بازخورد</string>
+    <string name="settings_rate_app">امتیاز دهی</string>
+    <string name="settings_about_quick_call">درباره کلیک</string>
+    <string name="title_suggestions">بازخورد</string>
+    <string name="hint_reply">لطفا سوالات و پیشنهادات خود را در این بخش وارد کنید</string>
+    <string name="hint_reply_info">لطفا ایمیل یا شماره موبایل خود را وارد کنید</string>
+    <string name="submit">ارسال</string>
+    <string name="cannot_submit">عدم ارسال</string>
+    <string name="call_error_message_network_error">عدم دسترسی به شبکه، لطفا بعدا تلاش کنید.</string>
+    <string name="submit_suggestion_failed">متاسفانه مشکلی در ارسال درخواست پیش آمد.</string>
+    <string name="submit_suggestion_success">ارسال با موفقیت انجام شد.</string>
+
+    <string name="contact_us">تماس با ما</string>
+    <string name="contact_us_name">سرویس ارتباطی کلیک - شرکت ارتباطاتی ضحی کیش</string>
+    <string name="contact_us_email">Email: info@96868696.ir</string>
+    <string name="contact_us_phone">tel: 021-96869696</string>
+    <string name="contact_us_qq">QQ : 122429471</string>
+    <string name="contact_us_address">Address : Jordan, Tehran, Iran</string>
+
+    <string name="home_bottom_quick_call">تماس سریع</string>
+    <string name="home_bottom_call_log">ریز مکالمات</string>
+    <string name="home_bottom_contacts">مخاطبین</string>
+    <string name="home_bottom_settings">تنظیمات</string>
+
+    <string name="this_number_has_been_set">این شماره در لیست مخاطبین ذخیره است</string>
+
+    <string name="popup_text_delete_this_contact">حذف این مخاطب</string>
+    <string name="popup_text_edit_this_contact">تغییر مخاطب</string>
+    <string name="popup_text_create_new_quick_call">ایجاد یک تماس سریع جدید</string>
+
+    <string name="save_first">شما بایستی این شماره را در دفترچه تلفن گوشی ذخیره کنید.</string>
+
+    <string name="yek">10000 ریال</string>
+    <string name="dow">20000 ریال</string>
+    <string name="panj">50000 ریال</string>
+    <string name="dah">100000 ریال</string>
+    <string name="bist">200000 ریال</string>
+    <string name="operator_spinner">Operators</string>
+    <string-array name="operator_array">
+        <item>Irancell</item>
+        <item>Hamrahe Aval</item>
+    </string-array>
+    <string name="PrefKeyName">Operators</string>
+    <string name="notification_title">AutoAnswer enabled</string>
+    <string name="notification_text">Select to configure or disable.</string>
+    <string name="enabled">Enabled?</string>
+    <string name="which_contacts">Answer Which Calls?</string>
+    <string name="delay">Delay Before Answer?</string>
+    <string name="use_speakerphone">Force Speakerphone?</string>
+    <string name="headset_only">Only Using BT Headset?</string>
+    <string name="no_second_call">Don\'t Answer if In Call?</string>
+    <string name="about_title">About</string>
+    <string name="about_message">AutoAnswer Version 1.5\nCopyright (c) 2010 EverySoft\n\nA simple Android application that automatically answers incoming calls.\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.\n\nChanges:\n1.5 - new answer routine should support more phones (thanks to Tedd\'s Droid Tools!)\n\n1.4 - added notification bar icon\n\n1.3 - added experimental BT headset detection\n\n1.2 - added support for froyo and the ability to ignore calls when there is already a call in process (ignore second call)\n\n1.1 - added configurable delay before answer\n\n1.0 - initial release</string>
+    <string name="license_title">License</string>
+    <string name="license_message"><![CDATA[GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007\n\nCopyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.\n\nPreamble\n\nThe GNU General Public License is a free, copyleft license for software and other kinds of works.\n\nThe licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.\n\nWhen we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things.\n\nTo protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others.\n\nFor example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.\n\nDevelopers that use the GNU GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.\n\nFor the developers\' and authors\' protection, the GPL clearly explains that there is no warranty for this free software. For both users\' and authors\' sake, the GPL requires that modified versions be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions.\n\nSome devices are designed to deny users access to install or run modified versions of the software inside them, although the manufacturer can do so. This is fundamentally incompatible with the aim of protecting users\' freedom to change the software. The systematic pattern of such abuse occurs in the area of products for individuals to use, which is precisely where it is most unacceptable. Therefore, we have designed this version of the GPL to prohibit the practice for those products. If such problems arise substantially in other domains, we stand ready to extend this provision to those domains in future versions of the GPL, as needed to protect the freedom of users.\n\nFinally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. To prevent this, the GPL assures that patents cannot be used to render the program non-free.\n\nThe precise terms and conditions for copying, distribution and modification follow.\n\nTERMS AND CONDITIONS\n\n0. Definitions.\n\n\"This License\" refers to version 3 of the GNU General Public License.\n\n\"Copyright\" also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.\n\n\"The Program\" refers to any copyrightable work licensed under this License. Each licensee is addressed as \"you\". \"Licensees\" and \"recipients\" may be individuals or organizations.\n\nTo \"modify\" a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a \"modified version\" of the earlier work or a work \"based on\" the earlier work.\n\nA \"covered work\" means either the unmodified Program or a work based on the Program.\n\nTo \"propagate\" a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.\n\nTo \"convey\" a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.\n\nAn interactive user interface displays \"Appropriate Legal Notices\" to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that licensees may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list meets this criterion.\n\n1. Source Code.\n\nThe \"source code\" for a work means the preferred form of the work for making modifications to it. \"Object code\" means any non-source form of a work.\n\nA \"Standard Interface\" means an interface that either is an official standard defined by a recognized standards body, or, in the case of interfaces specified for a particular programming language, one that is widely used among developers working in that language.\n\nThe \"System Libraries\" of an executable work include anything, other than the work as a whole, that (a) is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and (b) serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A \"Major Component\", in this context, means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.\n\nThe \"Corresponding Source\" for a work in object code form means all the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the work\'s System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work. For example, Corresponding Source includes interface definition files associated with source files for the work, and the source code for shared libraries and dynamically linked subprograms that the work is specifically designed to require, such as by intimate data communication or control flow between those subprograms and other parts of the work.\n\nThe Corresponding Source need not include anything that users can regenerate automatically from other parts of the Corresponding Source.\n\nThe Corresponding Source for a work in source code form is that same work.\n\n2. Basic Permissions.\n\nAll rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.\n\nYou may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.\n\nConveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.\n\n3. Protecting Users\' Legal Rights From Anti-Circumvention Law.\n\nNo covered work shall be deemed part of an effective technological measure under any applicable law fulfilling obligations under article 11 of the WIPO copyright treaty adopted on 20 December 1996, or similar laws prohibiting or restricting circumvention of such measures.\n\nWhen you convey a covered work, you waive any legal power to forbid circumvention of technological measures to the extent such circumvention is effected by exercising rights under this License with respect to the covered work, and you disclaim any intention to limit operation or modification of the work as a means of enforcing, against the work\'s users, your or third parties\' legal rights to forbid circumvention of technological measures.\n\n4. Conveying Verbatim Copies.\n\nYou may convey verbatim copies of the Program\'s source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code; keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.\n\nYou may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.\n\n5. Conveying Modified Source Versions.\n\nYou may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:\n\na) The work must carry prominent notices stating that you modified it, and giving a relevant date.\n\nb) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7. This requirement modifies the requirement in section 4 to \"keep intact all notices\".\n\nc) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.\n\nd) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.\n\nA compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an \"aggregate\" if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation\'s users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.\n\n6. Conveying Non-Source Forms.\n\nYou may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:\n\na) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by the Corresponding Source fixed on a durable physical medium customarily used for software interchange.\n\nb) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.\n\nc) Convey individual copies of the object code with a copy of the written offer to provide the Corresponding Source. This alternative is allowed only occasionally and noncommercially, and only if you received the object code with such an offer, in accord with subsection 6b.\n\nd) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.\n\ne) Convey the object code using peer-to-peer transmission, provided you inform other peers where the object code and Corresponding Source of the work are being offered to the general public at no charge under subsection 6d.\n\nA separable portion of the object code, whose source code is excluded from the Corresponding Source as a System Library, need not be included in conveying the object code work.\n\nA \"User Product\" is either (1) a \"consumer product\", which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, \"normally used\" refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.\n\n\"Installation Information\" for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.\n\nIf you convey an object code work under this section in, or with, or specifically for use in, a User Product, and the conveying occurs as part of a transaction in which the right of possession and use of the User Product is transferred to the recipient in perpetuity or for a fixed term (regardless of how the transaction is characterized), the Corresponding Source conveyed under this section must be accompanied by the Installation Information. But this requirement does not apply if neither you nor any third party retains the ability to install modified object code on the User Product (for example, the work has been installed in ROM).\n\nThe requirement to provide Installation Information does not include a requirement to continue to provide support service, warranty, or updates for a work that has been modified or installed by the recipient, or for the User Product in which it has been modified or installed. Access to a network may be denied when the modification itself materially and adversely affects the operation of the network or violates the rules and protocols for communication across the network.\n\nCorresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.\n\n7. Additional Terms.\n\n\"Additional permissions\" are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.\n\nWhen you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.\n\nNotwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:\n\na) Disclaiming warranty or limiting liability differently from the terms of sections 15 and 16 of this License; or\n\nb) Requiring preservation of specified reasonable legal notices or author attributions in that material or in the Appropriate Legal Notices displayed by works containing it; or\n\nc) Prohibiting misrepresentation of the origin of that material, or requiring that modified versions of such material be marked in reasonable ways as different from the original version; or\n\nd) Limiting the use for publicity purposes of names of licensors or authors of the material; or\n\ne) Declining to grant rights under trademark law for use of some trade names, trademarks, or service marks; or\n\nf) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.\n\nAll other non-permissive additional terms are considered \"further restrictions\" within the meaning of section 10. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.\n\nIf you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.\n\nAdditional terms, permissive or non-permissive, may be stated in the form of a separately written license, or stated as exceptions; the above requirements apply either way.\n\n8. Termination.\n\nYou may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).\n\nHowever, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.\n\nMoreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.\n\nTermination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, you do not qualify to receive new licenses for the same material under section 10.\n\n9. Acceptance Not Required for Having Copies.\n\nYou are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.\n\n10. Automatic Licensing of Downstream Recipients.\n\nEach time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.\n\nAn \"entity transaction\" is a transaction transferring control of an organization, or substantially all assets of one, or subdividing an organization, or merging organizations. If propagation of a covered work results from an entity transaction, each party to that transaction who receives a copy of the work also receives whatever licenses to the work the party\'s predecessor in interest had or could give under the previous paragraph, plus a right to possession of the Corresponding Source of the work from the predecessor in interest, if the predecessor has it or can get it with reasonable efforts.\n\nYou may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.\n\n11. Patents.\n\nA \"contributor\" is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor\'s \"contributor version\".\n\nA contributor\'s \"essential patent claims\" are all patent claims owned or controlled by the contributor, whether already acquired or hereafter acquired, that would be infringed by some manner, permitted by this License, of making, using, or selling its contributor version, but do not include claims that would be infringed only as a consequence of further modification of the contributor version. For purposes of this definition, \"control\" includes the right to grant patent sublicenses in a manner consistent with the requirements of this License.\n\nEach contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor\'s essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.\n\nIn the following three paragraphs, a \"patent license\" is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To \"grant\" such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.\n\nIf you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. \"Knowingly relying\" means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient\'s use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.\n\nIf, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.\n\nA patent license is \"discriminatory\" if it does not include within the scope of its coverage, prohibits the exercise of, or is conditioned on the non-exercise of one or more of the rights that are specifically granted under this License. You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license (a) in connection with copies of the covered work conveyed by you (or copies made from those copies), or (b) primarily for and in connection with specific products or compilations that contain the covered work, unless you entered into that arrangement, or that patent license was granted, prior to 28 March 2007.\n\nNothing in this License shall be construed as excluding or limiting any implied license or other defenses to infringement that may otherwise be available to you under applicable patent law.\n\n12. No Surrender of Others\' Freedom.\n\nIf conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot convey a covered work so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not convey it at all. For example, if you agree to terms that obligate you to collect a royalty for further conveying from those to whom you convey the Program, the only way you could satisfy both those terms and this License would be to refrain entirely from conveying the Program.\n\n13. Use with the GNU Affero General Public License.\n\nNotwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.\n\n14. Revised Versions of this License.\n\nThe Free Software Foundation may publish revised and/or new versions of the GNU General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.\n\nEach version is given a distinguishing version number. If the Program specifies that a certain numbered version of the GNU General Public License \"or any later version\" applies to it, you have the option of following the terms and conditions either of that numbered version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of the GNU General Public License, you may choose any version ever published by the Free Software Foundation.\n\nIf the Program specifies that a proxy can decide which future versions of the GNU General Public License can be used, that proxy\'s public statement of acceptance of a version permanently authorizes you to choose that version for the Program.\n\nLater license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.\n\n15. Disclaimer of Warranty.\n\nTHERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n16. Limitation of Liability.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n17. Interpretation of Sections 15 and 16.\n\nIf the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.\n\nEND OF TERMS AND CONDITIONS\n\nHow to Apply These Terms to Your New Programs\n\nIf you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.\n\nTo do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the \"copyright\" line and a pointer to where the full notice is found.\n\n<one line to give the program\'s name and a brief idea of what it does.> Copyright (C) <year> <name of author>\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\nIf the program does terminal interaction, make it output a short notice like this when it starts in an interactive mode:\n\n<program> Copyright (C) <year> <name of author> This program comes with ABSOLUTELY NO WARRANTY; for details type `show w\'. This is free software, and you are welcome to redistribute it under certain conditions; type `show c\' for details.\n\nThe hypothetical commands `show w\' and `show c\' should show the appropriate parts of the General Public License. Of course, your program\'s commands might be different; for a GUI interface, you would use an \"about box\".\n\nYou should also get your employer (if you work as a programmer) or school, if any, to sign a \"copyright disclaimer\" for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <http://www.gnu.org/licenses/>.\n\nThe GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <http://www.gnu.org/philosophy/why-not-lgpl.html>.]]></string>
+
+
+    <string name="description_image_button_one">one</string>
+
+    <!-- String describing the image on ImageButton two
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_two">two</string>
+
+    <!-- String describing the image on ImageButton three
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_three">three</string>
+
+    <!-- String describing the image on ImageButton four
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_four">four</string>
+
+    <!-- String describing the image on ImageButton five
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_five">five</string>
+
+    <!-- String describing the image on ImageButton six
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_six">six</string>
+
+    <!-- String describing the image on ImageButton seven
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_seven">seven</string>
+
+    <!-- String describing the image on ImageButton eight
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_eight">eight</string>
+
+    <!-- String describing the image on ImageButton nine
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_nine">nine</string>
+
+    <!-- String describing the image on ImageButton star
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_star">star</string>
+
+    <!-- String describing the image on ImageButton zero
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_zero">zero</string>
+
+    <!-- String describing the image on ImageButton pound
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <string name="description_image_button_pound">pound</string>
+
+    <string name="description_delete_button">backspace</string>
+    <string name="description_dial_button">dial</string>
+    <string name="dialerDialpadHintText">Dial to add a call</string>
+    <string name="recentCalls_addToContact">Add to contacts</string>
+    <string name="add_2sec_pause">Add 2-sec pause</string>
+    <string name="add_wait">Add wait</string>
+    <string name="call_settings">Settings</string>
+    <string name="dialog_voicemail_airplane_mode_message">To call voicemail, first turn off Airplane mode.</string>
+    <string name="dialog_voicemail_not_ready_message">To set up voicemail, go to Menu &gt; Settings.</string>
+    <string name="dialog_phone_call_prohibited_message" msgid="4313552620858880999">Call not sent</string>
+    <string name="dialer_useDtmfDialpad">Use touch tone keypad</string>
+    <string name="dialer_returnToInCallScreen">Return to call in progress</string>
+    <string name="dialer_addAnotherCall">Add call</string>
+
+    <string name="home_bottom_dialpad">صفحه شماره</string>
+    <string name="balance_text">باقیمانده اعتبار</string>
+    <string name="support_text">تماس با پشتیبانی</string>
+    <string name="charg_text">خرید اعتبار</string>
+    <string name="charg_title_text">مبلغ مورد نظر را انتخاب کنید</string>
+    <string name="balance_num">2</string>
+    <string name="support_num">100</string>
+    <string name="global_check_item">کلیک برای تمام تماس ها</string>
+    <string name="global_check_notify">درحال ارسال درخواست به کلیک</string>
+    <string name="is_global_off">کلیک برای تمام تماس ها لغو شد</string>
+    <string name="is_global_on">کلیک برای تمام تماس ها فعال شد</string>
+    <string name="nitification_cost">هزینه آخرین تماس (به ریال)</string>
+    <string name="nitification_click_title">تنظیم کلیک برای تمام تماس ها</string>
+    <string name="nitification_click_content_enable">برای فعال سازی روی این پیام ضربه بزنید</string>
+    <string name="nitification_click_content_disable">برای لغو بر روی این پیام ضربه بزنید</string>
+    <string name="autoanswer_check_item">اتصال خودکار تماس دریافتی از کلیک</string>
+    <string name="guid_text">راهنما</string>
+    <string name="callWithKleegram">تماس با کلیگرام</string>
+    <string name="callingWithKleegram">در حال برقراری تماس با کلیگرام</string>
+    <string name="kleegramSettings">تنظیمات کلیگرام</string>
+    <string name="activeKleegram">فعال سازی کلیگرام</string>
+
+</resources>
+

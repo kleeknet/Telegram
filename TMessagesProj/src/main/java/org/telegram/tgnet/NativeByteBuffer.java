@@ -40,17 +40,13 @@ public class NativeByteBuffer extends AbstractSerializedData {
 
     }
 
-    public NativeByteBuffer(int size) throws Exception {
-        if (size >= 0) {
-            address = native_getFreeBuffer(size);
-            if (address != 0) {
-                buffer = native_getJavaByteBuffer(address);
-                buffer.position(0);
-                buffer.limit(size);
-                buffer.order(ByteOrder.LITTLE_ENDIAN);
-            }
-        } else {
-            throw new Exception("invalid NativeByteBuffer size");
+    public NativeByteBuffer(int size) {
+        address = native_getFreeBuffer(size);
+        if (address != 0) {
+            buffer = native_getJavaByteBuffer(address);
+            buffer.position(0);
+            buffer.limit(size);
+            buffer.order(ByteOrder.LITTLE_ENDIAN);
         }
     }
 

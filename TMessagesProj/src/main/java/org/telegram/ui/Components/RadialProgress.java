@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.ui.Components;
@@ -55,44 +55,33 @@ public class RadialProgress {
         progressRect.set(left, top, right, bottom);
     }
 
-    private void updateAnimation(boolean progress) {
+    private void updateAnimation() {
         long newTime = System.currentTimeMillis();
         long dt = newTime - lastUpdateTime;
         lastUpdateTime = newTime;
 
-        if (progress) {
-            if (animatedProgressValue != 1) {
-                radOffset += 360 * dt / 3000.0f;
-                float progressDiff = currentProgress - animationProgressStart;
-                if (progressDiff > 0) {
-                    currentProgressTime += dt;
-                    if (currentProgressTime >= 300) {
-                        animatedProgressValue = currentProgress;
-                        animationProgressStart = currentProgress;
-                        currentProgressTime = 0;
-                    } else {
-                        animatedProgressValue = animationProgressStart + progressDiff * decelerateInterpolator.getInterpolation(currentProgressTime / 300.0f);
-                    }
+        if (animatedProgressValue != 1) {
+            radOffset += 360 * dt / 3000.0f;
+            float progressDiff = currentProgress - animationProgressStart;
+            if (progressDiff > 0) {
+                currentProgressTime += dt;
+                if (currentProgressTime >= 300) {
+                    animatedProgressValue = currentProgress;
+                    animationProgressStart = currentProgress;
+                    currentProgressTime = 0;
+                } else {
+                    animatedProgressValue = animationProgressStart + progressDiff * decelerateInterpolator.getInterpolation(currentProgressTime / 300.0f);
                 }
-                invalidateParent();
             }
-            if (animatedProgressValue >= 1 && previousDrawable != null) {
-                animatedAlphaValue -= dt / 200.0f;
-                if (animatedAlphaValue <= 0) {
-                    animatedAlphaValue = 0.0f;
-                    previousDrawable = null;
-                }
-                invalidateParent();
+            invalidateParent();
+        }
+        if (animatedProgressValue >= 1 && previousDrawable != null) {
+            animatedAlphaValue -= dt / 200.0f;
+            if (animatedAlphaValue <= 0) {
+                animatedAlphaValue = 0.0f;
+                previousDrawable = null;
             }
-        } else {
-            if (previousDrawable != null) {
-                animatedAlphaValue -= dt / 200.0f;
-                if (animatedAlphaValue <= 0) {
-                    animatedAlphaValue = 0.0f;
-                    previousDrawable = null;
-                }
-                invalidateParent();
-            }
+            invalidateParent();
         }
     }
 
@@ -135,19 +124,11 @@ public class RadialProgress {
         }
         currentWithRound = withRound;
         currentDrawable = drawable;
-        if (!animated) {
-            parent.invalidate();
-        } else {
-            invalidateParent();
-        }
+        invalidateParent();
     }
 
-    public boolean swapBackground(Drawable drawable) {
-        if (currentDrawable != drawable) {
-            currentDrawable = drawable;
-            return true;
-        }
-        return false;
+    public void swapBackground(Drawable drawable) {
+        currentDrawable = drawable;
     }
 
     public float getAlpha() {
@@ -181,9 +162,7 @@ public class RadialProgress {
             }
             cicleRect.set(progressRect.left + diff, progressRect.top + diff, progressRect.right - diff, progressRect.bottom - diff);
             canvas.drawArc(cicleRect, -90 + radOffset, Math.max(4, 360 * animatedProgressValue), false, progressPaint);
-            updateAnimation(true);
-        } else {
-            updateAnimation(false);
+            updateAnimation();
         }
     }
 }

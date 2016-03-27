@@ -16,15 +16,13 @@
 
 package org.telegram.messenger.support.widget.helper;
 
-import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.Nullable;
+import android.support.v4.animation.ValueAnimatorCompat;
 import android.support.v4.animation.AnimatorCompatHelper;
 import android.support.v4.animation.AnimatorListenerCompat;
 import android.support.v4.animation.AnimatorUpdateListenerCompat;
-import android.support.v4.animation.ValueAnimatorCompat;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v4.view.VelocityTrackerCompat;
@@ -33,8 +31,6 @@ import android.support.v4.view.ViewCompat;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.support.widget.LinearLayoutManager;
 import org.telegram.messenger.support.widget.RecyclerView;
-import org.telegram.messenger.support.widget.RecyclerView.OnItemTouchListener;
-import org.telegram.messenger.support.widget.RecyclerView.ViewHolder;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.HapticFeedbackConstants;
@@ -43,10 +39,13 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewParent;
-import android.view.animation.Interpolator;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.telegram.messenger.support.widget.RecyclerView.OnItemTouchListener;
+import org.telegram.messenger.support.widget.RecyclerView.ViewHolder;
+import android.view.animation.Interpolator;
 
 /**
  * This is a utility class to add swipe to dismiss and drag & drop support to RecyclerView.
@@ -158,11 +157,6 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
     private static final int ACTION_MODE_DRAG_MASK = ACTION_MODE_SWIPE_MASK << DIRECTION_FLAG_COUNT;
 
     /**
-     * The unit we are using to track velocity
-     */
-    private static final int PIXELS_PER_SECOND = 1000;
-
-    /**
      * Views, whose state should be cleared after they are detached from RecyclerView.
      * This is necessary after swipe dismissing an item. We wait until animator finishes its job
      * to clean these views.
@@ -186,16 +180,6 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
     float mInitialTouchX;
 
     float mInitialTouchY;
-
-    /**
-     * Set when ItemTouchHelper is assigned to a RecyclerView.
-     */
-    float mSwipeEscapeVelocity;
-
-    /**
-     * Set when ItemTouchHelper is assigned to a RecyclerView.
-     */
-    float mMaxSwipeVelocity;
 
     /**
      * The diff between the last event and initial touch.
@@ -383,11 +367,11 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
                     break;
                 }
                 case MotionEvent.ACTION_CANCEL:
-                    if (mVelocityTracker != null) {
-                        mVelocityTracker.clear();
-                    }
-                    // fall through
                 case MotionEvent.ACTION_UP:
+                    if (mVelocityTracker != null) {
+                        mVelocityTracker
+                                .computeCurrentVelocity(1000, mRecyclerView.getMaxFlingVelocity());
+                    }
                     select(null, ACTION_STATE_IDLE);
                     mActivePointerId = ACTIVE_POINTER_ID_NONE;
                     break;
@@ -395,6 +379,11 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
                     final int pointerIndex = MotionEventCompat.getActionIndex(event);
                     final int pointerId = MotionEventCompat.getPointerId(event, pointerIndex);
                     if (pointerId == mActivePointerId) {
+                        if (mVelocityTracker != null) {
+                            mVelocityTracker
+                                    .computeCurrentVelocity(1000,
+                                            mRecyclerView.getMaxFlingVelocity());
+                        }
                         // This was our active pointer going up. Choose a new
                         // active pointer and adjust accordingly.
                         final int newPointerIndex = pointerIndex == 0 ? 1 : 0;
@@ -447,14 +436,12 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
 
     /**
      * Attaches the ItemTouchHelper to the provided RecyclerView. If TouchHelper is already
-     * attached to a RecyclerView, it will first detach from the previous one. You can call this
-     * method with {@code null} to detach it from the current RecyclerView.
+     * attached
+     * to a RecyclerView, it will first detach from the previous one.
      *
-     * @param recyclerView The RecyclerView instance to which you want to add this helper or
-     *                     {@code null} if you want to remove ItemTouchHelper from the current
-     *                     RecyclerView.
+     * @param recyclerView The RecyclerView instance to which you want to add this helper.
      */
-    public void attachToRecyclerView(@Nullable RecyclerView recyclerView) {
+    public void attachToRecyclerView(RecyclerView recyclerView) {
         if (mRecyclerView == recyclerView) {
             return; // nothing to do
         }
@@ -463,9 +450,6 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
         }
         mRecyclerView = recyclerView;
         if (mRecyclerView != null) {
-            final Resources resources = recyclerView.getResources();
-            mSwipeEscapeVelocity = AndroidUtilities.dp(120);
-            mMaxSwipeVelocity = AndroidUtilities.dp(800);
             setupCallbacks();
         }
     }
@@ -890,6 +874,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
                     anim.cancel();
                 }
                 mRecoverAnimations.remove(i);
+                anim.mViewHolder.setIsRecyclable(true);
                 return anim.mAnimationType;
             }
         }
@@ -1025,7 +1010,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
 
     /**
      * Starts dragging the provided ViewHolder. By default, ItemTouchHelper starts a drag when a
-     * View is long pressed. You can disable that behavior by overriding
+     * View is long pressed. You can disable that behavior via
      * {@link ItemTouchHelper.Callback#isLongPressDragEnabled()}.
      * <p>
      * For this method to work:
@@ -1204,17 +1189,11 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
         if ((flags & (LEFT | RIGHT)) != 0) {
             final int dirFlag = mDx > 0 ? RIGHT : LEFT;
             if (mVelocityTracker != null && mActivePointerId > -1) {
-                mVelocityTracker.computeCurrentVelocity(PIXELS_PER_SECOND,
-                        mCallback.getSwipeVelocityThreshold(mMaxSwipeVelocity));
                 final float xVelocity = VelocityTrackerCompat
                         .getXVelocity(mVelocityTracker, mActivePointerId);
-                final float yVelocity = VelocityTrackerCompat
-                        .getYVelocity(mVelocityTracker, mActivePointerId);
                 final int velDirFlag = xVelocity > 0f ? RIGHT : LEFT;
-                final float absXVelocity = Math.abs(xVelocity);
                 if ((velDirFlag & flags) != 0 && dirFlag == velDirFlag &&
-                        absXVelocity >= mCallback.getSwipeEscapeVelocity(mSwipeEscapeVelocity) &&
-                        absXVelocity > Math.abs(yVelocity)) {
+                        Math.abs(xVelocity) >= mRecyclerView.getMinFlingVelocity()) {
                     return velDirFlag;
                 }
             }
@@ -1233,17 +1212,11 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
         if ((flags & (UP | DOWN)) != 0) {
             final int dirFlag = mDy > 0 ? DOWN : UP;
             if (mVelocityTracker != null && mActivePointerId > -1) {
-                mVelocityTracker.computeCurrentVelocity(PIXELS_PER_SECOND,
-                        mCallback.getSwipeVelocityThreshold(mMaxSwipeVelocity));
-                final float xVelocity = VelocityTrackerCompat
-                        .getXVelocity(mVelocityTracker, mActivePointerId);
                 final float yVelocity = VelocityTrackerCompat
                         .getYVelocity(mVelocityTracker, mActivePointerId);
                 final int velDirFlag = yVelocity > 0f ? DOWN : UP;
-                final float absYVelocity = Math.abs(yVelocity);
                 if ((velDirFlag & flags) != 0 && velDirFlag == dirFlag &&
-                        absYVelocity >= mCallback.getSwipeEscapeVelocity(mSwipeEscapeVelocity) &&
-                        absYVelocity > Math.abs(xVelocity)) {
+                        Math.abs(yVelocity) >= mRecyclerView.getMinFlingVelocity()) {
                     return velDirFlag;
                 }
             }
@@ -1384,7 +1357,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
         /**
          * Drag scroll speed keeps accelerating until this many milliseconds before being capped.
          */
-        private static final long DRAG_SCROLL_ACCELERATION_LIMIT_TIME_MS = 2000;
+        private static final long DRAG_SCROLL_ACCELERATION_LIMIT_TIME_MS = 500;
 
         private int mCachedMaxScrollSpeed = -1;
 
@@ -1399,8 +1372,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
         }
 
         /**
-         * Returns the {@link ItemTouchUIUtil} that is used by the {@link Callback} class for
-         * visual
+         * Returns the {@link ItemTouchUIUtil} that is used by the {@link Callback} class for visual
          * changes on Views in response to user interactions. {@link ItemTouchUIUtil} has different
          * implementations for different platform versions.
          * <p>
@@ -1690,54 +1662,6 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
         }
 
         /**
-         * Defines the minimum velocity which will be considered as a swipe action by the user.
-         * <p>
-         * You can increase this value to make it harder to swipe or decrease it to make it easier.
-         * Keep in mind that ItemTouchHelper also checks the perpendicular velocity and makes sure
-         * current direction velocity is larger then the perpendicular one. Otherwise, user's
-         * movement is ambiguous. You can change the threshold by overriding
-         * {@link #getSwipeVelocityThreshold(float)}.
-         * <p>
-         * The velocity is calculated in pixels per second.
-         * <p>
-         * The default framework value is passed as a parameter so that you can modify it with a
-         * multiplier.
-         *
-         * @param defaultValue The default value (in pixels per second) used by the
-         *                     ItemTouchHelper.
-         * @return The minimum swipe velocity. The default implementation returns the
-         * <code>defaultValue</code> parameter.
-         * @see #getSwipeVelocityThreshold(float)
-         * @see #getSwipeThreshold(ViewHolder)
-         */
-        public float getSwipeEscapeVelocity(float defaultValue) {
-            return defaultValue;
-        }
-
-        /**
-         * Defines the maximum velocity ItemTouchHelper will ever calculate for pointer movements.
-         * <p>
-         * To consider a movement as swipe, ItemTouchHelper requires it to be larger than the
-         * perpendicular movement. If both directions reach to the max threshold, none of them will
-         * be considered as a swipe because it is usually an indication that user rather tried to
-         * scroll then swipe.
-         * <p>
-         * The velocity is calculated in pixels per second.
-         * <p>
-         * You can customize this behavior by changing this method. If you increase the value, it
-         * will be easier for the user to swipe diagonally and if you decrease the value, user will
-         * need to make a rather straight finger movement to trigger a swipe.
-         *
-         * @param defaultValue The default value(in pixels per second) used by the ItemTouchHelper.
-         * @return The velocity cap for pointer movements. The default implementation returns the
-         * <code>defaultValue</code> parameter.
-         * @see #getSwipeEscapeVelocity(float)
-         */
-        public float getSwipeVelocityThreshold(float defaultValue) {
-            return defaultValue;
-        }
-
-        /**
          * Called by ItemTouchHelper to select a drop target from the list of ViewHolders that
          * are under the dragged View.
          * <p>
@@ -1855,6 +1779,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
          * @param actionState One of {@link ItemTouchHelper#ACTION_STATE_IDLE},
          *                    {@link ItemTouchHelper#ACTION_STATE_SWIPE} or
          *                    {@link ItemTouchHelper#ACTION_STATE_DRAG}.
+         *
          * @see #clearView(RecyclerView, RecyclerView.ViewHolder)
          */
         public void onSelectedChanged(ViewHolder viewHolder, int actionState) {
@@ -1977,6 +1902,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
                 final RecoverAnimation anim = recoverAnimationList.get(i);
                 if (anim.mEnded && !anim.mIsPendingCleanup) {
                     recoverAnimationList.remove(i);
+                    anim.mViewHolder.setIsRecyclable(true);
                 } else if (!anim.mEnded) {
                     hasRunningAnimation = true;
                 }
@@ -2112,14 +2038,15 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
          * the faster the list will scroll. Similarly, the larger portion of the View is out of
          * bounds, the faster the RecyclerView will scroll.
          *
-         * @param recyclerView        The RecyclerView instance to which ItemTouchHelper is
-         *                            attached to.
+         * @param recyclerView        The RecyclerView instance to which ItemTouchHelper is attached
+         *                            to.
          * @param viewSize            The total size of the View in scroll direction, excluding
          *                            item decorations.
          * @param viewSizeOutOfBounds The total size of the View that is out of bounds. This value
          *                            is negative if the View is dragged towards left or top edge.
          * @param totalSize           The total size of RecyclerView in the scroll direction.
          * @param msSinceStartScroll  The time passed since View is kept out of bounds.
+         *
          * @return The amount that RecyclerView should scroll. Keep in mind that this value will
          * be passed to {@link RecyclerView#scrollBy(int, int)} method.
          */
@@ -2387,9 +2314,6 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration
 
         @Override
         public void onAnimationEnd(ValueAnimatorCompat animation) {
-            if (!mEnded) {
-                mViewHolder.setIsRecyclable(true);
-            }
             mEnded = true;
         }
 

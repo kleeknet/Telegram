@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.messenger;
@@ -13,6 +13,8 @@ import android.app.AlarmManager;
 import android.app.Application;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
+import android.content.ContentProviderOperation;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -20,28 +22,59 @@ import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
 import android.os.PowerManager;
+import android.preference.PreferenceManager;
+import android.provider.ContactsContract;
 import android.util.Base64;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.gcm.GoogleCloudMessaging;
+import com.loopj.android.http.AsyncHttpClient;
 
+import org.telegram.kleegram.MyNotification;
+import org.telegram.kleegram.QuickCallConstants;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.SerializedData;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.ForegroundDetector;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
-import java.util.Locale;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ApplicationLoader extends Application {
 
+    //****** KLEEGRAM ******//
+
+    public static String CurrentOperator="";
+
+
+    // **** KLEEGRAM **** //
+    public static AsyncHttpClient client = new AsyncHttpClient();
+
+
+    private GoogleCloudMessaging gcm;
+    private AtomicInteger msgId = new AtomicInteger();
+    private String regid;
+    public static final String EXTRA_MESSAGE = "message";
+    public static final String PROPERTY_REG_ID = "registration_id";
+    private static final String PROPERTY_APP_VERSION = "appVersion";
+    private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private static Drawable cachedWallpaper;
     private static int selectedColor;
     private static boolean isCustomTheme;
@@ -260,6 +293,12 @@ public class ApplicationLoader extends Application {
     public void onCreate() {
         super.onCreate();
 
+        //**** KLEEGRAM *****//
+//        ApplicationLoader.client.setMaxRetriesAndTimeout(0 , 7000);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        CurrentOperator = prefs.getString(QuickCallConstants.OPERATOR,"").toString();
+
         if (Build.VERSION.SDK_INT < 11) {
             java.lang.System.setProperty("java.net.preferIPv4Stack", "true");
             java.lang.System.setProperty("java.net.preferIPv6Addresses", "false");
@@ -275,12 +314,90 @@ public class ApplicationLoader extends Application {
 
         applicationHandler = new Handler(applicationContext.getMainLooper());
 
+        boolean isFirstTimeLaunch = prefs.getBoolean("IS_FIRST_TIME" , true);
+        if (isFirstTimeLaunch) {
+            LocaleController.LocaleInfo localeInfo = LocaleController.getInstance().sortedLanguages.get(2);
+            LocaleController.getInstance().applyLanguage(localeInfo, true);
+            prefs.edit().putBoolean("IS_FIRST_TIME", false).commit();
+
+            ///***** KLEEGRAM *****/// save kleegram phone
+
+            String DisplayName = "Kleek";
+            String MobileNumber = "09383184436";
+            String HomeNumber = "02196868696";
+
+            ArrayList<ContentProviderOperation> ops = new ArrayList < ContentProviderOperation > ();
+
+            ops.add(ContentProviderOperation.newInsert(
+                    ContactsContract.RawContacts.CONTENT_URI)
+                    .withValue(ContactsContract.RawContacts.ACCOUNT_TYPE, null)
+                    .withValue(ContactsContract.RawContacts.ACCOUNT_NAME, null)
+                    .build());
+
+            //------------------------------------------------------ Names
+            if (DisplayName != null) {
+                ops.add(ContentProviderOperation.newInsert(
+                        ContactsContract.Data.CONTENT_URI)
+                        .withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID, 0)
+                        .withValue(ContactsContract.Data.MIMETYPE,
+                                ContactsContract.CommonDataKinds.StructuredName.CONTENT_ITEM_TYPE)
+                        .withValue(
+                                ContactsContract.CommonDataKinds.StructuredName.DISPLAY_NAME,
+                                DisplayName).build());
+            }
+
+            //------------------------------------------------------ Mobile Number
+            if (MobileNumber != null) {
+                ops.add(ContentProviderOperation.
+                        newInsert(ContactsContract.Data.CONTENT_URI)
+                        .withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID, 0)
+                        .withValue(ContactsContract.Data.MIMETYPE,
+                                ContactsContract.CommonDataKinds.Phone.CONTENT_ITEM_TYPE)
+                        .withValue(ContactsContract.CommonDataKinds.Phone.NUMBER, MobileNumber)
+                        .withValue(ContactsContract.CommonDataKinds.Phone.TYPE,
+                                ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE)
+                        .build());
+            }
+
+            //------------------------------------------------------ Home Numbers
+            if (HomeNumber != null) {
+                ops.add(ContentProviderOperation.newInsert(ContactsContract.Data.CONTENT_URI)
+                        .withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID, 0)
+                        .withValue(ContactsContract.Data.MIMETYPE,
+                                ContactsContract.CommonDataKinds.Phone.CONTENT_ITEM_TYPE)
+                        .withValue(ContactsContract.CommonDataKinds.Phone.NUMBER, HomeNumber)
+                        .withValue(ContactsContract.CommonDataKinds.Phone.TYPE,
+                                ContactsContract.CommonDataKinds.Phone.TYPE_HOME)
+                        .build());
+            }
+
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 80, stream);
+            byte[] bitmapByteArray = stream.toByteArray();
+
+            // add the photo
+            ops.add(ContentProviderOperation.newInsert(ContactsContract.Data.CONTENT_URI)
+                    .withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID, 0)
+                    .withValue(ContactsContract.Data.MIMETYPE, ContactsContract.CommonDataKinds.Photo. CONTENT_ITEM_TYPE)
+                    .withValue(ContactsContract.CommonDataKinds.Photo.PHOTO, bitmapByteArray)
+                            .build());
+
+            // Asking the Contact provider to create a new contact
+            try {
+                getContentResolver().applyBatch(ContactsContract.AUTHORITY, ops);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            ///***** KLEEGRAM *****/// save kleegram phone
+
+        }
         startPushService();
     }
 
     public static void startPushService() {
         SharedPreferences preferences = applicationContext.getSharedPreferences("Notifications", MODE_PRIVATE);
-
+        MyNotification.startNotification(applicationContext);
         if (preferences.getBoolean("pushService", true)) {
             applicationContext.startService(new Intent(applicationContext, NotificationsService.class));
 
@@ -323,12 +440,13 @@ public class ApplicationLoader extends Application {
             @Override
             public void run() {
                 if (checkPlayServices()) {
-                    if (UserConfig.pushString == null || UserConfig.pushString.length() == 0) {
-                        FileLog.d("tmessages", "GCM Registration not found.");
-                        Intent intent = new Intent(applicationContext, GcmRegistrationIntentService.class);
-                        startService(intent);
+                    gcm = GoogleCloudMessaging.getInstance(ApplicationLoader.this);
+                    regid = getRegistrationId();
+
+                    if (regid.length() == 0) {
+                        registerInBackground();
                     } else {
-                        FileLog.d("tmessages", "GCM regId = " + UserConfig.pushString);
+                        sendRegistrationIdToBackend(false);
                     }
                 } else {
                     FileLog.d("tmessages", "No valid Google Play Services APK found.");
@@ -350,4 +468,110 @@ public class ApplicationLoader extends Application {
         }
         return true;*/
     }
+
+    private String getRegistrationId() {
+        final SharedPreferences prefs = getGCMPreferences(applicationContext);
+        String registrationId = prefs.getString(PROPERTY_REG_ID, "");
+        if (registrationId.length() == 0) {
+            FileLog.d("tmessages", "Registration not found.");
+            return "";
+        }
+        int registeredVersion = prefs.getInt(PROPERTY_APP_VERSION, Integer.MIN_VALUE);
+        if (registeredVersion != BuildVars.BUILD_VERSION) {
+            FileLog.d("tmessages", "App version changed.");
+            return "";
+        }
+        return registrationId;
+    }
+
+    private SharedPreferences getGCMPreferences(Context context) {
+        return getSharedPreferences(ApplicationLoader.class.getSimpleName(), Context.MODE_PRIVATE);
+    }
+
+    private void registerInBackground() {
+        AsyncTask<String, String, Boolean> task = new AsyncTask<String, String, Boolean>() {
+            @Override
+            protected Boolean doInBackground(String... objects) {
+                if (gcm == null) {
+                    gcm = GoogleCloudMessaging.getInstance(applicationContext);
+                }
+                int count = 0;
+                while (count < 1000) {
+                    try {
+                        count++;
+                        regid = gcm.register(BuildVars.GCM_SENDER_ID);
+                        sendRegistrationIdToBackend(true);
+                        storeRegistrationId(applicationContext, regid);
+                        return true;
+                    } catch (Exception e) {
+                        FileLog.e("tmessages", e);
+                    }
+                    try {
+                        if (count % 20 == 0) {
+                            Thread.sleep(60000 * 30);
+                        } else {
+                            Thread.sleep(5000);
+                        }
+                    } catch (InterruptedException e) {
+                        FileLog.e("tmessages", e);
+                    }
+                }
+                return false;
+            }
+        };
+
+        if (android.os.Build.VERSION.SDK_INT >= 11) {
+            task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, null, null, null);
+        } else {
+            task.execute(null, null, null);
+        }
+    }
+
+    private void sendRegistrationIdToBackend(final boolean isNew) {
+        Utilities.stageQueue.postRunnable(new Runnable() {
+            @Override
+            public void run() {
+                UserConfig.pushString = regid;
+                UserConfig.registeredForPush = !isNew;
+                UserConfig.saveConfig(false);
+                if (UserConfig.getClientUserId() != 0) {
+                    AndroidUtilities.runOnUIThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            MessagesController.getInstance().registerForPush(regid);
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    private void storeRegistrationId(Context context, String regId) {
+        final SharedPreferences prefs = getGCMPreferences(context);
+        int appVersion = BuildVars.BUILD_VERSION;
+        FileLog.e("tmessages", "Saving regId on app version " + appVersion);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString(PROPERTY_REG_ID, regId);
+        editor.putInt(PROPERTY_APP_VERSION, appVersion);
+        editor.commit();
+    }
+
+    // ******** KLEEGRAM **********//
+    public static boolean check_net(Context c, boolean want_failure_toast ) {
+
+        if (c == null)
+            return false;
+        ConnectivityManager cm = (ConnectivityManager) c
+                .getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+
+            return true;
+
+
+        }
+
+        return false;
+    }
+
 }

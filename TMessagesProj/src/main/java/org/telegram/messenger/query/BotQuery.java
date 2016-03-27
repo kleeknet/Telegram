@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.messenger.query;
@@ -179,7 +179,7 @@ public class BotQuery {
     }
 
     public static void putBotInfo(final TLRPC.BotInfo botInfo) {
-        if (botInfo == null) {
+        if (botInfo == null || botInfo instanceof TLRPC.TL_botInfoEmpty) {
             return;
         }
         botInfos.put(botInfo.user_id, botInfo);

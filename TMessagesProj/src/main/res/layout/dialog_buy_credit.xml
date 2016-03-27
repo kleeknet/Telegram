@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:fadingEdge="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--
+             -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mhp_logo_safhe" />
+
+        <Button
+            android:id="@+id/yek"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/mhp_bg_setting_button"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="@string/yek"
+            android:textColor="@color/black_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/dow"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/mhp_bg_setting_button"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="@string/dow"
+            android:textColor="@color/black_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/panj"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/mhp_bg_setting_button"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="@string/panj"
+            android:textColor="@color/black_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/dah"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/mhp_bg_setting_button"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="@string/dah"
+            android:textColor="@color/black_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bist"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/mhp_bg_setting_button"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="@string/bist"
+            android:textColor="@color/black_color"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2016.
+ * Copyright Nikolai Kudashov, 2013-2015.
  */
 
 package org.telegram.messenger;
@@ -161,68 +161,77 @@ public class LocaleController {
         sortedLanguages.add(localeInfo);
         languagesDict.put(localeInfo.shortName, localeInfo);
 
+        // ***** KLEEGRAM ***** //
         localeInfo = new LocaleInfo();
-        localeInfo.name = "Italiano";
-        localeInfo.nameEnglish = "Italian";
-        localeInfo.shortName = "it";
+        localeInfo.name = "فارسی";
+        localeInfo.nameEnglish = "Farsi";
+        localeInfo.shortName = "fa";
         localeInfo.pathToFile = null;
         sortedLanguages.add(localeInfo);
         languagesDict.put(localeInfo.shortName, localeInfo);
 
-        localeInfo = new LocaleInfo();
-        localeInfo.name = "Español";
-        localeInfo.nameEnglish = "Spanish";
-        localeInfo.shortName = "es";
-        sortedLanguages.add(localeInfo);
-        languagesDict.put(localeInfo.shortName, localeInfo);
-
-        localeInfo = new LocaleInfo();
-        localeInfo.name = "Deutsch";
-        localeInfo.nameEnglish = "German";
-        localeInfo.shortName = "de";
-        localeInfo.pathToFile = null;
-        sortedLanguages.add(localeInfo);
-        languagesDict.put(localeInfo.shortName, localeInfo);
-
-        localeInfo = new LocaleInfo();
-        localeInfo.name = "Nederlands";
-        localeInfo.nameEnglish = "Dutch";
-        localeInfo.shortName = "nl";
-        localeInfo.pathToFile = null;
-        sortedLanguages.add(localeInfo);
-        languagesDict.put(localeInfo.shortName, localeInfo);
-
-        localeInfo = new LocaleInfo();
-        localeInfo.name = "العربية";
-        localeInfo.nameEnglish = "Arabic";
-        localeInfo.shortName = "ar";
-        localeInfo.pathToFile = null;
-        sortedLanguages.add(localeInfo);
-        languagesDict.put(localeInfo.shortName, localeInfo);
-
-        localeInfo = new LocaleInfo();
-        localeInfo.name = "Português (Brasil)";
-        localeInfo.nameEnglish = "Portuguese (Brazil)";
-        localeInfo.shortName = "pt_BR";
-        localeInfo.pathToFile = null;
-        sortedLanguages.add(localeInfo);
-        languagesDict.put(localeInfo.shortName, localeInfo);
-
-        localeInfo = new LocaleInfo();
-        localeInfo.name = "Português (Portugal)";
-        localeInfo.nameEnglish = "Portuguese (Portugal)";
-        localeInfo.shortName = "pt_PT";
-        localeInfo.pathToFile = null;
-        sortedLanguages.add(localeInfo);
-        languagesDict.put(localeInfo.shortName, localeInfo);
-
-        localeInfo = new LocaleInfo();
-        localeInfo.name = "한국어";
-        localeInfo.nameEnglish = "Korean";
-        localeInfo.shortName = "ko";
-        localeInfo.pathToFile = null;
-        sortedLanguages.add(localeInfo);
-        languagesDict.put(localeInfo.shortName, localeInfo);
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "Italiano";
+//        localeInfo.nameEnglish = "Italian";
+//        localeInfo.shortName = "it";
+//        localeInfo.pathToFile = null;
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
+//
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "Español";
+//        localeInfo.nameEnglish = "Spanish";
+//        localeInfo.shortName = "es";
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
+//
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "Deutsch";
+//        localeInfo.nameEnglish = "German";
+//        localeInfo.shortName = "de";
+//        localeInfo.pathToFile = null;
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
+//
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "Nederlands";
+//        localeInfo.nameEnglish = "Dutch";
+//        localeInfo.shortName = "nl";
+//        localeInfo.pathToFile = null;
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
+//
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "العربية";
+//        localeInfo.nameEnglish = "Arabic";
+//        localeInfo.shortName = "ar";
+//        localeInfo.pathToFile = null;
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
+//
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "Português (Brasil)";
+//        localeInfo.nameEnglish = "Portuguese (Brazil)";
+//        localeInfo.shortName = "pt_BR";
+//        localeInfo.pathToFile = null;
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
+//
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "Português (Portugal)";
+//        localeInfo.nameEnglish = "Portuguese (Portugal)";
+//        localeInfo.shortName = "pt_PT";
+//        localeInfo.pathToFile = null;
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
+//
+//        localeInfo = new LocaleInfo();
+//        localeInfo.name = "한국어";
+//        localeInfo.nameEnglish = "Korean";
+//        localeInfo.shortName = "ko";
+//        localeInfo.pathToFile = null;
+//        sortedLanguages.add(localeInfo);
+//        languagesDict.put(localeInfo.shortName, localeInfo);
 
         loadOtherLanguages();
 
@@ -322,7 +331,7 @@ public class LocaleController {
         StringBuilder result = new StringBuilder(11);
         result.append(languageCode);
         if (countryCode.length() > 0 || variantCode.length() > 0) {
-            result.append('-');
+            result.append('_');
         }
         result.append(countryCode);
         if (variantCode.length() > 0) {
@@ -664,21 +673,16 @@ public class LocaleController {
     }
 
     public static String formatDateChat(long date) {
-        try {
-            Calendar rightNow = Calendar.getInstance();
-            int year = rightNow.get(Calendar.YEAR);
+        Calendar rightNow = Calendar.getInstance();
+        int year = rightNow.get(Calendar.YEAR);
 
-            rightNow.setTimeInMillis(date * 1000);
-            int dateYear = rightNow.get(Calendar.YEAR);
+        rightNow.setTimeInMillis(date * 1000);
+        int dateYear = rightNow.get(Calendar.YEAR);
 
-            if (year == dateYear) {
-                return getInstance().chatDate.format(date * 1000);
-            }
-            return getInstance().chatFullDate.format(date * 1000);
-        } catch (Exception e) {
-            FileLog.e("tmessages", e);
+        if (year == dateYear) {
+            return getInstance().chatDate.format(date * 1000);
         }
-        return "LOC_ERR: formatDateChat";
+        return getInstance().chatFullDate.format(date * 1000);
     }
 
     public static String formatDate(long date) {
@@ -698,30 +702,6 @@ public class LocaleController {
                 return getInstance().formatterMonth.format(new Date(date * 1000));
             } else {
                 return getInstance().formatterYear.format(new Date(date * 1000));
-            }
-        } catch (Exception e) {
-            FileLog.e("tmessages", e);
-        }
-        return "LOC_ERR: formatDate";
-    }
-
-    public static String formatDateAudio(long date) {
-        try {
-            Calendar rightNow = Calendar.getInstance();
-            int day = rightNow.get(Calendar.DAY_OF_YEAR);
-            int year = rightNow.get(Calendar.YEAR);
-            rightNow.setTimeInMillis(date * 1000);
-            int dateDay = rightNow.get(Calendar.DAY_OF_YEAR);
-            int dateYear = rightNow.get(Calendar.YEAR);
-
-            if (dateDay == day && year == dateYear) {
-                return String.format("%s %s", LocaleController.getString("TodayAt", R.string.TodayAt), getInstance().formatterDay.format(new Date(date * 1000)));
-            } else if (dateDay + 1 == day && year == dateYear) {
-                return String.format("%s %s", LocaleController.getString("YesterdayAt", R.string.YesterdayAt), getInstance().formatterDay.format(new Date(date * 1000)));
-            } else if (year == dateYear) {
-                return LocaleController.formatString("formatDateAtTime", R.string.formatDateAtTime, getInstance().formatterMonth.format(new Date(date * 1000)), getInstance().formatterDay.format(new Date(date * 1000)));
-            } else {
-                return LocaleController.formatString("formatDateAtTime", R.string.formatDateAtTime, getInstance().formatterYear.format(new Date(date * 1000)), getInstance().formatterDay.format(new Date(date * 1000)));
             }
         } catch (Exception e) {
             FileLog.e("tmessages", e);
@@ -849,11 +829,7 @@ public class LocaleController {
                 return String.format(Locale.US, "%d.%d%s", number, lastDec, K);
             }
         }
-        if (K.length() == 2) {
-            return String.format(Locale.US, "%dM", number);
-        } else {
-            return String.format(Locale.US, "%d%s", number, K);
-        }
+        return String.format(Locale.US, "%d%s", number, K);
     }
 
     public static String formatUserStatus(TLRPC.User user) {
